@@ -1,0 +1,4770 @@
+[
+  {
+    "id": "src-01f4a26b62fba636",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "Standard Chartered Kenya",
+    "target": "Kenya",
+    "url": "https://www.sc.com/ke/deposits/fixed/?intcid=p-p-fixed-deposits",
+    "allowed_hosts": [
+      "www.sc.com",
+      "sc.com"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "100K\\ –\\ 1,999,999\\ KES",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "692a352a79cef4c3"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "100K\\ –\\ 1,999,999\\ KES",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "d2eed376ea477b0e"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "100K\\ –\\ 1,999,999\\ KES",
+        "label_column": 0,
+        "column": 6,
+        "record_id": "ebbb5fa9d70dc860"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "2,000,000\\ –\\ 9,999,999\\ KES",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "692a352a79cef4c3-09a44f30"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "2,000,000\\ –\\ 9,999,999\\ KES",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "d2eed376ea477b0e-09a44f30"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "2,000,000\\ –\\ 9,999,999\\ KES",
+        "label_column": 0,
+        "column": 6,
+        "record_id": "ebbb5fa9d70dc860-09a44f30"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "10,000,000\\ –\\ 19,999,999\\ KES",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "692a352a79cef4c3-28d0049e"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "10,000,000\\ –\\ 19,999,999\\ KES",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "d2eed376ea477b0e-28d0049e"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "10,000,000\\ –\\ 19,999,999\\ KES",
+        "label_column": 0,
+        "column": 6,
+        "record_id": "ebbb5fa9d70dc860-28d0049e"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "20,000,000\\ –\\ 29,999,999\\ KES",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "692a352a79cef4c3-03ff8a58"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "20,000,000\\ –\\ 29,999,999\\ KES",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "d2eed376ea477b0e-03ff8a58"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "20,000,000\\ –\\ 29,999,999\\ KES",
+        "label_column": 0,
+        "column": 6,
+        "record_id": "ebbb5fa9d70dc860-03ff8a58"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "30,000,000\\ –\\ 39,999,999\\ KES",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "692a352a79cef4c3-330ed3b6"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "30,000,000\\ –\\ 39,999,999\\ KES",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "d2eed376ea477b0e-330ed3b6"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "30,000,000\\ –\\ 39,999,999\\ KES",
+        "label_column": 0,
+        "column": 6,
+        "record_id": "ebbb5fa9d70dc860-330ed3b6"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "40,000,000\\ –\\ 49,999,999\\ KES",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "692a352a79cef4c3-369df96a"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "40,000,000\\ –\\ 49,999,999\\ KES",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "d2eed376ea477b0e-369df96a"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "40,000,000\\ –\\ 49,999,999\\ KES",
+        "label_column": 0,
+        "column": 6,
+        "record_id": "ebbb5fa9d70dc860-369df96a"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "50,000,000\\ –\\ 74,999,999\\ KES",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "692a352a79cef4c3-fb701eee"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "50,000,000\\ –\\ 74,999,999\\ KES",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "d2eed376ea477b0e-fb701eee"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "50,000,000\\ –\\ 74,999,999\\ KES",
+        "label_column": 0,
+        "column": 6,
+        "record_id": "ebbb5fa9d70dc860-fb701eee"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "75,000,000\\ –\\ 99,999,999\\ KES",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "692a352a79cef4c3-68486283"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "75,000,000\\ –\\ 99,999,999\\ KES",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "d2eed376ea477b0e-68486283"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "75,000,000\\ –\\ 99,999,999\\ KES",
+        "label_column": 0,
+        "column": 6,
+        "record_id": "ebbb5fa9d70dc860-68486283"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "100,000,000\\ \\+\\ KES",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "692a352a79cef4c3-088b994d"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "100,000,000\\ \\+\\ KES",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "d2eed376ea477b0e-088b994d"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN KES",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "100,000,000\\ \\+\\ KES",
+        "label_column": 0,
+        "column": 6,
+        "record_id": "ebbb5fa9d70dc860-088b994d"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN USD",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "5,000\\ –\\ 49,999\\ USD",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "538cf741f39ba326"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN USD",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "50,000\\ –\\ 99,999\\ USD",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "538cf741f39ba326-152200d0"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "DEPOSIT AMOUNT IN USD",
+          "INTEREST RATE PER ANNUM"
+        ],
+        "row_label": "100,000\\ \\+\\ USD",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "538cf741f39ba326-1fa67733"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-3557d0482cf2a1ce",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "Botswana Savings Bank (BSB)",
+    "target": "Botswana",
+    "url": "https://www.bsb.bw/rates-and-pricing/",
+    "allowed_hosts": [
+      "bsb.bw",
+      "www.bsb.bw"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "Type of Deposit",
+          "Nominal Interest Rates (%)Lowest-Highest",
+          "Actual Interest Rates (%)Lowest-Highest",
+          "Minimum Opening Balance"
+        ],
+        "row_label": "Sesigo",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "4cd389f2af3c9cf0"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Type of Deposit",
+          "Nominal Interest Rates (%)Lowest-Highest",
+          "Actual Interest Rates (%)Lowest-Highest",
+          "Minimum Opening Balance"
+        ],
+        "row_label": "Ordinary",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "35170f3879e0cf0b"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Type of Deposit",
+          "Nominal Interest Rates (%)Lowest-Highest",
+          "Actual Interest Rates (%)Lowest-Highest",
+          "Minimum Opening Balance"
+        ],
+        "row_label": "Save\\ As\\ You\\ Earn\\(SAYE\\)",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "4cd389f2af3c9cf0-a3acec57"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Type of Deposit",
+          "Nominal Interest Rates (%)Lowest-Highest",
+          "Actual Interest Rates (%)Lowest-Highest",
+          "Minimum Opening Balance"
+        ],
+        "row_label": "3\\ Months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "4986bcd759d3032e"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Type of Deposit",
+          "Nominal Interest Rates (%)Lowest-Highest",
+          "Actual Interest Rates (%)Lowest-Highest",
+          "Minimum Opening Balance"
+        ],
+        "row_label": "6\\ Months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "f81a06d2edf82ceb"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Type of Deposit",
+          "Nominal Interest Rates (%)Lowest-Highest",
+          "Actual Interest Rates (%)Lowest-Highest",
+          "Minimum Opening Balance"
+        ],
+        "row_label": "12\\ Months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "9110da32b180672a"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-8d81d976af3ba436",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "TymeBank (GoTyme)",
+    "target": "South Africa",
+    "url": "https://gotyme.co.za/personal/save-and-invest/fixed-deposit",
+    "allowed_hosts": [
+      "www.gotyme.co.za",
+      "gotyme.co.za"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "Nominal Annual Interest",
+          "Annual Effective",
+          "Interest at Maturity"
+        ],
+        "row_label": "3\\ Months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "0501b19637931e68"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "Nominal Annual Interest",
+          "Annual Effective",
+          "Interest at Maturity"
+        ],
+        "row_label": "6\\ Months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "54c2c4ff52a5c1eb"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "Nominal Annual Interest",
+          "Annual Effective",
+          "Interest at Maturity"
+        ],
+        "row_label": "12\\ Months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "77b50ef92f490d9e"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-55320becf5801f5b",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "Diamond Trust Bank (DTB)",
+    "target": "Tanzania",
+    "url": "https://diamondtrust.co.tz/account/fixed-deposits",
+    "allowed_hosts": [
+      "www.diamondtrust.co.tz",
+      "diamondtrust.co.tz"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "Tenor",
+          "USD > 50,000",
+          "USD up to 50,000",
+          "GBP",
+          "EUR"
+        ],
+        "row_label": "1\\ Year",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "8fbc96e9c9d01202"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Tenor",
+          "USD > 50,000",
+          "USD up to 50,000",
+          "GBP",
+          "EUR"
+        ],
+        "row_label": "1\\ Year",
+        "label_column": 0,
+        "column": 2,
+        "record_id": "8fbc96e9c9d01202-186450bf"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount (in TZS millions)",
+          "Call deposits",
+          "1 Month",
+          "3 Months",
+          "6 Months",
+          "12 Months",
+          "24 Months",
+          "36 Months"
+        ],
+        "row_label": "<\\ 100",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "27838bc7ced662eb"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount (in TZS millions)",
+          "Call deposits",
+          "1 Month",
+          "3 Months",
+          "6 Months",
+          "12 Months",
+          "24 Months",
+          "36 Months"
+        ],
+        "row_label": "<\\ 100",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "4a52fd56bd41391a"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount (in TZS millions)",
+          "Call deposits",
+          "1 Month",
+          "3 Months",
+          "6 Months",
+          "12 Months",
+          "24 Months",
+          "36 Months"
+        ],
+        "row_label": "<\\ 100",
+        "label_column": 0,
+        "column": 5,
+        "record_id": "79089557fa762060"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount (in TZS millions)",
+          "Call deposits",
+          "1 Month",
+          "3 Months",
+          "6 Months",
+          "12 Months",
+          "24 Months",
+          "36 Months"
+        ],
+        "row_label": ">\\ 100\\ \\-\\ 500",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "27838bc7ced662eb-86ab0a2e"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount (in TZS millions)",
+          "Call deposits",
+          "1 Month",
+          "3 Months",
+          "6 Months",
+          "12 Months",
+          "24 Months",
+          "36 Months"
+        ],
+        "row_label": ">\\ 100\\ \\-\\ 500",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "4a52fd56bd41391a-86ab0a2e"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount (in TZS millions)",
+          "Call deposits",
+          "1 Month",
+          "3 Months",
+          "6 Months",
+          "12 Months",
+          "24 Months",
+          "36 Months"
+        ],
+        "row_label": ">\\ 100\\ \\-\\ 500",
+        "label_column": 0,
+        "column": 5,
+        "record_id": "79089557fa762060-86ab0a2e"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount (in TZS millions)",
+          "Call deposits",
+          "1 Month",
+          "3 Months",
+          "6 Months",
+          "12 Months",
+          "24 Months",
+          "36 Months"
+        ],
+        "row_label": ">\\ 500\\ \\-\\ 1000",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "27838bc7ced662eb-566b7413"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount (in TZS millions)",
+          "Call deposits",
+          "1 Month",
+          "3 Months",
+          "6 Months",
+          "12 Months",
+          "24 Months",
+          "36 Months"
+        ],
+        "row_label": ">\\ 500\\ \\-\\ 1000",
+        "label_column": 0,
+        "column": 4,
+        "record_id": "4a52fd56bd41391a-566b7413"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount (in TZS millions)",
+          "Call deposits",
+          "1 Month",
+          "3 Months",
+          "6 Months",
+          "12 Months",
+          "24 Months",
+          "36 Months"
+        ],
+        "row_label": ">\\ 500\\ \\-\\ 1000",
+        "label_column": 0,
+        "column": 5,
+        "record_id": "79089557fa762060-566b7413"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-5882f5135bf84b65",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "FNB Namibia",
+    "target": "Namibia",
+    "url": "https://www.fnbnamibia.com.na/rates-pricing/accessImmediately.html",
+    "allowed_hosts": [
+      "fnbnamibia.com.na",
+      "www.fnbnamibia.com.na"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount",
+          "Nominal",
+          "Effective"
+        ],
+        "row_label": "N\\$0\\ \\-\\ 4\\ 999",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "e615d6cec91d603b"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount",
+          "Nominal",
+          "Effective"
+        ],
+        "row_label": "N\\$5\\ 000\\ \\-\\ 9\\ 999",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "e615d6cec91d603b-4912d33c"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount",
+          "Nominal",
+          "Effective"
+        ],
+        "row_label": "N\\$10\\ 000\\ \\-\\ 19\\ 999",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "e615d6cec91d603b-ea12ef20"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount",
+          "Nominal",
+          "Effective"
+        ],
+        "row_label": "N\\$20\\ 000\\ \\-\\ 24\\ 999",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "e615d6cec91d603b-d9881e7e"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount",
+          "Nominal",
+          "Effective"
+        ],
+        "row_label": "N\\$25\\ 000\\ \\-\\ 49\\ 999",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "e615d6cec91d603b-8704fb13"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount",
+          "Nominal",
+          "Effective"
+        ],
+        "row_label": "N\\$50\\ 000\\ \\-\\ 99\\ 999",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "e615d6cec91d603b-cb46c19f"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Amount",
+          "Nominal",
+          "Effective"
+        ],
+        "row_label": "N\\$100\\ 000\\ \\+",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "e615d6cec91d603b-ddbd3498"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-97dac4e1b8d5eb32",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "FNB Namibia",
+    "target": "Namibia",
+    "url": "https://www.fnbnamibia.com.na/rates-pricing/accessAfterAFixedPeriod.html",
+    "allowed_hosts": [
+      "fnbnamibia.com.na",
+      "www.fnbnamibia.com.na"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "N$1000 - 9 999",
+          "N$10 000 - 249 999",
+          "N$250 000+"
+        ],
+        "row_label": "3\\ Months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "54f2520d6ab4a1c3"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "N$1000 - 9 999",
+          "N$10 000 - 249 999",
+          "N$250 000+"
+        ],
+        "row_label": "3\\ Months",
+        "label_column": 0,
+        "column": 2,
+        "record_id": "54f2520d6ab4a1c3-74c1d58d"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "N$1000 - 9 999",
+          "N$10 000 - 249 999",
+          "N$250 000+"
+        ],
+        "row_label": "3\\ Months",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "54f2520d6ab4a1c3-d4699068"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "N$1000 - 9 999",
+          "N$10 000 - 249 999",
+          "N$250 000+"
+        ],
+        "row_label": "6\\ Months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "df839495c870e8b3"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "N$1000 - 9 999",
+          "N$10 000 - 249 999",
+          "N$250 000+"
+        ],
+        "row_label": "6\\ Months",
+        "label_column": 0,
+        "column": 2,
+        "record_id": "df839495c870e8b3-74c1d58d"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "N$1000 - 9 999",
+          "N$10 000 - 249 999",
+          "N$250 000+"
+        ],
+        "row_label": "6\\ Months",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "df839495c870e8b3-d4699068"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "N$1000 - 9 999",
+          "N$10 000 - 249 999",
+          "N$250 000+"
+        ],
+        "row_label": "12\\ Months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "45f87da05c7e3189"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "N$1000 - 9 999",
+          "N$10 000 - 249 999",
+          "N$250 000+"
+        ],
+        "row_label": "12\\ Months",
+        "label_column": 0,
+        "column": 2,
+        "record_id": "45f87da05c7e3189-74c1d58d"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "N$1000 - 9 999",
+          "N$10 000 - 249 999",
+          "N$250 000+"
+        ],
+        "row_label": "12\\ Months",
+        "label_column": 0,
+        "column": 3,
+        "record_id": "45f87da05c7e3189-d4699068"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-acba0c7ae4576af3",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "CRDB Bank",
+    "target": "Tanzania",
+    "url": "https://crdbbank.co.tz/storage/app/media/Forms%20and%20Guides/Rates/minimum-disclosure-a4-eng-aug-10.pdf",
+    "allowed_hosts": [
+      "www.crdbbank.co.tz",
+      "crdbbank.co.tz"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "\\b3\\s+Months\\s+(?P<rate>\\d+(?:\\.\\d+)?%\\s*-\\s*\\d+(?:\\.\\d+)?%)",
+        "record_id": "15fd39b9fba27e93"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b6\\s+Months\\s+(?P<rate>\\d+(?:\\.\\d+)?%\\s*-\\s*\\d+(?:\\.\\d+)?%)",
+        "record_id": "ccaa2736ce6f99fc"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b12\\s+Months\\s+(?P<rate>\\d+(?:\\.\\d+)?%\\s*-\\s*\\d+(?:\\.\\d+)?%)",
+        "record_id": "368bb7dbd5cf3448"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-76e978c5da35b69b",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "NMB Bank",
+    "target": "Tanzania",
+    "url": "https://www.nmbbank.co.tz/investor-relations-nmb/financial-and-regulatory-reports/disclosure?download=469:2026-minimum-disclosure-of-interest-rates-fees-and-charges",
+    "allowed_hosts": [
+      "www.nmbbank.co.tz",
+      "nmbbank.co.tz"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "\\b3\\s+Months\\s+(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "9dd848740cd021b7"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b3\\s+Months\\s+\\d+(?:\\.\\d+)?%\\s+(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "9dd848740cd021b7-dec5d05a"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b3\\s+Months\\s+\\d+(?:\\.\\d+)?%\\s+\\d+(?:\\.\\d+)?%\\s+(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "9dd848740cd021b7-fb950536"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b6\\s+Months\\s+(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "308e3317828f94de"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b6\\s+Months\\s+\\d+(?:\\.\\d+)?%\\s+(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "308e3317828f94de-dec5d05a"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b6\\s+Months\\s+\\d+(?:\\.\\d+)?%\\s+\\d+(?:\\.\\d+)?%\\s+(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "308e3317828f94de-fb950536"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b12\\s+Months\\s+(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "d1b9a3c3079a4403"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b12\\s+Months\\s+\\d+(?:\\.\\d+)?%\\s+(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "d1b9a3c3079a4403-dec5d05a"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b12\\s+Months\\s+\\d+(?:\\.\\d+)?%\\s+\\d+(?:\\.\\d+)?%\\s+(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "d1b9a3c3079a4403-fb950536"
+      },
+      {
+        "kind": "regex",
+        "pattern": "\\b12\\s+Months\\s+\\d+(?:\\.\\d+)?%\\s+\\d+(?:\\.\\d+)?%\\s+\\d+(?:\\.\\d+)?%\\s+(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "aefb60d58b9f2295"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-a866ecbbd99927df",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "Mauritus Commercial Bank(MCB)",
+    "target": "Mauritius",
+    "url": "https://mcb.mu/rates-fees",
+    "allowed_hosts": [
+      "mcb.mu",
+      "www.mcb.mu"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-e0c3794479e44377",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "Bank One",
+    "target": "Mauritius",
+    "url": "https://bankone.mu/en/tarrifs/",
+    "allowed_hosts": [
+      "www.bankone.mu",
+      "bankone.mu"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-b0673db44f87164a",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "MauBank",
+    "target": "Mauritius",
+    "url": "https://maubank.mu/news/2026/communique-changes-in-interest-rates/",
+    "allowed_hosts": [
+      "www.maubank.mu",
+      "maubank.mu"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "Savings Rate Household",
+          "3.40% p.a"
+        ],
+        "row_label": "Savings\\ Rate\\ Household",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "a025681fd400c0e9"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-826359a55d1fbe8b",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "ABC Banking Corporation",
+    "target": "Mauritius",
+    "url": "https://abcbanking.mu/fees-and-charges/",
+    "allowed_hosts": [
+      "abcbanking.mu",
+      "www.abcbanking.mu"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-6db4c18f67255270",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "AfrAsia Bank",
+    "target": "Mauritius",
+    "url": "https://www.afrasiabank.com/en/about/rates",
+    "allowed_hosts": [
+      "afrasiabank.com",
+      "www.afrasiabank.com"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-011547757936daae",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "BCP Bank(Mauritius)",
+    "target": "Mauritius",
+    "url": "https://www.bcpbank.mu/content/bank-mauritius-template-fees-charges-and-commissions",
+    "allowed_hosts": [
+      "bcpbank.mu",
+      "www.bcpbank.mu"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-cd0ea2cb49049d0a",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "SBM Bank (Mauritius)",
+    "target": "Mauritius",
+    "url": "https://banking.sbmgroup.mu/individual/interest-rates",
+    "allowed_hosts": [
+      "banking.sbmgroup.mu",
+      "www.banking.sbmgroup.mu"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-fa52f406fe283f73",
+    "group": "bank",
+    "country": "Seychelles",
+    "name": "Absa Bank Seychelles",
+    "target": "Seychelles",
+    "url": "https://www.absa.sc/applicable-interest-rates/",
+    "allowed_hosts": [
+      "absa.sc",
+      "www.absa.sc"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "Instant savings accounts:\\s*Interest on credit balance:\\s*(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "3076c51cbb4da50b"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Balance portion",
+          "Annual interest rate"
+        ],
+        "row_label": "Under\\ SCR5,000",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "b81a3bff2eab1b87"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Balance portion",
+          "Annual interest rate"
+        ],
+        "row_label": "SCR5,000\\ –\\ SCR49,999\\.99",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "b81a3bff2eab1b87-0cff3c6f"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Balance portion",
+          "Annual interest rate"
+        ],
+        "row_label": "SCR50,000\\ –\\ SCR99,999\\.99",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "b81a3bff2eab1b87-e3682a66"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Balance portion",
+          "Annual interest rate"
+        ],
+        "row_label": "SCR100,000\\ –\\ SCR999,999\\.99",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "b81a3bff2eab1b87-4b1b370f"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Balance portion",
+          "Annual interest rate"
+        ],
+        "row_label": "SCR1,000,000\\ –\\ SCR4,999,999\\.99",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "b81a3bff2eab1b87-2f802102"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Balance portion",
+          "Annual interest rate"
+        ],
+        "row_label": "Above\\ SCR5,000,000",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "b81a3bff2eab1b87-2e4fd75c"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-03f5f03cf8322000",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "BICICI",
+    "target": "Cote Divoire",
+    "url": "https://www.bicici.ci/special-epargne",
+    "allowed_hosts": [
+      "bicici.ci",
+      "www.bicici.ci"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-5a9648f44b55ed1a",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "Bank of Africa(BOA) Senegal",
+    "target": "Senegal",
+    "url": "https://www.boasenegal.com/particuliers/epargne-et-placements/compte-epargne/",
+    "allowed_hosts": [
+      "boasenegal.com",
+      "www.boasenegal.com"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-85fc6b655cb3e5ad",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "CBAO Groupe Attijariwafa Bank",
+    "target": "Senegal",
+    "url": "https://cbaobank.com/sites/default/files/CONDITIONS%20GENERALES%20CBAO%20SN%20Juin%202026.pdf",
+    "allowed_hosts": [
+      "www.cbaobank.com",
+      "cbaobank.com"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-ab176418dc9aae1b",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Republic Bank",
+    "target": "Ghana",
+    "url": "https://www.republicghana.com/products/savings/republic-i-do-account/",
+    "allowed_hosts": [
+      "www.republicghana.com",
+      "republicghana.com"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "Interest rate of (?P<rate>\\d+(?:\\.\\d+)?%) per annum",
+        "record_id": "caa0a140e180ef84"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-1d221f50ef7236f3",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "Centenary Bank",
+    "target": "Uganda",
+    "url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary/4/savings-accounts",
+    "allowed_hosts": [
+      "centenarybank.co.ug",
+      "www.centenarybank.co.ug"
+    ],
+    "adapter": "rules",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "Competitive interest rates of (?P<rate>\\d+(?:\\.\\d+)?%) p.a",
+        "record_id": "5070b06b0edfda8f"
+      },
+      {
+        "kind": "regex",
+        "pattern": "5 million unsecured at (?P<rate>\\d+(?:\\.\\d+)?%) p.a",
+        "record_id": "e998949b48feda40"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "src-580ac56e8bbdabec",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "United Bank of Africa(UBA) Zambia",
+    "target": "Zambia",
+    "url": "https://www.ubazambia.com/personal-banking/accounts/uba-savings-account/",
+    "allowed_hosts": [
+      "ubazambia.com",
+      "www.ubazambia.com"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-981fab275d20596e",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "CFG Bank",
+    "target": "Morocco",
+    "url": "https://www.cfgbank.com/particuliers/notre-offre/epargne/le-compte-sur-carnet/",
+    "allowed_hosts": [
+      "www.cfgbank.com",
+      "cfgbank.com"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-6fda9bec19d1a868",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Stanbic IBTC Bank",
+    "target": "Nigeria",
+    "url": "https://www.stanbicibtcbank.com/static_file/Nigeria/nigeriabank/Downloads/Pricing%20Guide/Stanbic%20IBTC%20Bank%202026%20Pricing%20Guide.pdf",
+    "allowed_hosts": [
+      "www.stanbicibtcbank.com",
+      "stanbicibtcbank.com"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-0fdb9ddeadd5292b",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Absa Bank Ghana",
+    "target": "Ghana",
+    "url": "https://www.absa.com.gh/personal/get-a-personal-loan/",
+    "allowed_hosts": [
+      "absa.com.gh",
+      "www.absa.com.gh"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "src-5c12cce71ec726b1",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "The United Bank of Egypt",
+    "target": "Egypt",
+    "url": "https://www.theubeg.com/retail-banking/loans/mortgage-loan",
+    "allowed_hosts": [
+      "theubeg.com",
+      "www.theubeg.com"
+    ],
+    "adapter": "review",
+    "enabled": true,
+    "scope": "Bank-published product rates",
+    "rules": [],
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-79cb00df987d",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "Mauritus Commercial Bank(MCB)",
+    "target": "Mauritius",
+    "url": "https://mcb.mu/",
+    "allowed_hosts": [
+      "mcb.mu"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-d2b58db3524a",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "SBM Bank (Mauritius)",
+    "target": "Mauritius",
+    "url": "https://banking.sbmgroup.mu/",
+    "allowed_hosts": [
+      "banking.sbmgroup.mu"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-ac07d8891b3c",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "Absa Bank Mauritius",
+    "target": "Mauritius",
+    "url": "https://www.absabank.mu/",
+    "allowed_hosts": [
+      "www.absabank.mu"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-0c1006efecd7",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "AfrAsia Bank",
+    "target": "Mauritius",
+    "url": "https://www.afrasiabank.com/",
+    "allowed_hosts": [
+      "www.afrasiabank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-71024921475c",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "MauBank",
+    "target": "Mauritius",
+    "url": "https://maubank.mu/",
+    "allowed_hosts": [
+      "maubank.mu"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-0d85c7afccce",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "Bank One",
+    "target": "Mauritius",
+    "url": "https://bankone.mu/en/",
+    "allowed_hosts": [
+      "bankone.mu"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-fa983382c8e9",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "HSBC Bank Mauritius",
+    "target": "Mauritius",
+    "url": "https://www.business.hsbc.co.mu/",
+    "allowed_hosts": [
+      "www.business.hsbc.co.mu"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-3f6d0ad6959b",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "Standard Bank Mauritius",
+    "target": "Mauritius",
+    "url": "https://www.standardbank.mu/mauritius/standard-bank-mauritius",
+    "allowed_hosts": [
+      "www.standardbank.mu"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-141a346b6a12",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "Standard Chartered Mauritius",
+    "target": "Mauritius",
+    "url": "https://www.sc.com/mu/",
+    "allowed_hosts": [
+      "www.sc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-1f104e7c450a",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "BCP Bank(Mauritius)",
+    "target": "Mauritius",
+    "url": "https://www.bcpbank.mu/",
+    "allowed_hosts": [
+      "www.bcpbank.mu"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-f3b99b9ce69f",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "ABC Banking Corporation",
+    "target": "Mauritius",
+    "url": "https://abcbanking.mu/",
+    "allowed_hosts": [
+      "abcbanking.mu"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-ce0915927199",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "SBI (Mauritius)",
+    "target": "Mauritius",
+    "url": "https://mu.statebank/",
+    "allowed_hosts": [
+      "mu.statebank"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-f22400d5cd68",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "Bank of Baroda",
+    "target": "Mauritius",
+    "url": "https://www.bankofbaroda-mu.com/",
+    "allowed_hosts": [
+      "www.bankofbaroda-mu.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-af8d33017468",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "Bank of China(Mauritius)",
+    "target": "Mauritius",
+    "url": "https://www.bankofchina.com/mu/en/",
+    "allowed_hosts": [
+      "www.bankofchina.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-6e38e8dc5ad5",
+    "group": "bank",
+    "country": "Mauritius",
+    "name": "Investec Bank(Mauritius)",
+    "target": "Mauritius",
+    "url": "https://www.investec.com/en_mu.html",
+    "allowed_hosts": [
+      "www.investec.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-343e57f394a3",
+    "group": "bank",
+    "country": "Seychelles",
+    "name": "Absa Bank Seychelles",
+    "target": "Seychelles",
+    "url": "https://www.absa.sc/personal/",
+    "allowed_hosts": [
+      "www.absa.sc"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-35ef9bc1fbc8",
+    "group": "bank",
+    "country": "Seychelles",
+    "name": "MCB Seychelles",
+    "target": "Seychelles",
+    "url": "https://mcb.sc/",
+    "allowed_hosts": [
+      "mcb.sc"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-cc8ee9bff693",
+    "group": "bank",
+    "country": "Seychelles",
+    "name": "Nouvobanq(SIMBC)",
+    "target": "Seychelles",
+    "url": "https://www.nouvobanq.sc/",
+    "allowed_hosts": [
+      "www.nouvobanq.sc"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-e45bb9ce2654",
+    "group": "bank",
+    "country": "Seychelles",
+    "name": "Seychelles Commercial Bank(SCB)",
+    "target": "Seychelles",
+    "url": "https://www.scb.sc/",
+    "allowed_hosts": [
+      "www.scb.sc"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-a65ff1587b57",
+    "group": "bank",
+    "country": "Seychelles",
+    "name": "Al Salam Bank Seychelles",
+    "target": "Seychelles",
+    "url": "https://www.alsalamseychelles.com/",
+    "allowed_hosts": [
+      "www.alsalamseychelles.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-70b11c400130",
+    "group": "bank",
+    "country": "Seychelles",
+    "name": "Bank of Baroda Seychelles",
+    "target": "Seychelles",
+    "url": "https://www.bankofbaroda.sc/",
+    "allowed_hosts": [
+      "www.bankofbaroda.sc"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-91409be42962",
+    "group": "bank",
+    "country": "Seychelles",
+    "name": "Bank of Ceylon Seychelles",
+    "target": "Seychelles",
+    "url": "https://www.boc.lk/",
+    "allowed_hosts": [
+      "www.boc.lk"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-359b1f1e437b",
+    "group": "bank",
+    "country": "Seychelles",
+    "name": "Habib Bank AG Zurich",
+    "target": "Seychelles",
+    "url": "https://habibbank.com:443/",
+    "allowed_hosts": [
+      "habibbank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-d66c222c145f",
+    "group": "bank",
+    "country": "Seychelles",
+    "name": "Bank Al Habib Limited",
+    "target": "Seychelles",
+    "url": "https://www.bankalhabib.com/",
+    "allowed_hosts": [
+      "www.bankalhabib.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": false,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-e938b9fedfbc",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Ecobank Ghana",
+    "target": "Ghana",
+    "url": "https://ecobank.com/gh/personal-banking",
+    "allowed_hosts": [
+      "ecobank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-6ba4446697bb",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "GCB Bank PLC",
+    "target": "Ghana",
+    "url": "https://www.gcbbank.com.gh/",
+    "allowed_hosts": [
+      "www.gcbbank.com.gh"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-000959a178f5",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Stanbic Bank Ghana",
+    "target": "Ghana",
+    "url": "https://www.stanbicbank.com.gh/gh/personal",
+    "allowed_hosts": [
+      "www.stanbicbank.com.gh"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-eed797a55693",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Absa Bank Ghana",
+    "target": "Ghana",
+    "url": "https://www.absa.com.gh/personal/",
+    "allowed_hosts": [
+      "www.absa.com.gh"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-9eafb847c600",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Fidelity Bank Ghana",
+    "target": "Ghana",
+    "url": "https://www.fidelitybank.com.gh/",
+    "allowed_hosts": [
+      "www.fidelitybank.com.gh"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-f7e9adc86aed",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Zenith Bank Ghana",
+    "target": "Ghana",
+    "url": "https://www.zenithbank.com.gh/",
+    "allowed_hosts": [
+      "www.zenithbank.com.gh"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-3e71e313784f",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Standard Chartered",
+    "target": "Ghana",
+    "url": "https://www.sc.com/gh/",
+    "allowed_hosts": [
+      "www.sc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-d622b880ef25",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Access Bank Ghana",
+    "target": "Ghana",
+    "url": "https://www.ghana.accessbankplc.com/",
+    "allowed_hosts": [
+      "www.ghana.accessbankplc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-cea7fa57ba14",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "CalBank PLC",
+    "target": "Ghana",
+    "url": "https://calbank.net/",
+    "allowed_hosts": [
+      "calbank.net"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-5e91be7c2181",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Consolidated Bank",
+    "target": "Ghana",
+    "url": "https://cbg.com.gh/",
+    "allowed_hosts": [
+      "cbg.com.gh"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-6ec5ef5a7209",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "UBA Ghana",
+    "target": "Ghana",
+    "url": "https://www.ubaghana.com/",
+    "allowed_hosts": [
+      "www.ubaghana.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-eda7aec137f5",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "GTBank Ghana",
+    "target": "Ghana",
+    "url": "https://www.gtbghana.com/",
+    "allowed_hosts": [
+      "www.gtbghana.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-ca4d53f20ed0",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Republic Bank",
+    "target": "Ghana",
+    "url": "https://www.republicghana.com/",
+    "allowed_hosts": [
+      "www.republicghana.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-d0661ca790f6",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "Societe Generale",
+    "target": "Ghana",
+    "url": "https://societegenerale.com.gh/en/",
+    "allowed_hosts": [
+      "societegenerale.com.gh"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-9ffd823b46f6",
+    "group": "bank",
+    "country": "Ghana",
+    "name": "FBNBank Ghana",
+    "target": "Ghana",
+    "url": "https://www.fbnbankghana.com/",
+    "allowed_hosts": [
+      "www.fbnbankghana.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-eea41274b759",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Access Bank",
+    "target": "Nigeria",
+    "url": "https://www.accessbankplc.com/",
+    "allowed_hosts": [
+      "www.accessbankplc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-e06ab25108cd",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Zenith Bank",
+    "target": "Nigeria",
+    "url": "https://www.zenithbank.com/",
+    "allowed_hosts": [
+      "www.zenithbank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-6aeade5030c3",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Guaranty Trust Bank(GTBank)",
+    "target": "Nigeria",
+    "url": "https://www.gtbank.com/",
+    "allowed_hosts": [
+      "www.gtbank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-50d86ec48f2b",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "United Bank of Africa (UBA)",
+    "target": "Nigeria",
+    "url": "https://www.ubagroup.com/nigeria/",
+    "allowed_hosts": [
+      "www.ubagroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-ef5184839226",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "First Bank of Nigeria",
+    "target": "Nigeria",
+    "url": "https://www.firstbanknigeria.com/",
+    "allowed_hosts": [
+      "www.firstbanknigeria.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-9e4fb878e9a4",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Fidelity Bank",
+    "target": "Nigeria",
+    "url": "https://www.fidelitybank.ng/",
+    "allowed_hosts": [
+      "www.fidelitybank.ng"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-a7bedb2e7aeb",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "First City Monument Bank (FCMB)",
+    "target": "Nigeria",
+    "url": "https://www.fcmb.com/",
+    "allowed_hosts": [
+      "www.fcmb.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-17ec8bbf5af9",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Stanbic IBTC Bank",
+    "target": "Nigeria",
+    "url": "https://www.stanbicibtcbank.com/nigeriabank/personal",
+    "allowed_hosts": [
+      "www.stanbicibtcbank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-b86d233094c5",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Ecobank Nigeria",
+    "target": "Nigeria",
+    "url": "https://ecobank.com/ng/personal-banking",
+    "allowed_hosts": [
+      "ecobank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-93242eaf849c",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Sterling Bank",
+    "target": "Nigeria",
+    "url": "https://www.sterling.ng/",
+    "allowed_hosts": [
+      "www.sterling.ng"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-faaeed905e01",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Wema Bank (ALAT)",
+    "target": "Nigeria",
+    "url": "https://www.wemabank.com/",
+    "allowed_hosts": [
+      "www.wemabank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-88fcb479a5ba",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Union Bank of Nigeria",
+    "target": "Nigeria",
+    "url": "https://www.unionbankng.com/",
+    "allowed_hosts": [
+      "www.unionbankng.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-732138ecfb83",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Polaris Bank",
+    "target": "Nigeria",
+    "url": "https://www.polarisbanklimited.com/",
+    "allowed_hosts": [
+      "www.polarisbanklimited.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-eef3786e7421",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Keystone Bank",
+    "target": "Nigeria",
+    "url": "https://www.keystonebankng.com/",
+    "allowed_hosts": [
+      "www.keystonebankng.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-0610b9f9e674",
+    "group": "bank",
+    "country": "Nigeria",
+    "name": "Unity Bank",
+    "target": "Nigeria",
+    "url": "https://providusunitybank.com/home",
+    "allowed_hosts": [
+      "providusunitybank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-d39b4775bb9a",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "KCB Bank Kenya",
+    "target": "Kenya",
+    "url": "https://ke.kcbgroup.com/",
+    "allowed_hosts": [
+      "ke.kcbgroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-7495135b837f",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "Equity Bank Kenya",
+    "target": "Kenya",
+    "url": "https://equitygroupholdings.com/ke/",
+    "allowed_hosts": [
+      "equitygroupholdings.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-7a0bc5a4198c",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "Co-operative Bank",
+    "target": "Kenya",
+    "url": "https://www.co-opbank.co.ke/",
+    "allowed_hosts": [
+      "www.co-opbank.co.ke"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-855496dbf7ee",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "NCBA Bank",
+    "target": "Kenya",
+    "url": "https://ncbagroup.com/ke/",
+    "allowed_hosts": [
+      "ncbagroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-15bd72c8a55c",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "Absa Bank Kenya",
+    "target": "Kenya",
+    "url": "https://www.absabank.co.ke/personal/",
+    "allowed_hosts": [
+      "www.absabank.co.ke"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-59a8cea7d996",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "Diamond Trust Bank(DTB)",
+    "target": "Kenya",
+    "url": "https://dtbk.dtbafrica.com/",
+    "allowed_hosts": [
+      "dtbk.dtbafrica.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-eebc47eecbe9",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "Stanbic Bank Kenya",
+    "target": "Kenya",
+    "url": "https://www.stanbicbank.co.ke/kenya/personal",
+    "allowed_hosts": [
+      "www.stanbicbank.co.ke"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-08511110070f",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "I&M Bank",
+    "target": "Kenya",
+    "url": "https://www.imbankgroup.com/ke/",
+    "allowed_hosts": [
+      "www.imbankgroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-00397de96ab9",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "Standard Chartered Kenya",
+    "target": "Kenya",
+    "url": "https://www.sc.com/ke/",
+    "allowed_hosts": [
+      "www.sc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-a97318993d02",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "Family Bank",
+    "target": "Kenya",
+    "url": "https://familybank.co.ke/",
+    "allowed_hosts": [
+      "familybank.co.ke"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-5e1141225cbd",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "National Bank of Kenya (NBK)",
+    "target": "Kenya",
+    "url": "https://www.nationalbank.co.ke/",
+    "allowed_hosts": [
+      "www.nationalbank.co.ke"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-20adb277dc2d",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "Prime Bank",
+    "target": "Kenya",
+    "url": "https://www.primebank.co.ke/",
+    "allowed_hosts": [
+      "www.primebank.co.ke"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-45d91fb219dc",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "SBM Bank Kenya",
+    "target": "Kenya",
+    "url": "https://www.sbmbank.co.ke/",
+    "allowed_hosts": [
+      "www.sbmbank.co.ke"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-20ec0574746e",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "CIB Kenya(Commercial Intl Bank)",
+    "target": "Kenya",
+    "url": "https://cibke.com/",
+    "allowed_hosts": [
+      "cibke.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-643887a45d2d",
+    "group": "bank",
+    "country": "Kenya",
+    "name": "Sidid Bank",
+    "target": "Kenya",
+    "url": "https://sidianbank.co.ke/",
+    "allowed_hosts": [
+      "sidianbank.co.ke"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-b7a5138176ac",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Standard Bank",
+    "target": "South Africa",
+    "url": "https://www.standardbank.co.za/southafrica/personal",
+    "allowed_hosts": [
+      "www.standardbank.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-a1013676ccd3",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "First National Bank (FNB)",
+    "target": "South Africa",
+    "url": "https://www.fnb.co.za/",
+    "allowed_hosts": [
+      "www.fnb.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-49ee4b38b981",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Absa Bank",
+    "target": "South Africa",
+    "url": "https://www.absa.co.za/personal/",
+    "allowed_hosts": [
+      "www.absa.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-4700e7911af8",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Nedbank",
+    "target": "South Africa",
+    "url": "https://www.nedbank.co.za/",
+    "allowed_hosts": [
+      "www.nedbank.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-1201ab6e5783",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Capitec Bank",
+    "target": "South Africa",
+    "url": "https://www.capitecbank.co.za/",
+    "allowed_hosts": [
+      "www.capitecbank.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-652890efb1fe",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Investec Bank",
+    "target": "South Africa",
+    "url": "https://www.investec.com/en_za.html",
+    "allowed_hosts": [
+      "www.investec.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-83c91ba54859",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "TymeBank (GoTyme)",
+    "target": "South Africa",
+    "url": "https://gotyme.co.za/",
+    "allowed_hosts": [
+      "gotyme.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-5a1aa9c1a621",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Discovery Bank",
+    "target": "South Africa",
+    "url": "https://www.discovery.co.za/",
+    "allowed_hosts": [
+      "www.discovery.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-7294420a0fbd",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Bank Zero",
+    "target": "South Africa",
+    "url": "https://www.bankzero.co.za/",
+    "allowed_hosts": [
+      "www.bankzero.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-92762fe524a9",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "African Bank",
+    "target": "South Africa",
+    "url": "https://www.africanbank.co.za/",
+    "allowed_hosts": [
+      "www.africanbank.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-51ac457bcea1",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Bidvest Bank",
+    "target": "South Africa",
+    "url": "https://www.bidvestbank.co.za/",
+    "allowed_hosts": [
+      "www.bidvestbank.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-df8ee99e298a",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Sasfin Bank",
+    "target": "South Africa",
+    "url": "https://www.sasfin.com/",
+    "allowed_hosts": [
+      "www.sasfin.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-ba390f86ac26",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Access Bank SA",
+    "target": "South Africa",
+    "url": "https://southafrica.accessbankplc.com/",
+    "allowed_hosts": [
+      "southafrica.accessbankplc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-453e51d67450",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Albaraka Bank",
+    "target": "South Africa",
+    "url": "https://www.albaraka.co.za/",
+    "allowed_hosts": [
+      "www.albaraka.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-63564ab64d2f",
+    "group": "bank",
+    "country": "South Africa",
+    "name": "Grindrod Bank",
+    "target": "South Africa",
+    "url": "https://www.grindrodbank.co.za/",
+    "allowed_hosts": [
+      "www.grindrodbank.co.za"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-03ed47fdc154",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "CRDB Bank",
+    "target": "Tanzania",
+    "url": "https://crdbbank.co.tz/en",
+    "allowed_hosts": [
+      "crdbbank.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-eb267b827097",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "NMB Bank",
+    "target": "Tanzania",
+    "url": "https://www.nmbbank.co.tz/",
+    "allowed_hosts": [
+      "www.nmbbank.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-86f9a410657e",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "NBC Bank",
+    "target": "Tanzania",
+    "url": "https://www.nbc.co.tz/en/personal/",
+    "allowed_hosts": [
+      "www.nbc.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-f66ebdd57aba",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "Stanbic Bank Tanzania",
+    "target": "Tanzania",
+    "url": "https://www.stanbicbank.co.tz/tanzania/personal",
+    "allowed_hosts": [
+      "www.stanbicbank.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-c3f030ff6df8",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "Exim Bank Tanzania",
+    "target": "Tanzania",
+    "url": "https://eximbank.co.tz/en",
+    "allowed_hosts": [
+      "eximbank.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-a0385cacc690",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "Absa Bank Tanzania",
+    "target": "Tanzania",
+    "url": "https://www.absa.co.tz/personal/",
+    "allowed_hosts": [
+      "www.absa.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-b1cfef88e0f6",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "Standard Chartered",
+    "target": "Tanzania",
+    "url": "https://www.sc.com/tz/",
+    "allowed_hosts": [
+      "www.sc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-97a92da3db7f",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "Diamond Trust Bank (DTB)",
+    "target": "Tanzania",
+    "url": "https://diamondtrust.co.tz/",
+    "allowed_hosts": [
+      "diamondtrust.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-3cb6681526c3",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "People's Bank of Zanzibar",
+    "target": "Tanzania",
+    "url": "https://www.pbzbank.co.tz/",
+    "allowed_hosts": [
+      "www.pbzbank.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-9302fe1af33d",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "Azania Bank",
+    "target": "Tanzania",
+    "url": "https://azaniabank.co.tz/",
+    "allowed_hosts": [
+      "azaniabank.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-5ef56c2a90d7",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "Tanzania Commercial Bank",
+    "target": "Tanzania",
+    "url": "https://www.tcbbank.co.tz/",
+    "allowed_hosts": [
+      "www.tcbbank.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-c963f34faeb2",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "KCB Bank Tanzania",
+    "target": "Tanzania",
+    "url": "https://kcbbank.co.tz/",
+    "allowed_hosts": [
+      "kcbbank.co.tz"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-f7d58782937c",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "Equity Bank Tanzania",
+    "target": "Tanzania",
+    "url": "https://equitygroupholdings.com/tz/",
+    "allowed_hosts": [
+      "equitygroupholdings.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-c128157171fe",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "I&M Bank Tanzania",
+    "target": "Tanzania",
+    "url": "https://www.imbankgroup.com/tz/personal/savings-accounts/",
+    "allowed_hosts": [
+      "www.imbankgroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-40d670e26945",
+    "group": "bank",
+    "country": "Tanzania",
+    "name": "Bank of Africa(BOA)",
+    "target": "Tanzania",
+    "url": "https://www.boa-tanzania.com/personal/save-invest/ordinary-savings-account/",
+    "allowed_hosts": [
+      "www.boa-tanzania.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-f61dd1e371fb",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "Société Générale IC",
+    "target": "Cote Divoire",
+    "url": "https://societegenerale.ci/fr/",
+    "allowed_hosts": [
+      "societegenerale.ci"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-0a29eb1d4c19",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "NSIA Banque CI",
+    "target": "Cote Divoire",
+    "url": "https://www.nsiabanque.ci/",
+    "allowed_hosts": [
+      "www.nsiabanque.ci"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-b8ae40fd3095",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "BNI(Banque Nationale d'Invetissement)",
+    "target": "Cote Divoire",
+    "url": "https://www.bni.ci/index",
+    "allowed_hosts": [
+      "www.bni.ci"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-cb963b2e891e",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "Ecobank Cote d'Ivoire",
+    "target": "Cote Divoire",
+    "url": "https://ecobank.com/ci/personal-banking",
+    "allowed_hosts": [
+      "ecobank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-a4527f864fcc",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "Banque Atlantique CI",
+    "target": "Cote Divoire",
+    "url": "https://www.banqueatlantique.net/",
+    "allowed_hosts": [
+      "www.banqueatlantique.net"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-d81d99757cb3",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "SIB(Societe Ivoirienne de Banque)",
+    "target": "Cote Divoire",
+    "url": "https://sib.ci/",
+    "allowed_hosts": [
+      "sib.ci"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-c0c45efe53db",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "BICICI",
+    "target": "Cote Divoire",
+    "url": "https://www.bicici.ci/",
+    "allowed_hosts": [
+      "www.bicici.ci"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-37b2fd2d6304",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "Bridge Bank Group CI",
+    "target": "Cote Divoire",
+    "url": "https://www.bridgebankgroup.com/intro",
+    "allowed_hosts": [
+      "www.bridgebankgroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-543f26dd9bb8",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "UBA Cote d'Ivoire",
+    "target": "Cote Divoire",
+    "url": "https://www.ubacotedivoire.com/",
+    "allowed_hosts": [
+      "www.ubacotedivoire.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-2413efb6d041",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "Coris Bank International",
+    "target": "Cote Divoire",
+    "url": "https://cotedivoire.coris.bank/",
+    "allowed_hosts": [
+      "cotedivoire.coris.bank"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-c93c9dec4fe1",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "Standard Chartered CI",
+    "target": "Cote Divoire",
+    "url": "https://www.sc.com/ci/",
+    "allowed_hosts": [
+      "www.sc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-6203f051977a",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "BGFIBank Cote d'Ivoire",
+    "target": "Cote Divoire",
+    "url": "https://groupebgfibank.com/",
+    "allowed_hosts": [
+      "groupebgfibank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-7bdfb35b1b2f",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "Orabank Cote d'Ivoire",
+    "target": "Cote Divoire",
+    "url": "https://www.orabank.net/fr/filiale/cote-divoire",
+    "allowed_hosts": [
+      "www.orabank.net"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-e07ce81626ae",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "BOA(Bank of Africa) CI",
+    "target": "Cote Divoire",
+    "url": "https://boacoteivoire.com/",
+    "allowed_hosts": [
+      "boacoteivoire.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-e2aa1e65fe5c",
+    "group": "bank",
+    "country": "Cote Divoire",
+    "name": "Orange Bank Africa",
+    "target": "Cote Divoire",
+    "url": "https://orangebank.ci/",
+    "allowed_hosts": [
+      "orangebank.ci"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-59cb57d4168f",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "CBAO Groupe Attijariwafa Bank",
+    "target": "Senegal",
+    "url": "https://cbaobank.com/fr",
+    "allowed_hosts": [
+      "cbaobank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-7eb92da1ae1c",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "Société Générale Senegal",
+    "target": "Senegal",
+    "url": "https://societegenerale.sn/fr/",
+    "allowed_hosts": [
+      "societegenerale.sn"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-56ea73071ee4",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "Ecobank Senegal",
+    "target": "Senegal",
+    "url": "https://ecobank.com/sn/personal-banking",
+    "allowed_hosts": [
+      "ecobank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-8e1d09a5571a",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "Bank of Africa(BOA) Senegal",
+    "target": "Senegal",
+    "url": "https://www.boasenegal.com/",
+    "allowed_hosts": [
+      "www.boasenegal.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-2ca68ecb1e9a",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "SUNU Bank Senegal",
+    "target": "Senegal",
+    "url": "https://sunubanksenegal.sn/",
+    "allowed_hosts": [
+      "sunubanksenegal.sn"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-1d26c57993de",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "Banque Atlantique Senegal",
+    "target": "Senegal",
+    "url": "https://www.banqueatlantique.net/",
+    "allowed_hosts": [
+      "www.banqueatlantique.net"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-5126f0a69dba",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "Banque Islamique du Senegal(BIC)",
+    "target": "Senegal",
+    "url": "https://bis-bank.com/",
+    "allowed_hosts": [
+      "bis-bank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-37824324471b",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "La Banque Agricole(LBA)",
+    "target": "Senegal",
+    "url": "https://www.labanqueagricole.sn/",
+    "allowed_hosts": [
+      "www.labanqueagricole.sn"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-f27e6fa22d05",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "UBA Senegal",
+    "target": "Senegal",
+    "url": "https://www.ubasenegal.com/",
+    "allowed_hosts": [
+      "www.ubasenegal.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-6e5f9ae683b0",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "Coris Bank International Senegal",
+    "target": "Senegal",
+    "url": "https://senegal.coris.bank/",
+    "allowed_hosts": [
+      "senegal.coris.bank"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-ef4ae3087043",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "Orabank Senegal",
+    "target": "Senegal",
+    "url": "https://www.orabank.net/fr/filiale/senegal",
+    "allowed_hosts": [
+      "www.orabank.net"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-661c34cb9212",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "BNDE(Banque Nationale de Developpement Economique)",
+    "target": "Senegal",
+    "url": "https://www.bnde.sn/",
+    "allowed_hosts": [
+      "www.bnde.sn"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-7d777308201a",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "FBNBank Senegal",
+    "target": "Senegal",
+    "url": "https://www.fbnbanksenegal.com/",
+    "allowed_hosts": [
+      "www.fbnbanksenegal.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-d83b8c5b64cc",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "NSIA Banque Senegal",
+    "target": "Senegal",
+    "url": "https://nsiabanque.sn/",
+    "allowed_hosts": [
+      "nsiabanque.sn"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-1925e6fbc695",
+    "group": "bank",
+    "country": "Senegal",
+    "name": "Citibank Senegal",
+    "target": "Senegal",
+    "url": "https://www.citigroup.com/global",
+    "allowed_hosts": [
+      "www.citigroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-9a085c080e42",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "National Bank of Egypt (NBE)",
+    "target": "Egypt",
+    "url": "https://www.nbe.com.eg/NBE/E/",
+    "allowed_hosts": [
+      "www.nbe.com.eg"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-5cfa550f9cc9",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Banque Misr",
+    "target": "Egypt",
+    "url": "https://www.banquemisr.com/en",
+    "allowed_hosts": [
+      "www.banquemisr.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-972aa4bc8321",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Commercial Intl Bank(CIB)",
+    "target": "Egypt",
+    "url": "https://www.cibeg.com/en",
+    "allowed_hosts": [
+      "www.cibeg.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-fd0cb7228a07",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "QNB Al Ahli",
+    "target": "Egypt",
+    "url": "https://www.qnb.com.eg/sites/qnb/qnbegypt/page/en/en-home.html",
+    "allowed_hosts": [
+      "www.qnb.com.eg"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-c3fa6faeebb6",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Banque du Caire",
+    "target": "Egypt",
+    "url": "https://www.bdc.com.eg/bdcwebsite/home.html",
+    "allowed_hosts": [
+      "www.bdc.com.eg"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-5dfcf4f0d291",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Arab African Intl Bank(AAIB)",
+    "target": "Egypt",
+    "url": "https://aaib.com/",
+    "allowed_hosts": [
+      "aaib.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-1195171feae7",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "HSBC Bank Egypt",
+    "target": "Egypt",
+    "url": "https://www.hsbc.com.eg/",
+    "allowed_hosts": [
+      "www.hsbc.com.eg"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-4573ae7136ce",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Alexbank",
+    "target": "Egypt",
+    "url": "https://www.alexbank.com/",
+    "allowed_hosts": [
+      "www.alexbank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-2bb4bfcebbd8",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Faisal Islamic Bank",
+    "target": "Egypt",
+    "url": "https://www.faisalbank.com.eg/en/",
+    "allowed_hosts": [
+      "www.faisalbank.com.eg"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-2d1c891c5b2a",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Housing & Development Bank",
+    "target": "Egypt",
+    "url": "https://www.hdb-egy.com/",
+    "allowed_hosts": [
+      "www.hdb-egy.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-e3301982fd5e",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Abu Dhabi Islamic Bank (ADIB)",
+    "target": "Egypt",
+    "url": "https://www.adib.eg/",
+    "allowed_hosts": [
+      "www.adib.eg"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-8d01da3516c9",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Credit Agricole Egypt",
+    "target": "Egypt",
+    "url": "https://www.ca-egypt.com/en/",
+    "allowed_hosts": [
+      "www.ca-egypt.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-d5c320abad9a",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Suez Canal Bank",
+    "target": "Egypt",
+    "url": "https://scbank.com.eg/",
+    "allowed_hosts": [
+      "scbank.com.eg"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-b8ad46b48ab3",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "The United Bank of Egypt",
+    "target": "Egypt",
+    "url": "https://www.theubeg.com/",
+    "allowed_hosts": [
+      "www.theubeg.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-2b635da41426",
+    "group": "bank",
+    "country": "Egypt",
+    "name": "Egyptian Gulf Bank(EGBANK)",
+    "target": "Egypt",
+    "url": "https://www.eg-bank.com/En/Index",
+    "allowed_hosts": [
+      "www.eg-bank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-bce38707dc62",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "Attijariwafa Bank",
+    "target": "Morocco",
+    "url": "https://www.attijariwafabank.com/",
+    "allowed_hosts": [
+      "www.attijariwafabank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-51709c31b2a5",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "BCP (Banque Populaire)",
+    "target": "Morocco",
+    "url": "https://www.groupebcp.com/fr/Pages/home.aspx",
+    "allowed_hosts": [
+      "www.groupebcp.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-193efe0b0552",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "Bank of Africa (BMCE)",
+    "target": "Morocco",
+    "url": "https://www.bankofafrica.ma/fr",
+    "allowed_hosts": [
+      "www.bankofafrica.ma"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-3c8ae44035f4",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "Société Générale Maroc",
+    "target": "Morocco",
+    "url": "https://www.sahambank.com/",
+    "allowed_hosts": [
+      "www.sahambank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-6fdc8ee1fc4d",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "BMCI (BNP Paribas)",
+    "target": "Morocco",
+    "url": "https://www.bmci.ma/",
+    "allowed_hosts": [
+      "www.bmci.ma"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-c78163e0be0f",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "Crédit Agricole du Maroc",
+    "target": "Morocco",
+    "url": "https://www.creditagricole.ma/fr",
+    "allowed_hosts": [
+      "www.creditagricole.ma"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-0b361193114c",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "Crédit du Maroc",
+    "target": "Morocco",
+    "url": "https://www.creditdumaroc.ma/",
+    "allowed_hosts": [
+      "www.creditdumaroc.ma"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-511205ec6918",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "CIH Bank",
+    "target": "Morocco",
+    "url": "https://www.cihbank.ma/",
+    "allowed_hosts": [
+      "www.cihbank.ma"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-c9bdc6aef213",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "Al Barid Bank",
+    "target": "Morocco",
+    "url": "https://www.albaridbank.ma/fr",
+    "allowed_hosts": [
+      "www.albaridbank.ma"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-0dac7c70de87",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "CFG Bank",
+    "target": "Morocco",
+    "url": "https://www.cfgbank.com/particuliers/",
+    "allowed_hosts": [
+      "www.cfgbank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-03d288878eda",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "Umnia Bank",
+    "target": "Morocco",
+    "url": "https://www.umniabank.ma/",
+    "allowed_hosts": [
+      "www.umniabank.ma"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-cc71d06a08e2",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "Bank Al-Yousr",
+    "target": "Morocco",
+    "url": "https://www.alyousr.ma/",
+    "allowed_hosts": [
+      "www.alyousr.ma"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-b361a7401562",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "Assafa Bank",
+    "target": "Morocco",
+    "url": "https://www.bankassafa.com/fr",
+    "allowed_hosts": [
+      "www.bankassafa.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-3d285031f14b",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "Arab Bank Morocco",
+    "target": "Morocco",
+    "url": "https://www.arabbank.ma/",
+    "allowed_hosts": [
+      "www.arabbank.ma"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-b9220d26e192",
+    "group": "bank",
+    "country": "Morocco",
+    "name": "CDG Capital",
+    "target": "Morocco",
+    "url": "https://www.cdgcapital.ma/fr",
+    "allowed_hosts": [
+      "www.cdgcapital.ma"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-c8c406ce43da",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "First National Bank of Botswana",
+    "target": "Botswana",
+    "url": "https://www.fnbbotswana.co.bw/",
+    "allowed_hosts": [
+      "www.fnbbotswana.co.bw"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-5f3789b56c33",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "Absa Bank Botswana",
+    "target": "Botswana",
+    "url": "https://www.absa.co.bw/personal/",
+    "allowed_hosts": [
+      "www.absa.co.bw"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-9bb588316b45",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "Stanbic Bank Botswana",
+    "target": "Botswana",
+    "url": "https://www.stanbicbank.co.bw/botswana/personal",
+    "allowed_hosts": [
+      "www.stanbicbank.co.bw"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-6c2666886578",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "Standard Chartered Botswana",
+    "target": "Botswana",
+    "url": "https://www.sc.com/bw/",
+    "allowed_hosts": [
+      "www.sc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-e06f1cf9b165",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "Access Bank Botswana",
+    "target": "Botswana",
+    "url": "https://botswana.accessbankplc.com/",
+    "allowed_hosts": [
+      "botswana.accessbankplc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-914a4a6a85fc",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "Bank Gaborone",
+    "target": "Botswana",
+    "url": "https://www.bankgaborone.co.bw/Pages/default.aspx",
+    "allowed_hosts": [
+      "www.bankgaborone.co.bw"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-5e56ba4d8593",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "First Capital Bank Botswana",
+    "target": "Botswana",
+    "url": "https://www.firstcapitalbank.co.bw/",
+    "allowed_hosts": [
+      "www.firstcapitalbank.co.bw"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-145c6831d928",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "BBS Bank Limited",
+    "target": "Botswana",
+    "url": "https://www.bbs.co.bw/",
+    "allowed_hosts": [
+      "www.bbs.co.bw"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-ff7488fc8abb",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "Bank of Baroda Botswana",
+    "target": "Botswana",
+    "url": "https://www.bankofbaroda.co.bw/",
+    "allowed_hosts": [
+      "www.bankofbaroda.co.bw"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-1431bfd10ac0",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "State Bank of India(Botswana)",
+    "target": "Botswana",
+    "url": "https://sbi.bank.in/",
+    "allowed_hosts": [
+      "sbi.bank.in"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-f91600153243",
+    "group": "bank",
+    "country": "Botswana",
+    "name": "Botswana Savings Bank (BSB)",
+    "target": "Botswana",
+    "url": "https://www.bsb.bw/",
+    "allowed_hosts": [
+      "www.bsb.bw"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-53156067ad84",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "FNB Namibia",
+    "target": "Namibia",
+    "url": "https://www.fnbnamibia.com.na/",
+    "allowed_hosts": [
+      "www.fnbnamibia.com.na"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-8130ff9a4f0e",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "Standard Bank Namibia",
+    "target": "Namibia",
+    "url": "https://www.standardbank.com.na/namibia/personal",
+    "allowed_hosts": [
+      "www.standardbank.com.na"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-93112ff997a0",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "Bank Windhoek",
+    "target": "Namibia",
+    "url": "https://www.bankwindhoek.com.na/",
+    "allowed_hosts": [
+      "www.bankwindhoek.com.na"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-39dd17baaa33",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "Nedbank Namibia",
+    "target": "Namibia",
+    "url": "https://www.nedbank.com.na/",
+    "allowed_hosts": [
+      "www.nedbank.com.na"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-7669303e99db",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "Letshego Bank Namibia",
+    "target": "Namibia",
+    "url": "https://www.letsgo.letshego.com/?locale=en",
+    "allowed_hosts": [
+      "www.letsgo.letshego.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-a3c4d7b283ef",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "Bank BIC Namibia",
+    "target": "Namibia",
+    "url": "https://www.bankbic.na/",
+    "allowed_hosts": [
+      "www.bankbic.na"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-33b8ac8158c6",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "Trustco Bank Namibia",
+    "target": "Namibia",
+    "url": "https://www.tgh.na/",
+    "allowed_hosts": [
+      "www.tgh.na"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": false,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-749c4d4e2cf9",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "Atlantic de Europa (Namibia)",
+    "target": "Namibia",
+    "url": "https://www.atlantico.na/",
+    "allowed_hosts": [
+      "www.atlantico.na"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-99ac4ddaf0cd",
+    "group": "bank",
+    "country": "Namibia",
+    "name": "NamPost Savings Bank",
+    "target": "Namibia",
+    "url": "https://www.nampost.com.na/",
+    "allowed_hosts": [
+      "www.nampost.com.na"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-a845b6c7494e",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "Stanbic Bank Uganda",
+    "target": "Uganda",
+    "url": "https://www.stanbicbank.co.ug/uganda/personal",
+    "allowed_hosts": [
+      "www.stanbicbank.co.ug"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-4eb7ece6467e",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "Centenary Bank",
+    "target": "Uganda",
+    "url": "https://www.centenarybank.co.ug/",
+    "allowed_hosts": [
+      "www.centenarybank.co.ug"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-40970f4c3012",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "Absa Bank Uganda",
+    "target": "Uganda",
+    "url": "https://www.absabank.co.ug/",
+    "allowed_hosts": [
+      "www.absabank.co.ug"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-44cbba0f6fcd",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "Standard Chartered",
+    "target": "Uganda",
+    "url": "https://www.sc.com/ug/",
+    "allowed_hosts": [
+      "www.sc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-6240f034957b",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "DFCU Bank",
+    "target": "Uganda",
+    "url": "https://www.dfcugroup.com/",
+    "allowed_hosts": [
+      "www.dfcugroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-ce18f63a6165",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "Equity Bank Uganda",
+    "target": "Uganda",
+    "url": "https://equitygroupholdings.com/ug/",
+    "allowed_hosts": [
+      "equitygroupholdings.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-f4af71a6154e",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "Bank of Baroda",
+    "target": "Uganda",
+    "url": "https://www.bankofbaroda.ug/",
+    "allowed_hosts": [
+      "www.bankofbaroda.ug"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-ba38cf6afb96",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "Diamond Trust Bank",
+    "target": "Uganda",
+    "url": "https://dtbu.dtbafrica.com/",
+    "allowed_hosts": [
+      "dtbu.dtbafrica.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-4b71a5716c11",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "Housing Finance Bank",
+    "target": "Uganda",
+    "url": "https://www.housingfinance.co.ug/",
+    "allowed_hosts": [
+      "www.housingfinance.co.ug"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-de05fcdf2e28",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "PostBank Uganda",
+    "target": "Uganda",
+    "url": "https://www.pearlbank.co.ug/",
+    "allowed_hosts": [
+      "www.pearlbank.co.ug"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-b1107b1eac1b",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "KCB Bank Uganda",
+    "target": "Uganda",
+    "url": "https://ug.kcbgroup.com/",
+    "allowed_hosts": [
+      "ug.kcbgroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-1aae21386ef5",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "I&M Bank Uganda",
+    "target": "Uganda",
+    "url": "https://www.imbankgroup.com/ug/",
+    "allowed_hosts": [
+      "www.imbankgroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-bef9bfc510ff",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "UBA Uganda",
+    "target": "Uganda",
+    "url": "https://www.ubauganda.com/",
+    "allowed_hosts": [
+      "www.ubauganda.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-0b9955f71852",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "Ecobank Uganda",
+    "target": "Uganda",
+    "url": "https://ecobank.com/ug/personal-banking",
+    "allowed_hosts": [
+      "ecobank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-9dd64ab7ace8",
+    "group": "bank",
+    "country": "Uganda",
+    "name": "NCBA Bank Uganda",
+    "target": "Uganda",
+    "url": "https://ncbagroup.com/ug/",
+    "allowed_hosts": [
+      "ncbagroup.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-405dc250f855",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "Zanaco",
+    "target": "Zambia",
+    "url": "https://www.zanaco.co.zm/",
+    "allowed_hosts": [
+      "www.zanaco.co.zm"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-e721a1ab4492",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "Stanbic Bank Zambia",
+    "target": "Zambia",
+    "url": "https://www.stanbicbank.co.zm/zambia/personal",
+    "allowed_hosts": [
+      "www.stanbicbank.co.zm"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-a09c2dd4cabc",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "Absa Bank Zambia",
+    "target": "Zambia",
+    "url": "https://www.absa.co.zm/personal/",
+    "allowed_hosts": [
+      "www.absa.co.zm"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-51a927e59117",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "First National Bank(FNB) Zambia",
+    "target": "Zambia",
+    "url": "https://www.fnbzambia.co.zm/",
+    "allowed_hosts": [
+      "www.fnbzambia.co.zm"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-849223694654",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "Indo-Zambia Bank",
+    "target": "Zambia",
+    "url": "https://www.izb.co.zm/",
+    "allowed_hosts": [
+      "www.izb.co.zm"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-efba1b53f139",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "Access Bank Zambia",
+    "target": "Zambia",
+    "url": "https://zambia.accessbankplc.com/",
+    "allowed_hosts": [
+      "zambia.accessbankplc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-c0fa504976f3",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "Standard Chartered Zambia",
+    "target": "Zambia",
+    "url": "https://www.sc.com/zm/",
+    "allowed_hosts": [
+      "www.sc.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-2a040ff5f531",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "Ecobank Zambia",
+    "target": "Zambia",
+    "url": "https://ecobank.com/zm/personal-banking",
+    "allowed_hosts": [
+      "ecobank.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-89f001523235",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "United Bank of Africa(UBA) Zambia",
+    "target": "Zambia",
+    "url": "https://www.ubazambia.com/",
+    "allowed_hosts": [
+      "www.ubazambia.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-96590abf54e0",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "Zambia Industrial",
+    "target": "Zambia",
+    "url": "https://www.zicb.co.zm/",
+    "allowed_hosts": [
+      "www.zicb.co.zm"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-d887cf912492",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "Investrust Bank PLC",
+    "target": "Zambia",
+    "url": "https://www.boz.zm/",
+    "allowed_hosts": [
+      "www.boz.zm"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": false,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-bf8e6ac25d7c",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "Bank of China(Zambia)",
+    "target": "Zambia",
+    "url": "https://www.bankofchina.com/zm/",
+    "allowed_hosts": [
+      "www.bankofchina.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-349a5649721a",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "First Capital Bank Zambia",
+    "target": "Zambia",
+    "url": "https://www.firstcapitalbank.co.zm/",
+    "allowed_hosts": [
+      "www.firstcapitalbank.co.zm"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-a57b5a9dd58c",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "AB Bank Zambia",
+    "target": "Zambia",
+    "url": "https://www.abbank.co.zm/",
+    "allowed_hosts": [
+      "www.abbank.co.zm"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "bank-1ed307b0eaeb",
+    "group": "bank",
+    "country": "Zambia",
+    "name": "First Alliance Bank",
+    "target": "Zambia",
+    "url": "https://www.firstalliancebankzambia.com/",
+    "allowed_hosts": [
+      "www.firstalliancebankzambia.com"
+    ],
+    "adapter": "review",
+    "scope": "Website/publication discovery; manual product review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "cb-3bdc6fa80e5d534e",
+    "group": "central",
+    "country": "South Africa",
+    "name": "South African Reserve Bank",
+    "target": "South Africas scrapped CB data",
+    "url": "https://custom.resbank.co.za/SarbWebApi/WebIndicators/CurrentMarketRates",
+    "allowed_hosts": [
+      "custom.resbank.co.za",
+      "www.custom.resbank.co.za"
+    ],
+    "adapter": "sarb",
+    "scope": "Central-bank published aggregate or policy data",
+    "enabled": true,
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "cb-a3dcc512fefaad55",
+    "group": "central",
+    "country": "Kenya",
+    "name": "Kenya Bankers Association / CBK Cost of Credit",
+    "target": "Kenyas scrapped CB data",
+    "url": "https://www.costofcredit.co.ke/site/interest-rate",
+    "allowed_hosts": [
+      "costofcredit.co.ke",
+      "www.costofcredit.co.ke"
+    ],
+    "adapter": "kenya",
+    "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
+    "enabled": true,
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "cb-6723870326e29905",
+    "group": "central",
+    "country": "Morocco",
+    "name": "Bank Al-Maghrib — Term deposits",
+    "target": "Morocco CB Data",
+    "url": "https://www.bkam.ma/en/Statistics/Interest-rate/Rates-on-term-deposits",
+    "allowed_hosts": [
+      "bkam.ma",
+      "www.bkam.ma"
+    ],
+    "adapter": "morocco_term",
+    "scope": "Central-bank published aggregate or policy data",
+    "enabled": true,
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "cb-80f21b9011c500ed",
+    "group": "central",
+    "country": "Morocco",
+    "name": "Bank Al-Maghrib — Passbook savings",
+    "target": "Morocco CB Data",
+    "url": "https://www.bkam.ma/en/Statistics/Interest-rate/Interest-rates-on-savings-accounts",
+    "allowed_hosts": [
+      "bkam.ma",
+      "www.bkam.ma"
+    ],
+    "adapter": "morocco_savings",
+    "scope": "Central-bank published aggregate or policy data",
+    "enabled": true,
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "cb-1a509fe254888a6e",
+    "group": "central",
+    "country": "Morocco",
+    "name": "Bank Al-Maghrib — Lending survey",
+    "target": "Morocco CB Data",
+    "url": "https://www.bkam.ma/en/Statistics/Interest-rate/Lending-rates",
+    "allowed_hosts": [
+      "bkam.ma",
+      "www.bkam.ma"
+    ],
+    "adapter": "morocco_lending",
+    "scope": "Central-bank published aggregate or policy data",
+    "enabled": true,
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "cb-06e8988f6622db6c",
+    "group": "central",
+    "country": "Ghana",
+    "name": "Bank of Ghana — July 2026 summary",
+    "target": "Ghana CB Data",
+    "url": "https://www.bog.gov.gh/wp-content/uploads/2026/07/Summary-of-Economic-and-Financial-Data-July-2026-1.pdf",
+    "allowed_hosts": [
+      "bog.gov.gh",
+      "www.bog.gov.gh"
+    ],
+    "adapter": "review",
+    "scope": "Central-bank published aggregate or policy data",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "cb-12198aaa34ef9eae",
+    "group": "central",
+    "country": "Tanzania",
+    "name": "Bank of Tanzania — Monthly Economic Review",
+    "target": "Tanzanias scrapped CB data",
+    "url": "https://www.bot.go.tz/Publications/Regular/Monthly%20Economic%20Review/en/2026090916364778.pdf",
+    "allowed_hosts": [
+      "bot.go.tz",
+      "www.bot.go.tz"
+    ],
+    "adapter": "review",
+    "scope": "Central-bank published aggregate or policy data",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "cb-68a0f1d7cecdc13b",
+    "group": "central",
+    "country": "Uganda",
+    "name": "Bank of Uganda — bank charges April 2026",
+    "target": "Ugandas scrapped CB data",
+    "url": "https://bou.or.ug/uploads/Commercial_Banks_Interest_Rates_and_Bank_Charges_as_at_01_April_2026_25716d34bb.pdf",
+    "allowed_hosts": [
+      "bou.or.ug",
+      "www.bou.or.ug"
+    ],
+    "adapter": "review",
+    "scope": "Bank-reported ranges republished by regulator; product/tenor unspecified",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "cb-nigeria",
+    "group": "central",
+    "country": "Nigeria",
+    "name": "Central Bank of Nigeria",
+    "target": "Bank_of_Nigeria_Data",
+    "url": "https://www.cbn.gov.ng/Documents/depositandlending.html",
+    "allowed_hosts": [
+      "www.cbn.gov.ng"
+    ],
+    "adapter": "review",
+    "scope": "Original report data; verification pending",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "cb-egypt",
+    "group": "central",
+    "country": "Egypt",
+    "name": "Central Bank of Egypt",
+    "target": "Egypts scrapped CB data",
+    "url": "https://www.cbe.org.eg/en/economic-research/statistics/monthly-interest-rates",
+    "allowed_hosts": [
+      "www.cbe.org.eg"
+    ],
+    "adapter": "review",
+    "scope": "Original report data; verification pending",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "cb-mauritius",
+    "group": "central",
+    "country": "Mauritius",
+    "name": "Bank of Mauritius",
+    "target": "Mauritius CB Data",
+    "url": "https://www.bom.mu/repo-rate",
+    "allowed_hosts": [
+      "www.bom.mu"
+    ],
+    "adapter": "bom_key",
+    "scope": "Central bank policy rate",
+    "enabled": true,
+    "update_mode": "Automatic reviewed mapping"
+  },
+  {
+    "id": "cb-namibia",
+    "group": "central",
+    "country": "Namibia",
+    "name": "Bank of Namibia",
+    "target": "Namibia CB Data",
+    "url": "https://www.bon.com.na/",
+    "allowed_hosts": [
+      "www.bon.com.na"
+    ],
+    "adapter": "review",
+    "scope": "Central bank policy rate",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  }
+]
