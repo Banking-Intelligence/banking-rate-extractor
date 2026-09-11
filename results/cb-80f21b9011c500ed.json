@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "source_id": "cb-80f21b9011c500ed",
+  "checked_at": "2026-09-11T21:19:46.901507+00:00",
+  "status": "failed",
+  "records": [],
+  "fingerprint": "",
+  "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Interest-rates-on-savings-accounts",
+  "message": "HTTP Error 403: Forbidden"
+}

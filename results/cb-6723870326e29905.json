@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "source_id": "cb-6723870326e29905",
+  "checked_at": "2026-09-11T21:19:46.554375+00:00",
+  "status": "failed",
+  "records": [],
+  "fingerprint": "",
+  "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Rates-on-term-deposits",
+  "message": "HTTP Error 403: Forbidden"
+}

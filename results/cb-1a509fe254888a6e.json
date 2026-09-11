@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "source_id": "cb-1a509fe254888a6e",
+  "checked_at": "2026-09-11T21:19:46.937927+00:00",
+  "status": "failed",
+  "records": [],
+  "fingerprint": "",
+  "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Lending-rates",
+  "message": "HTTP Error 403: Forbidden"
+}
