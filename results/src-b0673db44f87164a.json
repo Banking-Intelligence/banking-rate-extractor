@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source_id": "src-b0673db44f87164a",
+  "checked_at": "2026-09-11T21:22:25.801141+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "a025681fd400c0e9",
+      "target": "Mauritius",
+      "rate": 0.034,
+      "low": 0.034,
+      "high": 0.034,
+      "method": "Published rate",
+      "raw": "3.40% p.a",
+      "source_url": "https://maubank.mu/news/2026/communique-changes-in-interest-rates/",
+      "evidence": "Savings Rate Household | 3.40% p.a",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-b0673db44f87164a",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "d936c87aedb9fe948859feff5c866f52b5c3dc1e1395ce5884085f0d34519701",
+  "source_url": "https://maubank.mu/news/2026/communique-changes-in-interest-rates/",
+  "message": ""
+}

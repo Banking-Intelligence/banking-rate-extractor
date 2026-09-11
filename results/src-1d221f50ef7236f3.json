@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "source_id": "src-1d221f50ef7236f3",
+  "checked_at": "2026-09-11T21:22:30.050581+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "5070b06b0edfda8f",
+      "target": "Uganda",
+      "rate": 0.02,
+      "low": 0.02,
+      "high": 0.02,
+      "method": "Published rate",
+      "raw": "2%",
+      "source_url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary/4/savings-accounts",
+      "evidence": "Competitive interest rates of 2% p.a",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-1d221f50ef7236f3",
+      "effective_date": "",
+      "published_date": ""
+    },
+    {
+      "id": "e998949b48feda40",
+      "target": "Uganda",
+      "rate": 0.18,
+      "low": 0.18,
+      "high": 0.18,
+      "method": "Published rate",
+      "raw": "18%",
+      "source_url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary/4/savings-accounts",
+      "evidence": "5 million unsecured at 18% p.a",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-1d221f50ef7236f3",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "da880d9ba5bc0e1f4276b357100365ccf82ad4a1af782f1271e228243fbb914a",
+  "source_url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary/4/savings-accounts",
+  "message": ""
+}

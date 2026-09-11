@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "source_id": "src-8d81d976af3ba436",
+  "checked_at": "2026-09-11T21:22:11.947358+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "0501b19637931e68",
+      "target": "South Africa",
+      "rate": 0.0775,
+      "low": 0.0775,
+      "high": 0.0775,
+      "method": "Published rate",
+      "raw": "7.75%",
+      "source_url": "https://gotyme.co.za/personal/save-and-invest/fixed-deposit",
+      "evidence": "3 Months | 7.75% | 7.98% | 7.75%",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-8d81d976af3ba436",
+      "effective_date": "",
+      "published_date": ""
+    },
+    {
+      "id": "54c2c4ff52a5c1eb",
+      "target": "South Africa",
+      "rate": 0.0825,
+      "low": 0.0825,
+      "high": 0.0825,
+      "method": "Published rate",
+      "raw": "8.25%",
+      "source_url": "https://gotyme.co.za/personal/save-and-invest/fixed-deposit",
+      "evidence": "6 Months | 8.25% | 8.42% | 8.25%",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-8d81d976af3ba436",
+      "effective_date": "",
+      "published_date": ""
+    },
+    {
+      "id": "77b50ef92f490d9e",
+      "target": "South Africa",
+      "rate": 0.0875,
+      "low": 0.0875,
+      "high": 0.0875,
+      "method": "Published rate",
+      "raw": "8.75%",
+      "source_url": "https://gotyme.co.za/personal/save-and-invest/fixed-deposit",
+      "evidence": "12 Months | 8.75% | 8.75% | 8.75%",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-8d81d976af3ba436",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "bdcad3b8b1b97f374ca07cb15660bd287154da5ff84b4ae6b426e054eb27ef84",
+  "source_url": "https://gotyme.co.za/personal/save-and-invest/fixed-deposit",
+  "message": ""
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "source_id": "src-acba0c7ae4576af3",
+  "checked_at": "2026-09-11T21:22:21.885906+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "15fd39b9fba27e93",
+      "target": "Tanzania",
+      "rate": 0.025,
+      "low": 0.02,
+      "high": 0.03,
+      "method": "Calculated midpoint",
+      "raw": "2% - 3%",
+      "source_url": "https://crdbbank.co.tz/storage/app/media/Forms%20and%20Guides/Rates/minimum-disclosure-a4-eng-aug-10.pdf",
+      "evidence": "3 Months 2% - 3%",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-acba0c7ae4576af3",
+      "effective_date": "",
+      "published_date": ""
+    },
+    {
+      "id": "ccaa2736ce6f99fc",
+      "target": "Tanzania",
+      "rate": 0.0325,
+      "low": 0.025,
+      "high": 0.04,
+      "method": "Calculated midpoint",
+      "raw": "2.5% - 4%",
+      "source_url": "https://crdbbank.co.tz/storage/app/media/Forms%20and%20Guides/Rates/minimum-disclosure-a4-eng-aug-10.pdf",
+      "evidence": "6 Months 2.5% - 4%",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-acba0c7ae4576af3",
+      "effective_date": "",
+      "published_date": ""
+    },
+    {
+      "id": "368bb7dbd5cf3448",
+      "target": "Tanzania",
+      "rate": 0.0425,
+      "low": 0.035,
+      "high": 0.05,
+      "method": "Calculated midpoint",
+      "raw": "3.5% - 5%",
+      "source_url": "https://crdbbank.co.tz/storage/app/media/Forms%20and%20Guides/Rates/minimum-disclosure-a4-eng-aug-10.pdf",
+      "evidence": "12 Months 3.5% - 5%",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-acba0c7ae4576af3",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "6bb058440c4f2642c32a67d3b6d798112d574cf9626cb1d567149fadd8fb3f32",
+  "source_url": "https://crdbbank.co.tz/storage/app/media/Forms%20and%20Guides/Rates/minimum-disclosure-a4-eng-aug-10.pdf",
+  "message": ""
+}

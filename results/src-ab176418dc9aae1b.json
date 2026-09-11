@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source_id": "src-ab176418dc9aae1b",
+  "checked_at": "2026-09-11T21:22:29.079756+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "caa0a140e180ef84",
+      "target": "Ghana",
+      "rate": 0.05,
+      "low": 0.05,
+      "high": 0.05,
+      "method": "Published rate",
+      "raw": "5%",
+      "source_url": "https://www.republicghana.com/products/savings/republic-i-do-account/",
+      "evidence": "Interest rate of 5% per annum",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-ab176418dc9aae1b",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "930c098708d4f00c0703c957e11b8cf5f427eb8c8b5878b5f4fcc7f2e51ec98d",
+  "source_url": "https://www.republicghana.com/products/savings/republic-i-do-account/",
+  "message": ""
+}
