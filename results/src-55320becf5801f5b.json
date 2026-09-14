@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-55320becf5801f5b",
-  "checked_at": "2026-09-11T21:22:13.051289+00:00",
+  "checked_at": "2026-09-14T08:02:37.823013+00:00",
   "status": "ok",
   "records": [
     {
@@ -181,7 +181,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "1aa97c115e027f795dc4748d5f78408f83b0babcc55ca5890aa2fd76c543d42f",
+  "fingerprint": "ac48fadad76fd4fce04a7c5eb375ba81e6070b35811a9bde315c5d8c3d834fc2",
   "source_url": "https://diamondtrust.co.tz/account/fixed-deposits",
   "message": ""
 }
