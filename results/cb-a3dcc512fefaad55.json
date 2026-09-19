@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-09-18T06:28:30.628981+00:00",
+  "checked_at": "2026-09-19T06:27:14.077771+00:00",
   "status": "ok",
   "records": [
     {
@@ -291,26 +291,26 @@
       "status": "Verified official source"
     },
     {
-      "id": "cb-a3dcc512fefaad55:1863b4dd9d8d51d0",
+      "id": "cb-a3dcc512fefaad55:c965ee1eb7008a2a",
       "target": "Kenyas scrapped CB data",
       "metric": "Digital Loans",
       "value": 0.16690000000000002,
       "unit": "%",
       "period": "2026-08-31",
-      "bank": "Branch International",
+      "bank": "Branch Microfinance Bank Ltd",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
       "notes": "Central Bank Rate (CBR) + Bank Premium (K); indicative average, not a customer quote",
       "status": "Verified official source"
     },
     {
-      "id": "cb-a3dcc512fefaad55:c15c1213d493184d",
+      "id": "cb-a3dcc512fefaad55:a187bec900d8d4bd",
       "target": "Kenyas scrapped CB data",
       "metric": "Personal",
       "value": 0.10949999999999999,
       "unit": "%",
       "period": "2026-09-10",
-      "bank": "Branch International",
+      "bank": "Branch Microfinance Bank Ltd",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
       "notes": "Central Bank Rate (CBR) + Bank Premium (K); indicative average, not a customer quote",
@@ -2267,7 +2267,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "c46818023c2a4b50bdb24dd6c31606a31c158f8664bbda06199fe48a9ebbf5ee",
+  "fingerprint": "0bc7810aff144d6023bc47599f0edd50d89f29d3b67b9e6d8078984b7cc468da",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": ""
 }
