@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-mauritius",
-  "checked_at": "2026-09-20T06:50:00.504862+00:00",
+  "checked_at": "2026-09-21T06:57:17.869479+00:00",
   "status": "ok",
   "records": [
     {
@@ -18,7 +18,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "f76b36962393fe4e48051b5ea9492a9d00e487c5fa0403eff82df45f50cde220",
+  "fingerprint": "2ce9e5fbf17aeaee5824af34b62d1d2876cc63b10c0b332794d30940210df281",
   "source_url": "https://www.bom.mu/repo-rate",
   "message": ""
 }
