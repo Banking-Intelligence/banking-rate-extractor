@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "src-3557d0482cf2a1ce",
-  "checked_at": "2026-09-14T08:02:20.498683+00:00",
+  "checked_at": "2026-09-21T08:07:24.532324+00:00",
   "status": "failed",
   "records": [],
   "fingerprint": "",
   "source_url": "https://www.bsb.bw/rates-and-pricing/",
-  "message": "HTTP Error 503: Service Unavailable"
+  "message": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
 }
