@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-09-21T06:56:52.846933+00:00",
+  "checked_at": "2026-09-22T06:41:37.831653+00:00",
   "status": "ok",
   "records": [
     {
@@ -291,12 +291,38 @@
       "status": "Verified official source"
     },
     {
+      "id": "cb-a3dcc512fefaad55:fbe19a75374d33c0",
+      "target": "Kenyas scrapped CB data",
+      "metric": "Asset Finance",
+      "value": 0.30269999999999997,
+      "unit": "%",
+      "period": "2026-09-21",
+      "bank": "Branch Microfinance Bank Ltd",
+      "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
+      "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
+      "notes": "Central Bank Rate (CBR) + Bank Premium (K); indicative average, not a customer quote",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-a3dcc512fefaad55:02e054f88204070c",
+      "target": "Kenyas scrapped CB data",
+      "metric": "Corporate",
+      "value": 0.2375,
+      "unit": "%",
+      "period": "2026-09-21",
+      "bank": "Branch Microfinance Bank Ltd",
+      "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
+      "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
+      "notes": "Central Bank Rate (CBR) + Bank Premium (K); indicative average, not a customer quote",
+      "status": "Verified official source"
+    },
+    {
       "id": "cb-a3dcc512fefaad55:c965ee1eb7008a2a",
       "target": "Kenyas scrapped CB data",
       "metric": "Digital Loans",
       "value": 0.16690000000000002,
       "unit": "%",
-      "period": "2026-08-31",
+      "period": "2026-09-21",
       "bank": "Branch Microfinance Bank Ltd",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -309,7 +335,7 @@
       "metric": "Personal",
       "value": 0.10949999999999999,
       "unit": "%",
-      "period": "2026-09-10",
+      "period": "2026-09-21",
       "bank": "Branch Microfinance Bank Ltd",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -2267,7 +2293,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "426bcba55a7d2163524f74012e745eb1c9b63536b9c2d963e328dd7e679b8eb1",
+  "fingerprint": "6d5298b539ed448312966578fdd6f4115dddaf3da49760a12a7c878992e275cc",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": ""
 }
