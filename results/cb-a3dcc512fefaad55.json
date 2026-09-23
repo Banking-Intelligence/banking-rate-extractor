@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-09-22T06:41:37.831653+00:00",
+  "checked_at": "2026-09-23T06:31:51.863358+00:00",
   "status": "ok",
   "records": [
     {
@@ -1971,9 +1971,9 @@
       "id": "cb-a3dcc512fefaad55:6ac44ece79ff2c5b",
       "target": "Kenyas scrapped CB data",
       "metric": "Asset Finance",
-      "value": 0.17809999999999998,
+      "value": 0.1783,
       "unit": "%",
-      "period": "2026-08-18",
+      "period": "2026-09-22",
       "bank": "Sidian Bank Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -1984,9 +1984,9 @@
       "id": "cb-a3dcc512fefaad55:7b3472400aca3299",
       "target": "Kenyas scrapped CB data",
       "metric": "Business (MSME + Trade Finance)",
-      "value": 0.1769,
+      "value": 0.1772,
       "unit": "%",
-      "period": "2026-08-18",
+      "period": "2026-09-22",
       "bank": "Sidian Bank Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -1997,9 +1997,9 @@
       "id": "cb-a3dcc512fefaad55:59f43e5a0ef76607",
       "target": "Kenyas scrapped CB data",
       "metric": "Corporate",
-      "value": 0.1392,
+      "value": 0.1407,
       "unit": "%",
-      "period": "2026-08-18",
+      "period": "2026-09-22",
       "bank": "Sidian Bank Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -2012,7 +2012,7 @@
       "metric": "Personal",
       "value": 0.1341,
       "unit": "%",
-      "period": "2026-08-18",
+      "period": "2026-09-22",
       "bank": "Sidian Bank Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -2293,7 +2293,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "6d5298b539ed448312966578fdd6f4115dddaf3da49760a12a7c878992e275cc",
+  "fingerprint": "4244e476d95e675f7981f82a4551bbe0391570688432eb1bb94b4c6311db69c6",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": ""
 }
