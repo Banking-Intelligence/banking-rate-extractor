@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-09-23T06:31:51.863358+00:00",
+  "checked_at": "2026-09-24T06:37:32.314835+00:00",
   "status": "ok",
   "records": [
     {
@@ -1500,6 +1500,58 @@
       "status": "Verified official source"
     },
     {
+      "id": "cb-a3dcc512fefaad55:87c5395b5e34cc7e",
+      "target": "Kenyas scrapped CB data",
+      "metric": "Mortgages",
+      "value": 0.20370000000000002,
+      "unit": "%",
+      "period": "2026-09-23",
+      "bank": "Kingdom Bank Limited",
+      "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
+      "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
+      "notes": "Central Bank Rate (CBR) + Bank Premium (K); indicative average, not a customer quote",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-a3dcc512fefaad55:54428a6ad577064a",
+      "target": "Kenyas scrapped CB data",
+      "metric": "Asset Finance",
+      "value": 0.18310600000000002,
+      "unit": "%",
+      "period": "2026-09-23",
+      "bank": "Kingdom Bank Limited",
+      "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
+      "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
+      "notes": "KESONIA + Premium; indicative average, not a customer quote",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-a3dcc512fefaad55:56977a0f87fc57af",
+      "target": "Kenyas scrapped CB data",
+      "metric": "Business (MSME + Trade Finance)",
+      "value": 0.203706,
+      "unit": "%",
+      "period": "2026-09-23",
+      "bank": "Kingdom Bank Limited",
+      "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
+      "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
+      "notes": "KESONIA + Premium; indicative average, not a customer quote",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-a3dcc512fefaad55:ab1b8abebb05242d",
+      "target": "Kenyas scrapped CB data",
+      "metric": "Personal",
+      "value": 0.206206,
+      "unit": "%",
+      "period": "2026-09-23",
+      "bank": "Kingdom Bank Limited",
+      "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
+      "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
+      "notes": "KESONIA + Premium; indicative average, not a customer quote",
+      "status": "Verified official source"
+    },
+    {
       "id": "cb-a3dcc512fefaad55:dd3d17f80a59d543",
       "target": "Kenyas scrapped CB data",
       "metric": "Asset Finance",
@@ -2293,7 +2345,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "4244e476d95e675f7981f82a4551bbe0391570688432eb1bb94b4c6311db69c6",
+  "fingerprint": "f176a7fd42aac528b28439f3c79e1334b75c8cc20542d2574aa70cc85f16aa99",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": ""
 }
