@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "cb-namibia",
-  "checked_at": "2026-09-24T06:38:00.426088+00:00",
+  "checked_at": "2026-09-25T06:31:10.240531+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "d40e3e3993687c4674ba14899c816a70181925dff5f4bb3c230a8247de9b1eab",
+  "fingerprint": "9ab12662bab7fef9d1bd1b18ed1c7b66a1ab9b15e672b95d706f28be7413104a",
   "source_url": "https://www.bon.com.na/",
   "message": "Publication retrieved; product/period mapping needs review"
 }

@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "source_id": "cb-3bdc6fa80e5d534e",
-  "checked_at": "2026-09-24T06:37:31.040033+00:00",
+  "checked_at": "2026-09-25T06:30:34.279396+00:00",
   "status": "ok",
   "records": [
     {
       "id": "cb-3bdc6fa80e5d534e:MMRD002A",
       "target": "South Africas scrapped CB data",
       "metric": "SARB Policy Rate",
-      "value": 0.07,
+      "value": 0.0725,
       "unit": "%",
-      "period": "2026-09-23",
+      "period": "2026-09-25",
       "bank": "",
       "scope": "Central-bank published aggregate or policy data",
       "source_url": "https://custom.resbank.co.za/SarbWebApi/WebIndicators/CurrentMarketRates",
@@ -164,9 +164,9 @@
       "id": "cb-3bdc6fa80e5d534e:MMRD000A",
       "target": "South Africas scrapped CB data",
       "metric": "Prime lending rate",
-      "value": 0.105,
+      "value": 0.1075,
       "unit": "%",
-      "period": "2026-09-23",
+      "period": "2026-09-25",
       "bank": "",
       "scope": "Central-bank published aggregate or policy data",
       "source_url": "https://custom.resbank.co.za/SarbWebApi/WebIndicators/CurrentMarketRates",
@@ -317,7 +317,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "61b2a2b7d9e951e599a4b7c5742ea188ba50045405b4340aee1f5e490ba825f3",
+  "fingerprint": "c9a0bc12fd25ea1e8256cf286353fc1a5331c7487507fa19d95e4fdcfefeb1ee",
   "source_url": "https://custom.resbank.co.za/SarbWebApi/WebIndicators/CurrentMarketRates",
   "message": ""
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-09-24T06:37:32.314835+00:00",
+  "checked_at": "2026-09-25T06:30:35.200403+00:00",
   "status": "ok",
   "records": [
     {
@@ -1399,9 +1399,9 @@
       "id": "cb-a3dcc512fefaad55:fac48d61617340b8",
       "target": "Kenyas scrapped CB data",
       "metric": "Asset Finance",
-      "value": 0.15960000000000002,
+      "value": 0.1588,
       "unit": "%",
-      "period": "2026-06-11",
+      "period": "2026-09-24",
       "bank": "KCB Bank Kenya Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -1412,9 +1412,9 @@
       "id": "cb-a3dcc512fefaad55:95f7ac6b6127d200",
       "target": "Kenyas scrapped CB data",
       "metric": "Business (MSME + Trade Finance)",
-      "value": 0.1672,
+      "value": 0.1728,
       "unit": "%",
-      "period": "2026-06-11",
+      "period": "2026-09-24",
       "bank": "KCB Bank Kenya Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -1425,9 +1425,9 @@
       "id": "cb-a3dcc512fefaad55:b95e2a4a015ecf4c",
       "target": "Kenyas scrapped CB data",
       "metric": "Corporate",
-      "value": 0.129,
+      "value": 0.1321,
       "unit": "%",
-      "period": "2026-06-11",
+      "period": "2026-09-24",
       "bank": "KCB Bank Kenya Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -1451,9 +1451,9 @@
       "id": "cb-a3dcc512fefaad55:a4f8b2a88bd955d1",
       "target": "Kenyas scrapped CB data",
       "metric": "Personal",
-      "value": 0.157,
+      "value": 0.15539999999999998,
       "unit": "%",
-      "period": "2026-06-11",
+      "period": "2026-09-24",
       "bank": "KCB Bank Kenya Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -2345,7 +2345,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "f176a7fd42aac528b28439f3c79e1334b75c8cc20542d2574aa70cc85f16aa99",
+  "fingerprint": "f45004c59a652503091a2901d6cf5e2cebe1484f78735a2556d52895279a5f05",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": ""
 }
