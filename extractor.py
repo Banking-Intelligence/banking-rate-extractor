@@ -6,6 +6,9 @@ import io
 import json
 import os
 import re
+import socket
+import ssl
+import urllib.error
 import urllib.parse
 import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -24,7 +27,7 @@ def clean(value):
 
 def rate(value):
     """Only single percentages and two-ended ranges. Returns decimal Excel values."""
-    s = clean(value).replace('−','-').replace('–','-').replace('—','-')
+    s = clean(value).replace('−','-').replace('–','-').replace('—','-').replace('�','-')
     s = re.sub(r'(?<=\d),(?=\d)', '.', s)
     m = re.fullmatch(r'(\d+(?:\.\d+)?)\s*%?\s*(?:-|to|à)\s*(\d+(?:\.\d+)?)\s*%(?:\s*(?:p\.?a\.?|per annum))?',s,re.I)
     if m:
@@ -40,6 +43,25 @@ def rate(value):
 def tables(raw):
     doc=html.fromstring(raw)
     return [[[clean(c.text_content()) for c in r.xpath('./th|./td')] for r in t.xpath('.//tr')] for t in doc.xpath('//table')]
+
+def markdown_tables(raw):
+    text = raw.decode('utf-8', 'replace') if isinstance(raw, bytes) else str(raw or '')
+    groups = []
+    current = []
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith('|') and stripped.endswith('|') and stripped.count('|') >= 2:
+            cells = [clean(c) for c in stripped.strip('|').split('|')]
+            if cells and all(re.fullmatch(r':?-{3,}:?', c.replace(' ', '')) for c in cells):
+                continue
+            current.append(cells)
+        elif current:
+            if len(current) > 1:
+                groups.append(current)
+            current = []
+    if current and len(current) > 1:
+        groups.append(current)
+    return groups
 
 def text_content(raw):
     if raw.startswith(b'%PDF'):
@@ -59,16 +81,72 @@ class SafeRedirect(urllib.request.HTTPRedirectHandler):
         if not allowed(newurl,self.source):raise ReviewRequired('Redirect left approved publisher domains')
         return super().redirect_request(req,fp,code,msg,headers,newurl)
 
-def fetch(url,source):
-    if not allowed(url,source):raise ReviewRequired('URL is not an approved HTTPS publisher URL')
-    req=urllib.request.Request(url,headers={'User-Agent':'BankingIntelligence/1.0 (public tariff research)','Accept':'text/html,application/pdf,application/json,*/*'})
-    with urllib.request.build_opener(SafeRedirect(source)).open(req,timeout=25) as r:
-        body=r.read(MAX_BYTES+1)
-        if len(body)>MAX_BYTES:raise ReviewRequired('Publication exceeds extraction size limit')
-        final=r.url
-    if re.search(rb'(?i)<title>\s*(?:just a moment|request rejected|access denied)',body[:10000]):
+def retrieval_looks_blocked(body):
+    return bool(re.search(rb'(?i)<title>\s*(?:just a moment|request rejected|access denied)', body[:10000]))
+
+def retrieval_failure_is_eligible(exc):
+    if isinstance(exc, ReviewRequired):
+        return 'interactive access' in str(exc).lower()
+    if isinstance(exc, (ssl.SSLError, TimeoutError, socket.timeout, ConnectionError)):
+        return True
+    if isinstance(exc, urllib.error.HTTPError):
+        return exc.code in (403, 429, 500, 502, 503, 504)
+    if isinstance(exc, urllib.error.URLError):
+        reason = getattr(exc, 'reason', exc)
+        text = str(reason).lower()
+        return isinstance(reason, (ssl.SSLError, TimeoutError, socket.timeout, ConnectionError)) or any(
+            marker in text for marker in ('ssl', 'certificate', 'timed out', 'timeout', 'connection reset', 'network is unreachable')
+        )
+    return False
+
+def read_limited_response(response):
+    body = response.read(MAX_BYTES + 1)
+    if len(body) > MAX_BYTES:
+        raise ReviewRequired('Publication exceeds extraction size limit')
+    return body
+
+def retrieve_http(url, source):
+    if not allowed(url, source):
+        raise ReviewRequired('URL is not an approved HTTPS publisher URL')
+    req = urllib.request.Request(url, headers={
+        'User-Agent': 'BankingIntelligence/1.0 (public tariff research)',
+        'Accept': 'text/html,application/pdf,application/json,*/*'
+    })
+    with urllib.request.build_opener(SafeRedirect(source)).open(req, timeout=25) as r:
+        body = read_limited_response(r)
+        final = r.url
+    if retrieval_looks_blocked(body):
         raise ReviewRequired('Publisher requires interactive access')
-    return body,final
+    return {'body': body, 'url': final, 'retrieval_method': 'direct_http'}
+
+def retrieve_jina_reader(url, source):
+    if not allowed(url, source):
+        raise ReviewRequired('URL is not an approved HTTPS publisher URL')
+    reader_url = 'https://r.jina.ai/' + url
+    req = urllib.request.Request(reader_url, headers={
+        'User-Agent': 'BankingIntelligence/1.0 (public tariff research)',
+        'Accept': 'text/plain,text/markdown,*/*'
+    })
+    with urllib.request.urlopen(req, timeout=45) as r:
+        body = read_limited_response(r)
+    if not clean(body.decode('utf-8', 'replace')):
+        raise ReviewRequired('Jina Reader returned empty content')
+    return {'body': body, 'url': url, 'retrieval_method': 'jina_reader'}
+
+def retrieve(url, source):
+    try:
+        return retrieve_http(url, source)
+    except Exception as exc:
+        if not retrieval_failure_is_eligible(exc):
+            raise
+        try:
+            return retrieve_jina_reader(url, source)
+        except Exception as fallback_exc:
+            raise ReviewRequired('Retrieval failed by direct HTTP and Jina Reader: %s; %s' % (str(exc)[:220], str(fallback_exc)[:220]))
+
+def fetch(url,source):
+    retrieved = retrieve(url, source)
+    return retrieved['body'], retrieved['url'], {'retrieval_method': retrieved.get('retrieval_method', 'direct_http')}
 
 def observation(source,key,metric,value,period='',unit='%',bank='',notes=''):
     return {'id':source['id']+':'+key,'target':source['target'],'metric':metric,'value':value,
@@ -132,13 +210,30 @@ def parse_bom_key(source,raw):
                 return [observation(source,'key','Key Rate',float(r[1])/100,r[0])]
     raise ReviewRequired('Mauritius policy table changed')
 
+def table_header_matches(table, expected_header):
+    if not expected_header:
+        return True
+    expected = [re.sub(r'\s+', '', clean(cell)).lower() for cell in expected_header]
+    return any([re.sub(r'\s+', '', clean(cell)).lower() for cell in row] == expected for row in table)
+
+def row_label_matches(pattern, value):
+    if re.fullmatch(pattern, value, re.I):
+        return True
+    space_normalized = pattern.replace('\\ ', ' ')
+    if space_normalized != pattern and re.fullmatch(space_normalized, value, re.I):
+        return True
+    literal = pattern.replace('\\ ', ' ').replace('\\(', '(').replace('\\)', ')')
+    compact_literal = re.sub(r'\s+', '', clean(literal)).lower()
+    compact_value = re.sub(r'\s+', '', clean(value)).lower()
+    return bool(compact_literal and compact_literal == compact_value)
+
 def parse_rules(source,raw):
-    out=[];ts=tables(raw) if not raw.startswith(b'%PDF') else []; text=text_content(raw)
+    out=[];ts=(tables(raw)+markdown_tables(raw)) if not raw.startswith(b'%PDF') else []; text=text_content(raw)
     for rule in source.get('rules',[]):
         if rule['kind']=='table':
-            selected=[t for t in ts if not rule.get('table_header') or rule['table_header'] in t]
+            selected=[t for t in ts if table_header_matches(t, rule.get('table_header'))]
             label_col=rule.get('label_column',0)
-            matches=[r for t in selected for r in t if len(r)>label_col and re.fullmatch(rule['row_label'],r[label_col],re.I)]
+            matches=[r for t in selected for r in t if len(r)>label_col and row_label_matches(rule['row_label'],r[label_col])]
             if len(matches)!=1:raise ReviewRequired('Product row is missing or ambiguous: '+rule['row_label'])
             row=matches[0]; idx=rule['column']
             if idx>=len(row):raise ReviewRequired('Rate column changed')
@@ -162,24 +257,24 @@ ADAPTERS={'sarb':parse_sarb,'kenya':parse_kenya,'morocco_term':parse_morocco,'mo
           'morocco_savings':parse_morocco,'bom_key':parse_bom_key,'rules':parse_rules}
 
 def extract(source):
-    raw,url=fetch(source['url'],source);source=dict(source,url=url)
+    raw,url,retrieval_meta=fetch(source['url'],source);source=dict(source,url=url)
     if source.get('publication_link_pattern'):
         doc=html.fromstring(raw)
         links=[urllib.parse.urljoin(url,a.get('href')) for a in doc.xpath('//a[@href]') if re.search(source['publication_link_pattern'],a.get('href')+' '+clean(a.text_content()),re.I)]
         links=list(dict.fromkeys(links))
         if not links:raise ReviewRequired('No matching publication on the official index')
-        raw,url=fetch(links[0],source);source['url']=url
+        raw,url,retrieval_meta=fetch(links[0],source);source['url']=url
     fingerprint=hashlib.sha256(raw).hexdigest()
     handler=ADAPTERS.get(source['adapter'])
     if handler:
         records=handler(source,raw)
         if not records:raise ReviewRequired('No usable observations')
-        return {'status':'ok','records':records,'source_url':url,'fingerprint':fingerprint}
+        return {'status':'ok','records':records,'source_url':url,'fingerprint':fingerprint,**retrieval_meta}
     txt=text_content(raw)
     lines=txt.splitlines() if '\n' in txt else re.split(r'(?<=[.;])\s+',txt)
     snippets=[l[:1200] for l in lines if re.search(r'interest|deposit|lending|savings|taux',l,re.I) and re.search(r'\d',l)][:30]
     return {'status':'review','records':[],'source_url':url,'fingerprint':fingerprint,
-            'message':'Publication retrieved; product/period mapping needs review','evidence':snippets}
+            'message':'Publication retrieved; product/period mapping needs review','evidence':snippets,**retrieval_meta}
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self,*args):pass
