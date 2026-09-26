@@ -26,6 +26,15 @@ class ResultContractTests(unittest.TestCase):
         self.assertEqual("review", result["status"])
         self.assertEqual([], result["records"])
 
+    def test_review_preserves_retrieval_metadata(self):
+        def review(_):
+            raise ReviewRequired("ambiguous table", {"retrieval_method": "direct_http", "fingerprint": "abc", "source_url": SOURCE["url"], "stage": "parsing"})
+        result = build_result(SOURCE, review, NOW)
+        self.assertEqual("review", result["status"])
+        self.assertEqual("direct_http", result["retrieval_method"])
+        self.assertEqual("abc", result["fingerprint"])
+        self.assertEqual("parsing", result["stage"])
+
     def test_failure_retains_empty_records(self):
         def fail(_):
             raise RuntimeError("network unavailable")

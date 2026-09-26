@@ -1,9 +1,11 @@
-import unittest, math
-from extractor import rate,ReviewRequired,allowed,parse_sarb
+import unittest, math, ssl, urllib.error
+from unittest import mock
+from extractor import rate,ReviewRequired,allowed,parse_sarb,retrieve,parse_rules,row_label_matches
 class ExtractionTests(unittest.TestCase):
  def test_midpoint(self):
   r=rate('2%–3%');self.assertAlmostEqual(r['rate'],.025);self.assertEqual(r['method'],'Calculated midpoint')
  def test_french_decimal(self):self.assertAlmostEqual(rate('1,75% - 2,00%')['rate'],.01875)
+ def test_replacement_dash_range(self):self.assertAlmostEqual(rate('1.75% � 2.75%')['rate'],.0225)
  def test_zero_is_not_missing(self):self.assertEqual(rate('0%')['rate'],0)
  def test_qualifiers_not_guessed(self):
   for v in ['Up to 3%','From 2%','Prime + 2%','Negotiable','N/A','3% - 2%','2% monthly','2.5% / 3.5%']:
@@ -13,6 +15,41 @@ class ExtractionTests(unittest.TestCase):
   self.assertTrue(allowed('https://bank.example/rates.pdf',s))
   for u in ['http://bank.example/','https://evil.example/','https://bank.example.evil.test/','https://u:p@bank.example/','https://bank.example:8080/']:
    self.assertFalse(allowed(u,s))
+
+ def test_direct_retrieval_success(self):
+  with mock.patch('extractor.retrieve_http', return_value={'body':b'<html>ok</html>','url':'https://bank.example/rates','retrieval_method':'direct_http'}), mock.patch('extractor.retrieve_jina_reader') as fallback:
+   out=retrieve('https://bank.example/rates',{'allowed_hosts':['bank.example']})
+   self.assertEqual(out['retrieval_method'],'direct_http');self.assertEqual(out['url'],'https://bank.example/rates');fallback.assert_not_called()
+ def test_fallback_after_ssl_failure(self):
+  with mock.patch('extractor.retrieve_http', side_effect=urllib.error.URLError(ssl.SSLError('certificate verify failed'))), mock.patch('extractor.retrieve_jina_reader', return_value={'body':b'| Product | Rate |\n| --- | --- |\n| A | 2% |','url':'https://bank.example/rates','retrieval_method':'jina_reader'}):
+   out=retrieve('https://bank.example/rates',{'allowed_hosts':['bank.example']})
+   self.assertEqual(out['retrieval_method'],'jina_reader');self.assertEqual(out['url'],'https://bank.example/rates')
+ def test_both_retrieval_methods_fail_for_review(self):
+  with mock.patch('extractor.retrieve_http', side_effect=urllib.error.URLError(ssl.SSLError('certificate verify failed'))), mock.patch('extractor.retrieve_jina_reader', side_effect=TimeoutError('timeout')):
+   with self.assertRaises(ReviewRequired):retrieve('https://bank.example/rates',{'allowed_hosts':['bank.example']})
+ def test_fallback_does_not_authorize_proxy_domain(self):
+  s={'allowed_hosts':['bank.example']}
+  self.assertFalse(allowed('https://r.jina.ai/https://bank.example/rates',s))
+ def test_escaped_space_row_labels_match(self):
+  self.assertTrue(row_label_matches('Save\\ As\\ You\\ Earn\\(SAYE\\)','Save As You Earn (SAYE)'))
+  self.assertTrue(row_label_matches('3\\ Months','3 Months'))
+ def test_markdown_table_rules_preserve_record_ids(self):
+  src={'id':'src-3557d0482cf2a1ce','target':'Botswana','url':'https://www.bsb.bw/rates-and-pricing/','scope':'Bank-published product rates','rules':[{'kind':'table','table_header':['Type of Deposit','Nominal Interest Rates (%)Lowest-Highest','Actual Interest Rates (%)Lowest-Highest','Minimum Opening Balance'],'row_label':'Sesigo','label_column':0,'column':1,'record_id':'4cd389f2af3c9cf0'}]}
+  raw=b'| Type of Deposit | Nominal Interest Rates (%) Lowest-Highest | Actual Interest Rates (%) Lowest-Highest | Minimum Opening Balance |\n| --- | --- | --- | --- |\n| Sesigo | 2% - 3% | 2% - 3% | P100 |'
+  records=parse_rules(src,raw)
+  self.assertEqual(records[0]['id'],'4cd389f2af3c9cf0');self.assertAlmostEqual(records[0]['rate'],.025)
+ def test_markdown_rules_do_not_verify_ambiguous_rates(self):
+  src={'id':'src-test','target':'Botswana','url':'https://www.bsb.bw/rates-and-pricing/','rules':[{'kind':'table','table_header':['Product','Rate'],'row_label':'Sesigo','label_column':0,'column':1,'record_id':'r1'}]}
+  raw=b'| Product | Rate |\n| --- | --- |\n| Sesigo | Up to 3% |'
+  with self.assertRaises(ReviewRequired):parse_rules(src,raw)
+ def test_nmb_jina_challenge_stays_review(self):
+  src={'id':'src-76e978c5da35b69b','target':'Tanzania','url':'https://www.nmbbank.co.tz/investor-relations-nmb/financial-and-regulatory-reports/disclosure?download=469:2026-minimum-disclosure-of-interest-rates-fees-and-charges','rules':[{'kind':'regex','pattern':'\\b3\\s+Months\\s+(?P<rate>\\d+(?:\\.\\d+)?%)','record_id':'9dd848740cd021b7'}]}
+  raw=b'Title: Just a moment...\n\nWarning: Target URL returned error 403: Forbidden\n\nMarkdown Content:\nEnable JavaScript and cookies to continue'
+  with self.assertRaises(ReviewRequired):parse_rules(src,raw)
+ def test_fnb_unrelated_static_table_stays_review(self):
+  src={'id':'src-5882f5135bf84b65','target':'Namibia','url':'https://www.fnbnamibia.com.na/rates-pricing/accessImmediately.html','rules':[{'kind':'table','table_header':['Amount','Nominal','Effective'],'row_label':'N\\$0\\ \\-\\ 4\\ 999','label_column':0,'column':1,'record_id':'e615d6cec91d603b'}]}
+  raw=b'<table><tr><th>Sales and Services</th><th>Tellers</th></tr><tr><td>Monday and Friday</td><td>8:30 - 16:00</td></tr></table>'
+  with self.assertRaises(ReviewRequired):parse_rules(src,raw)
  def test_units(self):
   import json
   s={'id':'cb-test','target':'Test','url':'https://bank.example/'}
