@@ -20,7 +20,10 @@ MAX_BYTES = 20 * 1024 * 1024
 CONFIG = Path(__file__).with_name('sources.json')
 
 class ReviewRequired(Exception):
-    pass
+    def __init__(self, message, metadata=None):
+        super().__init__(message)
+        self.metadata = metadata or {}
+
 
 def clean(value):
     return re.sub(r'\s+', ' ', str(value or '')).strip()
@@ -267,8 +270,13 @@ def extract(source):
     fingerprint=hashlib.sha256(raw).hexdigest()
     handler=ADAPTERS.get(source['adapter'])
     if handler:
-        records=handler(source,raw)
-        if not records:raise ReviewRequired('No usable observations')
+        try:
+            records=handler(source,raw)
+            if not records:raise ReviewRequired('No usable observations')
+        except ReviewRequired as exc:
+            metadata={'source_url':url,'fingerprint':fingerprint,'stage':'parsing',**retrieval_meta}
+            metadata.update(getattr(exc,'metadata',{}))
+            raise ReviewRequired(str(exc), metadata)
         return {'status':'ok','records':records,'source_url':url,'fingerprint':fingerprint,**retrieval_meta}
     txt=text_content(raw)
     lines=txt.splitlines() if '\n' in txt else re.split(r'(?<=[.;])\s+',txt)
@@ -294,6 +302,10 @@ class Handler(BaseHTTPRequestHandler):
             source=next((s for s in sources if s['id']==sid),None)
             if not source:return self.respond(404,{'error':'Unknown source identifier'})
             result=extract(source);result['checked_at']=dt.datetime.now(dt.timezone.utc).isoformat();self.respond(200,result)
+        except ReviewRequired as e:
+            payload={'status':'review','records':[],'message':str(e)[:500]}
+            payload.update(getattr(e,'metadata',{}))
+            self.respond(200,payload)
         except Exception as e:self.respond(200,{'status':'review','records':[],'message':str(e)[:500]})
 
 if __name__=='__main__':

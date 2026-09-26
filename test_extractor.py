@@ -42,6 +42,14 @@ class ExtractionTests(unittest.TestCase):
   src={'id':'src-test','target':'Botswana','url':'https://www.bsb.bw/rates-and-pricing/','rules':[{'kind':'table','table_header':['Product','Rate'],'row_label':'Sesigo','label_column':0,'column':1,'record_id':'r1'}]}
   raw=b'| Product | Rate |\n| --- | --- |\n| Sesigo | Up to 3% |'
   with self.assertRaises(ReviewRequired):parse_rules(src,raw)
+ def test_nmb_jina_challenge_stays_review(self):
+  src={'id':'src-76e978c5da35b69b','target':'Tanzania','url':'https://www.nmbbank.co.tz/investor-relations-nmb/financial-and-regulatory-reports/disclosure?download=469:2026-minimum-disclosure-of-interest-rates-fees-and-charges','rules':[{'kind':'regex','pattern':'\\b3\\s+Months\\s+(?P<rate>\\d+(?:\\.\\d+)?%)','record_id':'9dd848740cd021b7'}]}
+  raw=b'Title: Just a moment...\n\nWarning: Target URL returned error 403: Forbidden\n\nMarkdown Content:\nEnable JavaScript and cookies to continue'
+  with self.assertRaises(ReviewRequired):parse_rules(src,raw)
+ def test_fnb_unrelated_static_table_stays_review(self):
+  src={'id':'src-5882f5135bf84b65','target':'Namibia','url':'https://www.fnbnamibia.com.na/rates-pricing/accessImmediately.html','rules':[{'kind':'table','table_header':['Amount','Nominal','Effective'],'row_label':'N\\$0\\ \\-\\ 4\\ 999','label_column':0,'column':1,'record_id':'e615d6cec91d603b'}]}
+  raw=b'<table><tr><th>Sales and Services</th><th>Tellers</th></tr><tr><td>Monday and Friday</td><td>8:30 - 16:00</td></tr></table>'
+  with self.assertRaises(ReviewRequired):parse_rules(src,raw)
  def test_units(self):
   import json
   s={'id':'cb-test','target':'Test','url':'https://bank.example/'}
