@@ -2,3 +2,4 @@ lxml>=5.3,<7
 pypdf>=5,<7
 openpyxl>=3.1,<4
 pdfplumber>=0.11,<0.12
+crawl4ai==0.9.4

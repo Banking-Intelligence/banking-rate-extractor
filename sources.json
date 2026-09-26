@@ -799,7 +799,8 @@
         "record_id": "e615d6cec91d603b-ddbd3498"
       }
     ],
-    "update_mode": "Automatic reviewed mapping"
+    "update_mode": "Automatic reviewed mapping",
+    "retrieval_fallback": "crawl4ai"
   },
   {
     "id": "src-97dac4e1b8d5eb32",
@@ -934,7 +935,8 @@
         "record_id": "45f87da05c7e3189-d4699068"
       }
     ],
-    "update_mode": "Automatic reviewed mapping"
+    "update_mode": "Automatic reviewed mapping",
+    "retrieval_fallback": "crawl4ai"
   },
   {
     "id": "src-acba0c7ae4576af3",

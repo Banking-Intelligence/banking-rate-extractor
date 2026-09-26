@@ -1,6 +1,6 @@
 import unittest, math, ssl, urllib.error
 from unittest import mock
-from extractor import rate,ReviewRequired,allowed,parse_sarb,retrieve,parse_rules,row_label_matches
+from extractor import rate,ReviewRequired,allowed,parse_sarb,retrieve,parse_rules,row_label_matches,extract
 class ExtractionTests(unittest.TestCase):
  def test_midpoint(self):
   r=rate('2%–3%');self.assertAlmostEqual(r['rate'],.025);self.assertEqual(r['method'],'Calculated midpoint')
@@ -50,6 +50,31 @@ class ExtractionTests(unittest.TestCase):
   src={'id':'src-5882f5135bf84b65','target':'Namibia','url':'https://www.fnbnamibia.com.na/rates-pricing/accessImmediately.html','rules':[{'kind':'table','table_header':['Amount','Nominal','Effective'],'row_label':'N\\$0\\ \\-\\ 4\\ 999','label_column':0,'column':1,'record_id':'e615d6cec91d603b'}]}
   raw=b'<table><tr><th>Sales and Services</th><th>Tellers</th></tr><tr><td>Monday and Friday</td><td>8:30 - 16:00</td></tr></table>'
   with self.assertRaises(ReviewRequired):parse_rules(src,raw)
+
+ def test_crawl4ai_fallback_only_for_configured_sources(self):
+  src={'id':'src-test','target':'Namibia','url':'https://www.fnbnamibia.com.na/rates-pricing/accessImmediately.html','allowed_hosts':['www.fnbnamibia.com.na'],'adapter':'rules','rules':[{'kind':'table','table_header':['Amount','Nominal','Effective'],'row_label':'N\\$0\\ \\-\\ 4\\ 999','label_column':0,'column':1,'record_id':'r1'}]}
+  raw=b'<table><tr><th>Sales and Services</th><th>Tellers</th></tr></table>'
+  with mock.patch('extractor.fetch_publication', return_value=(src,raw,src['url'],{'retrieval_method':'direct_http'})), mock.patch('extractor.retrieve_crawl4ai') as crawl:
+   with self.assertRaises(ReviewRequired):extract(src)
+   crawl.assert_not_called()
+ def test_crawl4ai_fallback_parses_valid_rendered_table(self):
+  src={'id':'src-5882f5135bf84b65','target':'Namibia','url':'https://www.fnbnamibia.com.na/rates-pricing/accessImmediately.html','allowed_hosts':['www.fnbnamibia.com.na'],'adapter':'rules','retrieval_fallback':'crawl4ai','rules':[{'kind':'table','table_header':['Amount','Nominal','Effective'],'row_label':'N\\$0\\ \\-\\ 4\\ 999','label_column':0,'column':1,'record_id':'e615d6cec91d603b'}]}
+  raw=b'<table><tr><th>Sales and Services</th><th>Tellers</th></tr></table>'
+  rendered=b'<table><tr><th>Amount</th><th>Nominal</th><th>Effective</th></tr><tr><td>N$0 - 4 999</td><td>2.31%</td><td>2.33%</td></tr></table>'
+  with mock.patch('extractor.fetch_publication', return_value=(src,raw,src['url'],{'retrieval_method':'direct_http'})), mock.patch('extractor.retrieve_crawl4ai', return_value={'body':rendered,'url':src['url'],'retrieval_method':'crawl4ai','render_status':200}):
+   result=extract(src)
+   self.assertEqual(result['status'],'ok');self.assertEqual(result['retrieval_method'],'crawl4ai');self.assertEqual(result['source_url'],src['url']);self.assertEqual(result['records'][0]['id'],'e615d6cec91d603b')
+ def test_crawl4ai_failure_does_not_create_ok(self):
+  src={'id':'src-5882f5135bf84b65','target':'Namibia','url':'https://www.fnbnamibia.com.na/rates-pricing/accessImmediately.html','allowed_hosts':['www.fnbnamibia.com.na'],'adapter':'rules','retrieval_fallback':'crawl4ai','rules':[{'kind':'table','table_header':['Amount','Nominal','Effective'],'row_label':'N\\$0\\ \\-\\ 4\\ 999','label_column':0,'column':1,'record_id':'e615d6cec91d603b'}]}
+  raw=b'<table><tr><th>Sales and Services</th><th>Tellers</th></tr></table>'
+  with mock.patch('extractor.fetch_publication', return_value=(src,raw,src['url'],{'retrieval_method':'direct_http'})), mock.patch('extractor.retrieve_crawl4ai', side_effect=ReviewRequired('renderer failed')):
+   with self.assertRaises(ReviewRequired):extract(src)
+ def test_direct_success_does_not_invoke_crawl4ai(self):
+  src={'id':'src-5882f5135bf84b65','target':'Namibia','url':'https://www.fnbnamibia.com.na/rates-pricing/accessImmediately.html','allowed_hosts':['www.fnbnamibia.com.na'],'adapter':'rules','retrieval_fallback':'crawl4ai','rules':[{'kind':'table','table_header':['Amount','Nominal','Effective'],'row_label':'N\\$0\\ \\-\\ 4\\ 999','label_column':0,'column':1,'record_id':'e615d6cec91d603b'}]}
+  raw=b'<table><tr><th>Amount</th><th>Nominal</th><th>Effective</th></tr><tr><td>N$0 - 4 999</td><td>2.31%</td><td>2.33%</td></tr></table>'
+  with mock.patch('extractor.fetch_publication', return_value=(src,raw,src['url'],{'retrieval_method':'direct_http'})), mock.patch('extractor.retrieve_crawl4ai') as crawl:
+   result=extract(src)
+   self.assertEqual(result['status'],'ok');self.assertEqual(result['retrieval_method'],'direct_http');crawl.assert_not_called()
  def test_units(self):
   import json
   s={'id':'cb-test','target':'Test','url':'https://bank.example/'}

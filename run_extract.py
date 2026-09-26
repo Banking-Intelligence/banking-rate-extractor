@@ -36,7 +36,7 @@ def build_result(source, extract_fn=extract, now=None):
         "source_url": source["url"],
         "message": "",
     }
-    passthrough = ("status", "records", "fingerprint", "source_url", "message", "retrieval_method", "stage")
+    passthrough = ("status", "records", "fingerprint", "source_url", "message", "retrieval_method", "stage", "render_status")
     try:
         extracted = extract_fn(source)
         base.update({k: extracted[k] for k in passthrough if k in extracted})

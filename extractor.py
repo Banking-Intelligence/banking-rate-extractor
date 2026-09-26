@@ -1,4 +1,5 @@
 """Public-source extraction service. No bank credentials or customer data are used."""
+import asyncio
 import datetime as dt
 import hashlib
 import hmac
@@ -136,6 +137,47 @@ def retrieve_jina_reader(url, source):
         raise ReviewRequired('Jina Reader returned empty content')
     return {'body': body, 'url': url, 'retrieval_method': 'jina_reader'}
 
+def crawl4ai_enabled(source):
+    return source.get('retrieval_fallback') == 'crawl4ai'
+
+def retrieve_crawl4ai(url, source):
+    if not allowed(url, source):
+        raise ReviewRequired('URL is not an approved HTTPS publisher URL')
+
+    async def run_browser():
+        from crawl4ai import AsyncWebCrawler, BrowserConfig, CacheMode, CrawlerRunConfig
+        browser_config = BrowserConfig(headless=True, browser_type='chromium')
+        run_config = CrawlerRunConfig(cache_mode=CacheMode.BYPASS, wait_until='networkidle', page_timeout=90000, delay_before_return_html=3.0)
+        async with AsyncWebCrawler(config=browser_config) as crawler:
+            return await crawler.arun(url=url, config=run_config)
+
+    try:
+        result = asyncio.run(run_browser())
+    except RuntimeError as exc:
+        raise ReviewRequired('Crawl4AI could not run browser renderer: ' + str(exc)[:220])
+    except Exception as exc:
+        raise ReviewRequired('Crawl4AI retrieval failed: ' + str(exc)[:220])
+
+    if not getattr(result, 'success', False):
+        detail = getattr(result, 'error_message', '') or getattr(result, 'status_code', '') or 'unknown renderer failure'
+        raise ReviewRequired('Crawl4AI retrieval failed: ' + str(detail)[:220])
+
+    final = getattr(result, 'url', None) or url
+    if not allowed(final, source):
+        raise ReviewRequired('Crawl4AI final URL left approved publisher domains')
+
+    html_body = getattr(result, 'html', None) or getattr(result, 'cleaned_html', None) or ''
+    markdown = getattr(result, 'markdown', None) or ''
+    if not isinstance(markdown, str):
+        markdown = str(markdown)
+    combined = (html_body or '') + '\n' + markdown
+    if not clean(combined):
+        raise ReviewRequired('Crawl4AI returned empty rendered content')
+    body = combined.encode('utf-8', 'replace')
+    if len(body) > MAX_BYTES:
+        raise ReviewRequired('Rendered publication exceeds extraction size limit')
+    return {'body': body, 'url': final, 'retrieval_method': 'crawl4ai', 'render_status': getattr(result, 'status_code', '')}
+
 def retrieve(url, source):
     try:
         return retrieve_http(url, source)
@@ -259,14 +301,7 @@ def parse_rules(source,raw):
 ADAPTERS={'sarb':parse_sarb,'kenya':parse_kenya,'morocco_term':parse_morocco,'morocco_lending':parse_morocco,
           'morocco_savings':parse_morocco,'bom_key':parse_bom_key,'rules':parse_rules}
 
-def extract(source):
-    raw,url,retrieval_meta=fetch(source['url'],source);source=dict(source,url=url)
-    if source.get('publication_link_pattern'):
-        doc=html.fromstring(raw)
-        links=[urllib.parse.urljoin(url,a.get('href')) for a in doc.xpath('//a[@href]') if re.search(source['publication_link_pattern'],a.get('href')+' '+clean(a.text_content()),re.I)]
-        links=list(dict.fromkeys(links))
-        if not links:raise ReviewRequired('No matching publication on the official index')
-        raw,url,retrieval_meta=fetch(links[0],source);source['url']=url
+def parse_with_handler(source, raw, url, retrieval_meta):
     fingerprint=hashlib.sha256(raw).hexdigest()
     handler=ADAPTERS.get(source['adapter'])
     if handler:
@@ -283,6 +318,36 @@ def extract(source):
     snippets=[l[:1200] for l in lines if re.search(r'interest|deposit|lending|savings|taux',l,re.I) and re.search(r'\d',l)][:30]
     return {'status':'review','records':[],'source_url':url,'fingerprint':fingerprint,
             'message':'Publication retrieved; product/period mapping needs review','evidence':snippets,**retrieval_meta}
+
+def fetch_publication(source):
+    raw,url,retrieval_meta=fetch(source['url'],source)
+    current=dict(source,url=url)
+    if source.get('publication_link_pattern'):
+        doc=html.fromstring(raw)
+        links=[urllib.parse.urljoin(url,a.get('href')) for a in doc.xpath('//a[@href]') if re.search(source['publication_link_pattern'],a.get('href')+' '+clean(a.text_content()),re.I)]
+        links=list(dict.fromkeys(links))
+        if not links:raise ReviewRequired('No matching publication on the official index')
+        raw,url,retrieval_meta=fetch(links[0],source);current['url']=url
+    return current, raw, url, retrieval_meta
+
+def extract(source):
+    current,raw,url,retrieval_meta=fetch_publication(source)
+    try:
+        return parse_with_handler(current, raw, url, retrieval_meta)
+    except ReviewRequired as first_exc:
+        if not crawl4ai_enabled(source):
+            raise
+        try:
+            rendered=retrieve_crawl4ai(source['url'], source)
+            rendered_source=dict(source,url=rendered['url'])
+            return parse_with_handler(rendered_source, rendered['body'], rendered['url'], {'retrieval_method':'crawl4ai','render_status':rendered.get('render_status','')})
+        except ReviewRequired as crawl_exc:
+            metadata=getattr(crawl_exc,'metadata',{}) or {}
+            if not metadata:
+                metadata=getattr(first_exc,'metadata',{})
+            if metadata.get('retrieval_method') != 'crawl4ai' and 'source_url' in metadata:
+                metadata=dict(metadata, crawl4ai_message=str(crawl_exc)[:220])
+            raise ReviewRequired(str(crawl_exc), metadata)
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self,*args):pass
