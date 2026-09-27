@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "mappings": [
+    {
+      "source_id": "src-826359a55d1fbe8b",
+      "record_id": "3df58c69d7ff81bc",
+      "country": "Mauritius",
+      "bank_name": "ABC Banking Corporation",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / ABC Savings",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-011547757936daae",
+      "record_id": "828fd3846c2bd65d",
+      "country": "Mauritius",
+      "bank_name": "BCP Bank(Mauritius)",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / Savings",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-6db4c18f67255270",
+      "record_id": "6608e6e916f9b6b9",
+      "country": "Mauritius",
+      "bank_name": "AfrAsia Bank",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / Savings",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-981fab275d20596e",
+      "record_id": "bf05d7499c04c4bf",
+      "country": "Morocco",
+      "bank_name": "CFG Bank",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / Compte sur carnet",
+      "currency": "MAD",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-03f5f03cf8322000",
+      "record_id": "77c79ab8942a9190",
+      "country": "Cote Divoire",
+      "bank_name": "BICICI",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / Compte spécial épargne",
+      "currency": "XOF",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-85fc6b655cb3e5ad",
+      "record_id": "ca8ccb1104402be2",
+      "country": "Senegal",
+      "bank_name": "CBAO Groupe Attijariwafa Bank",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / Compte d’épargne simple",
+      "currency": "XOF",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-cd0ea2cb49049d0a",
+      "record_id": "c97791493abc9fdd",
+      "country": "Mauritius",
+      "bank_name": "SBM Bank (Mauritius)",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / Savings Account",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-cd0ea2cb49049d0a",
+      "record_id": "1d4a911081bbbca9",
+      "country": "Mauritius",
+      "bank_name": "SBM Bank (Mauritius)",
+      "type": "Deposit",
+      "product_tenor": "Fixed: 12 Month / MUR term deposit half-yearly payout",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-e0c3794479e44377",
+      "record_id": "50b2f0241b37b51c",
+      "country": "Mauritius",
+      "bank_name": "Bank One",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / Rs 10,000 to Rs 1,000,000",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-e0c3794479e44377",
+      "record_id": "50b2f0241b37b51c-e82cfddd",
+      "country": "Mauritius",
+      "bank_name": "Bank One",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / Rs 1,000,000 to Rs 2,000,000",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-e0c3794479e44377",
+      "record_id": "50b2f0241b37b51c-d84bf1c2",
+      "country": "Mauritius",
+      "bank_name": "Bank One",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / Above Rs 2,000,000",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-e0c3794479e44377",
+      "record_id": "0ba341b1bc65072e",
+      "country": "Mauritius",
+      "bank_name": "Bank One",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (High-Yield) / Moneytree balance above Rs 1,000,000",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-e0c3794479e44377",
+      "record_id": "0ba341b1bc65072e-dad7c69c",
+      "country": "Mauritius",
+      "bank_name": "Bank One",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (High-Yield) / POP Save",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    }
+  ]
+}

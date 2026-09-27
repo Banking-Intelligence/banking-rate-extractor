@@ -799,7 +799,8 @@
         "record_id": "e615d6cec91d603b-ddbd3498"
       }
     ],
-    "update_mode": "Automatic reviewed mapping"
+    "update_mode": "Automatic reviewed mapping",
+    "retrieval_fallback": "crawl4ai"
   },
   {
     "id": "src-97dac4e1b8d5eb32",
@@ -934,7 +935,8 @@
         "record_id": "45f87da05c7e3189-d4699068"
       }
     ],
-    "update_mode": "Automatic reviewed mapping"
+    "update_mode": "Automatic reviewed mapping",
+    "retrieval_fallback": "crawl4ai"
   },
   {
     "id": "src-acba0c7ae4576af3",
@@ -1065,11 +1067,36 @@
       "www.bankone.mu",
       "bankone.mu"
     ],
-    "adapter": "review",
+    "adapter": "rules",
     "enabled": true,
     "scope": "Bank-published product rates",
-    "rules": [],
-    "update_mode": "Retrieve and flag for review"
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "Savings\\s*(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\s+on\\s+balance\\s+between\\s+Rs\\s*10,000\\s+and\\s+Rs\\s*1,000,000",
+        "record_id": "50b2f0241b37b51c"
+      },
+      {
+        "kind": "regex",
+        "pattern": "on\\s+balance\\s+between\\s+Rs\\s*10,000\\s+and\\s+Rs\\s*1,000,000\\s+(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\s+on\\s+balance\\s+between\\s+Rs\\s*1,000,000\\s+and\\s+Rs\\s*2,000,000", "record_id": "50b2f0241b37b51c-e82cfddd"
+      },
+      {
+        "kind": "regex",
+        "pattern": "on\\s+balance\\s+between\\s+Rs\\s*1,000,000\\s+and\\s+Rs\\s*2,000,000\\s+(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\s+on\\s+balance\\s+above\\s+Rs\\s*2,000,000"
+        ,"record_id": "50b2f0241b37b51c-d84bf1c2"
+      },
+      {
+        "kind": "regex",
+        "pattern": "Moneytree\\s*(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\s*\\(BSR\\s*\\+\\s*0\\.05%\\s+on\\s+balance\\s+on\\s+excess\\s+of\\s+Rs1m\\)",
+        "record_id": "0ba341b1bc65072e"
+      },
+      {
+        "kind": "regex",
+        "pattern": "POP\\s+Save\\s*(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?",
+        "record_id": "0ba341b1bc65072e-dad7c69c"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
   },
   {
     "id": "src-b0673db44f87164a",
@@ -1111,11 +1138,26 @@
       "abcbanking.mu",
       "www.abcbanking.mu"
     ],
-    "adapter": "review",
+    "adapter": "rules",
     "enabled": true,
     "scope": "Bank-published product rates",
-    "rules": [],
-    "update_mode": "Retrieve and flag for review"
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "",
+          "Individuals",
+          "Corporate",
+          "Others"
+        ],
+        "row_label": "ABC\\ Savings",
+        "label_column": 0,
+        "column": 1,
+        "value_pattern": "(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\s*payable\\s+half\\s+yearly",
+        "record_id": "3df58c69d7ff81bc"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
   },
   {
     "id": "src-6db4c18f67255270",
@@ -1128,11 +1170,26 @@
       "afrasiabank.com",
       "www.afrasiabank.com"
     ],
-    "adapter": "review",
+    "adapter": "rules",
     "enabled": true,
     "scope": "Bank-published product rates",
-    "rules": [],
-    "update_mode": "Retrieve and flag for review"
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "A) Interest Rates",
+          "Individuals",
+          "Corporates",
+          "Others"
+        ],
+        "row_label": "Savings",
+        "label_column": 0,
+        "column": 1,
+        "value_pattern": "(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?",
+        "record_id": "6608e6e916f9b6b9"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
   },
   {
     "id": "src-011547757936daae",
@@ -1145,11 +1202,26 @@
       "bcpbank.mu",
       "www.bcpbank.mu"
     ],
-    "adapter": "review",
+    "adapter": "rules",
     "enabled": true,
     "scope": "Bank-published product rates",
-    "rules": [],
-    "update_mode": "Retrieve and flag for review"
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "",
+          "Individuals",
+          "Corporates",
+          "Self-employed / SMEs"
+        ],
+        "row_label": "Savings",
+        "label_column": 0,
+        "column": 1,
+        "value_pattern": "(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "828fd3846c2bd65d"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
   },
   {
     "id": "src-cd0ea2cb49049d0a",
@@ -1162,11 +1234,34 @@
       "banking.sbmgroup.mu",
       "www.banking.sbmgroup.mu"
     ],
-    "adapter": "review",
+    "adapter": "rules",
     "enabled": true,
     "scope": "Bank-published product rates",
-    "rules": [],
-    "update_mode": "Retrieve and flag for review"
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "INTEREST RATES ON SAVINGS/CURRENT ACCOUNTS – EFFECTIVE 05 JUNE 2026"
+        ],
+        "row_label": "Savings\\ Account",
+        "label_column": 0,
+        "column": 1,
+        "value_pattern": "(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?",
+        "record_id": "c97791493abc9fdd"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "INTEREST RATES ON MUR TERM DEPOSITS – EFFECTIVE 05 JUNE 2026 (Applicable for individual customers only)"
+        ],
+        "row_label": "12\\ Months",
+        "label_column": 0,
+        "column": 1,
+        "value_pattern": ".*\\((?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\)",
+        "record_id": "1d4a911081bbbca9"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
   },
   {
     "id": "src-fa52f406fe283f73",
@@ -1268,11 +1363,17 @@
       "bicici.ci",
       "www.bicici.ci"
     ],
-    "adapter": "review",
+    "adapter": "rules",
     "enabled": true,
     "scope": "Bank-published product rates",
-    "rules": [],
-    "update_mode": "Retrieve and flag for review"
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "Un\\s+taux\\s+r\\S+mun\\S+rateur\\s+de\\s+(?P<rate>\\d+(?:[,.]\\d+)?\\s*%)\\s+par\\s+an\\s+jusqu.{0,80}?FCFA\\s+de\\s+d\\S+p\\S+t",
+        "record_id": "77c79ab8942a9190"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
   },
   {
     "id": "src-5a9648f44b55ed1a",
@@ -1302,11 +1403,17 @@
       "www.cbaobank.com",
       "cbaobank.com"
     ],
-    "adapter": "review",
+    "adapter": "rules",
     "enabled": true,
     "scope": "Bank-published product rates",
-    "rules": [],
-    "update_mode": "Retrieve and flag for review"
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "2\\.1\\.8\\.4\\s+Int\\S+r\\S+ts\\s+cr\\S+diteurs\\s+pour\\s+les\\s+comptes\\s+d[\\S\\s]{0,20}?pargne\\s+simple\\s+(?P<rate>\\d+(?:[,.]\\d+)?\\s*%)\\s+l[\\S\\s]{0,5}?an",
+        "record_id": "ca8ccb1104402be2"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
   },
   {
     "id": "src-ab176418dc9aae1b",
@@ -1387,11 +1494,17 @@
       "www.cfgbank.com",
       "cfgbank.com"
     ],
-    "adapter": "review",
+    "adapter": "rules",
     "enabled": true,
     "scope": "Bank-published product rates",
-    "rules": [],
-    "update_mode": "Retrieve and flag for review"
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "Taux\\s+minimum\\s+.{0,40}?\\s+en\\s+vigueur\\s+de\\s+(?P<rate>\\d+(?:[,.]\\d+)?\\s*%)\\s+brut",
+        "record_id": "bf05d7499c04c4bf"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
   },
   {
     "id": "src-6fda9bec19d1a868",

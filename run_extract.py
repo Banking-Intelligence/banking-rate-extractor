@@ -36,11 +36,13 @@ def build_result(source, extract_fn=extract, now=None):
         "source_url": source["url"],
         "message": "",
     }
+    passthrough = ("status", "records", "fingerprint", "source_url", "message", "retrieval_method", "stage", "render_status")
     try:
         extracted = extract_fn(source)
-        base.update({k: extracted.get(k, base[k]) for k in ("status", "records", "fingerprint", "source_url", "message")})
+        base.update({k: extracted[k] for k in passthrough if k in extracted})
     except ReviewRequired as exc:
         base.update(status="review", message=str(exc)[:500])
+        base.update(getattr(exc, "metadata", {}))
     except Exception as exc:
         base.update(status="failed", message=str(exc)[:500])
     return base
