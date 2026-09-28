@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "source_id": "src-981fab275d20596e",
+  "checked_at": "2026-09-28T08:54:50.387432+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "bf05d7499c04c4bf",
+      "target": "Morocco",
+      "rate": 0.0161,
+      "low": 0.0161,
+      "high": 0.0161,
+      "method": "Published rate",
+      "raw": "1.61 %",
+      "source_url": "https://www.cfgbank.com/particuliers/notre-offre/epargne/le-compte-sur-carnet/",
+      "evidence": "Taux minimum réglementaire en vigueur de 1,61 % brut",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-981fab275d20596e",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "01df301edea6bbc5b64dae2a8943f92b0eaa5b96d00ce87f5c35940f186f5437",
+  "source_url": "https://www.cfgbank.com/particuliers/notre-offre/epargne/le-compte-sur-carnet/",
+  "message": "",
+  "retrieval_method": "direct_http"
+}

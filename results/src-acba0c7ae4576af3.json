@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-acba0c7ae4576af3",
-  "checked_at": "2026-09-21T08:07:38.863206+00:00",
+  "checked_at": "2026-09-28T08:54:23.536179+00:00",
   "status": "ok",
   "records": [
     {
@@ -55,5 +55,6 @@
   ],
   "fingerprint": "6bb058440c4f2642c32a67d3b6d798112d574cf9626cb1d567149fadd8fb3f32",
   "source_url": "https://crdbbank.co.tz/storage/app/media/Forms%20and%20Guides/Rates/minimum-disclosure-a4-eng-aug-10.pdf",
-  "message": ""
+  "message": "",
+  "retrieval_method": "direct_http"
 }

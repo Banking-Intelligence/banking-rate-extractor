@@ -1,10 +1,13 @@
 {
   "schema_version": 1,
   "source_id": "src-5882f5135bf84b65",
-  "checked_at": "2026-09-21T08:07:32.520255+00:00",
+  "checked_at": "2026-09-28T08:53:53.190513+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "",
+  "fingerprint": "da905435d41382e9c0476e9536c42c9c36d0ffbfd8ce198970a38edb5923ee51",
   "source_url": "https://www.fnbnamibia.com.na/rates-pricing/accessImmediately.html",
-  "message": "Product row is missing or ambiguous: N\\$0\\ \\-\\ 4\\ 999"
+  "message": "Product row is missing or ambiguous: N\\$0\\ \\-\\ 4\\ 999",
+  "stage": "parsing",
+  "retrieval_method": "crawl4ai",
+  "render_status": 200
 }

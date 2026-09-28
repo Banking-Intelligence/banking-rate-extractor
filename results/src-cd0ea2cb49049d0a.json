@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "source_id": "src-cd0ea2cb49049d0a",
+  "checked_at": "2026-09-28T08:54:36.470651+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "c97791493abc9fdd",
+      "target": "Mauritius",
+      "rate": 0.0335,
+      "low": 0.0335,
+      "high": 0.0335,
+      "method": "Published rate",
+      "raw": "3.35%",
+      "source_url": "https://banking.sbmgroup.mu/individual/interest-rates",
+      "evidence": "Savings Account | 3.35% p.a.",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-cd0ea2cb49049d0a",
+      "effective_date": "",
+      "published_date": ""
+    },
+    {
+      "id": "1d4a911081bbbca9",
+      "target": "Mauritius",
+      "rate": 0.0355,
+      "low": 0.0355,
+      "high": 0.0355,
+      "method": "Published rate",
+      "raw": "3.55%",
+      "source_url": "https://banking.sbmgroup.mu/individual/interest-rates",
+      "evidence": "12 Months | 0.20% over Savings Rate presently being 3.35% p.a (3.55% p.a) | Half Yearly",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-cd0ea2cb49049d0a",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "30fac727ad9336673ddff946f343f12c6fa5f7399cf32cb11b497cbe0cc6301f",
+  "source_url": "https://banking.sbmgroup.mu/individual/interest-rates",
+  "message": "",
+  "retrieval_method": "direct_http"
+}

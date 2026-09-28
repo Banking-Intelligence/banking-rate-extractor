@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "source_id": "src-6db4c18f67255270",
+  "checked_at": "2026-09-28T08:54:32.558541+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "6608e6e916f9b6b9",
+      "target": "Mauritius",
+      "rate": 0.0365,
+      "low": 0.0365,
+      "high": 0.0365,
+      "method": "Published rate",
+      "raw": "3.65%",
+      "source_url": "https://www.afrasiabank.com/en/about/rates",
+      "evidence": "Savings | 3.65% p.a | n/a | n/a",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-6db4c18f67255270",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "9192180bdca95314f65b618a8130de904b64b074c8de0017c5576cc9aa5e2669",
+  "source_url": "https://www.afrasiabank.com/en/about/rates",
+  "message": "",
+  "retrieval_method": "direct_http"
+}

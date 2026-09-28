@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-fa52f406fe283f73",
-  "checked_at": "2026-09-21T08:07:48.160789+00:00",
+  "checked_at": "2026-09-28T08:54:40.014075+00:00",
   "status": "ok",
   "records": [
     {
@@ -119,5 +119,6 @@
   ],
   "fingerprint": "56b5789ad7733535a9213db74a7e91f24326a5dd1602143ef7b6ca43e41589c3",
   "source_url": "https://www.absa.sc/applicable-interest-rates/",
-  "message": ""
+  "message": "",
+  "retrieval_method": "direct_http"
 }

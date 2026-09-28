@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "source_id": "src-826359a55d1fbe8b",
+  "checked_at": "2026-09-28T08:54:31.463896+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "3df58c69d7ff81bc",
+      "target": "Mauritius",
+      "rate": 0.0315,
+      "low": 0.0315,
+      "high": 0.0315,
+      "method": "Published rate",
+      "raw": "3.15%",
+      "source_url": "https://abcbanking.mu/fees-and-charges/",
+      "evidence": "ABC Savings | 3.15% p.a payable half yearly | N/A | N/A",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-826359a55d1fbe8b",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "4eaae6b7d114f75f9653bcd68293b6ef0a52828150cd659130db232fdd8e3f27",
+  "source_url": "https://abcbanking.mu/fees-and-charges/",
+  "message": "",
+  "retrieval_method": "direct_http"
+}

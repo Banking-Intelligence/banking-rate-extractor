@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "source_id": "src-85fc6b655cb3e5ad",
+  "checked_at": "2026-09-28T08:54:45.228172+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "ca8ccb1104402be2",
+      "target": "Senegal",
+      "rate": 0.035,
+      "low": 0.035,
+      "high": 0.035,
+      "method": "Published rate",
+      "raw": "3.5%",
+      "source_url": "https://cbaobank.com/sites/default/files/CONDITIONS%20GENERALES%20CBAO%20SN%20Juin%202026.pdf",
+      "evidence": "2.1.8.4 Intérêts créditeurs pour les comptes d'épargne simple 3,5% l'an",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "src-85fc6b655cb3e5ad",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "1e2ee9f7feb3206f6cbd8fd23941f30b186b6e304800c6763485b717855dd69e",
+  "source_url": "https://cbaobank.com/sites/default/files/CONDITIONS%20GENERALES%20CBAO%20SN%20Juin%202026.pdf",
+  "message": "",
+  "retrieval_method": "direct_http"
+}
