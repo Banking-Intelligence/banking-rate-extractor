@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-3bdc6fa80e5d534e",
-  "checked_at": "2026-09-27T06:59:42.059314+00:00",
+  "checked_at": "2026-09-28T07:29:14.348850+00:00",
   "status": "ok",
   "records": [
     {
@@ -319,5 +319,6 @@
   ],
   "fingerprint": "2c1c71a18f737cad2e40d21880022b5e708c4de322d154bd63d2e41f357be622",
   "source_url": "https://custom.resbank.co.za/SarbWebApi/WebIndicators/CurrentMarketRates",
-  "message": ""
+  "message": "",
+  "retrieval_method": "direct_http"
 }

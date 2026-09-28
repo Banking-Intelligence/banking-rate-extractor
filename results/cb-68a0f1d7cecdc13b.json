@@ -1,10 +1,11 @@
 {
   "schema_version": 1,
   "source_id": "cb-68a0f1d7cecdc13b",
-  "checked_at": "2026-09-27T06:59:54.588107+00:00",
+  "checked_at": "2026-09-28T07:30:07.576371+00:00",
   "status": "review",
   "records": [],
   "fingerprint": "8cbcef464a943377feb033cb8717df7482733e7de716ee89b960e20ae86dd3b5",
   "source_url": "https://bou.or.ug/uploads/Commercial_Banks_Interest_Rates_and_Bank_Charges_as_at_01_April_2026_25716d34bb.pdf",
-  "message": "Publication retrieved; product/period mapping needs review"
+  "message": "Publication retrieved; product/period mapping needs review",
+  "retrieval_method": "direct_http"
 }
