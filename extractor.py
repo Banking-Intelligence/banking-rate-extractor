@@ -274,6 +274,14 @@ def parse_central_rules(source,raw):
         evidence=''; value_text=''
         if rule['kind']=='regex':
             matches=list(re.finditer(rule['pattern'],text,re.I|re.S))
+            if matches:
+                unique={}
+                value_group=rule.get('value_group','value')
+                for match in matches:
+                    value_key=clean(match.group(value_group)) if match.groupdict().get(value_group) else clean(match.group(0))
+                    evidence_key=re.sub(r'\s+',' ',match.group(0)).strip()
+                    unique[(value_key,evidence_key)]=match
+                matches=list(unique.values())
             if len(matches)!=1:raise ReviewRequired('Central-bank metric is missing or ambiguous: '+metric)
             match=matches[0]
             value_text=match.group(rule.get('value_group','value'))

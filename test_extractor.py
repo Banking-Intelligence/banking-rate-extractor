@@ -193,6 +193,11 @@ class ExtractionTests(unittest.TestCase):
   raw=b'<h5>Monetary Policy Rate : <a>1.75%</a></h5>'
   records=parse_central_rules(src,raw)
   self.assertEqual(records[0]['id'],'cb-seychelles:mpr');self.assertEqual(records[0]['target'],'Seychelles CB data');self.assertAlmostEqual(records[0]['value'],.0175);self.assertEqual(records[0]['source_url'],src['url'])
+ def test_namibia_repo_sentence_avoids_duplicate_headline(self):
+  src={'id':'cb-namibia','target':'Namibia CB data','url':'https://www.bon.com.na/','rules':[{'kind':'regex','key':'repo','metric':'Repo Rate','pattern':r'decided\s+to\s+maintain\s+the\s+Repo\s+rate\s+at\s+(?P<value>\d+(?:\.\d+)?)\s*percent','unit':'%'}]}
+  raw=b'Repo Rate Maintained at 6.75 Percent. The MPC unanimously decided to maintain the Repo rate at 6.75 percent. The MPC unanimously decided to maintain the Repo rate at 6.75 percent.'
+  records=parse_central_rules(src,raw)
+  self.assertEqual(records[0]['id'],'cb-namibia:repo');self.assertAlmostEqual(records[0]['value'],.0675)
  def test_central_rules_reject_duplicate_or_qualified_values(self):
   src={'id':'cb-test','target':'Test CB data','url':'https://bank.example/','rules':[{'kind':'regex','key':'policy','metric':'Policy Rate','pattern':r'Policy\s+Rate\s+(?P<value>\d+(?:\.\d+)?%)'}]}
   with self.assertRaises(ReviewRequired):parse_central_rules(src,b'Policy Rate 5% Policy Rate 6%')

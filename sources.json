@@ -4959,9 +4959,9 @@
         "kind": "regex",
         "key": "repo",
         "metric": "Repo Rate",
-        "pattern": "Repo\\s+Rate\\s+Maintained\\s+at\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*Percent",
+        "pattern": "decided\\s+to\\s+maintain\\s+the\\s+Repo\\s+rate\\s+at\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*percent",
         "unit": "%",
-        "notes": "Home page monetary-policy headline"
+        "notes": "Official Bank of Namibia monetary-policy homepage text"
       }
     ]
   },
