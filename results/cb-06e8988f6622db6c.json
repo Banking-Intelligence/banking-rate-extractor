@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "source_id": "cb-06e8988f6622db6c",
-  "checked_at": "2026-09-30T07:15:25.776599+00:00",
+  "checked_at": "2026-09-30T08:58:27.251553+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "91e4072d224d129181df524d49d64aa4eb3a8153879009284c210b8538dc8a71",
+  "fingerprint": "d1b20e8f42f893387352b4567e87dcd443186ae26011df303f337279f5331189",
   "source_url": "https://www.bog.gov.gh/wp-content/uploads/2026/07/Summary-of-Economic-and-Financial-Data-July-2026-1.pdf",
   "message": "Publication retrieved; product/period mapping needs review",
-  "retrieval_method": "jina_reader"
+  "retrieval_method": "direct_http"
 }
