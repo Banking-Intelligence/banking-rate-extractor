@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-09-29T07:24:57.670503+00:00",
+  "checked_at": "2026-09-30T07:15:19.480783+00:00",
   "status": "ok",
   "records": [
     {
@@ -2072,6 +2072,19 @@
       "status": "Verified official source"
     },
     {
+      "id": "cb-a3dcc512fefaad55:ce6297e50daf2108",
+      "target": "Kenyas scrapped CB data",
+      "metric": "Asset Finance",
+      "value": 0.277506,
+      "unit": "%",
+      "period": "2026-09-29",
+      "bank": "SMEP MICROFINANCE BANK",
+      "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
+      "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
+      "notes": "KESONIA + Premium; indicative average, not a customer quote",
+      "status": "Verified official source"
+    },
+    {
       "id": "cb-a3dcc512fefaad55:8e90c5012c8a129a",
       "target": "Kenyas scrapped CB data",
       "metric": "Asset Finance",
@@ -2345,7 +2358,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "46455db57d19cd226ee675f16b594d9f0cc2367ec72694f0ced053e11f9913bb",
+  "fingerprint": "52cbe407124830e2ed1f0a5c25fb59230515003b073a534c204cbe92960fec4d",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": "",
   "retrieval_method": "direct_http"
