@@ -1,25 +1,11 @@
 {
   "schema_version": 1,
   "source_id": "cb-mauritius",
-  "checked_at": "2026-09-30T08:58:51.494233+00:00",
-  "status": "ok",
-  "records": [
-    {
-      "id": "cb-mauritius:key",
-      "target": "Mauritius CB Data",
-      "metric": "Key Rate",
-      "value": 0.0475,
-      "unit": "%",
-      "period": "12 August 2026",
-      "bank": "",
-      "scope": "Central bank policy rate",
-      "source_url": "https://www.bom.mu/repo-rate",
-      "notes": "",
-      "status": "Verified official source"
-    }
-  ],
-  "fingerprint": "48ebf93f3df688adc7ff9d62588df7ce0929cedc024af0a8e4c8c47ac06727d5",
+  "checked_at": "2026-09-30T09:10:06.239967+00:00",
+  "status": "review",
+  "records": [],
+  "fingerprint": "dcc0c3371bc53493ff705759052f1d506f4d85ef5d794ce355fbdf61404fa015",
   "source_url": "https://www.bom.mu/repo-rate",
-  "message": "",
+  "message": "Publication retrieved; product/period mapping needs review",
   "retrieval_method": "direct_http"
 }

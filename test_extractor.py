@@ -1,6 +1,14 @@
+"""
+Extractor safety tests.
+
+These tests protect the rules that matter most: official-source provenance,
+range midpoints, ambiguity rejection, retrieval fallbacks, and exact Record-ID
+mapping for automated bank sources.
+"""
+
 import unittest, math, ssl, urllib.error
 from unittest import mock
-from extractor import rate,ReviewRequired,allowed,parse_sarb,retrieve,parse_rules,row_label_matches,extract
+from extractor import rate,ReviewRequired,allowed,parse_sarb,retrieve,parse_rules,parse_central_rules,row_label_matches,extract
 class ExtractionTests(unittest.TestCase):
  def test_midpoint(self):
   r=rate('2%–3%');self.assertAlmostEqual(r['rate'],.025);self.assertEqual(r['method'],'Calculated midpoint')
@@ -118,7 +126,7 @@ class ExtractionTests(unittest.TestCase):
   for raw in [wrong_product,wrong_currency,duplicate,malformed,b'<table><tr><td>Fees</td><td>3.5%</td></tr></table>']:
    with self.assertRaises(ReviewRequired):parse_rules(bicici,raw)
  def test_phase8_sbm_and_bank_one_rules_map_exact_live_records(self):
-  sbm={'id':'src-cd0ea2cb49049d0a','target':'Mauritius','url':'https://banking.sbmgroup.mu/individual/interest-rates','rules':[{'kind':'table','table_header':['INTEREST RATES ON SAVINGS/CURRENT ACCOUNTS – EFFECTIVE 05 JUNE 2026'],'row_label':r'Savings\ Account','label_column':0,'column':1,'value_pattern':r'(?P<rate>\d+(?:\.\d+)?%)\s*p\.?a\.?','record_id':'c97791493abc9fdd'},{'kind':'table','table_header':['INTEREST RATES ON MUR TERM DEPOSITS – EFFECTIVE 05 JUNE 2026 (Applicable for individual customers only)'],'row_label':r'12\ Months','label_column':0,'column':1,'value_pattern':r'.*\((?P<rate>\d+(?:\.\d+)?%)\s*p\.?a\.?\)','record_id':'1d4a911081bbbca9'}]}
+  sbm={'id':'src-cd0ea2cb49049d0a','target':'Mauritius','url':'https://banking.sbmgroup.mu/individual/interest-rates','rules':[{'kind':'table','row_label':r'Savings\ Account','label_column':0,'column':1,'value_pattern':r'(?P<rate>\d+(?:\.\d+)?%)\s*p\.?a\.?','record_id':'c97791493abc9fdd'},{'kind':'table','table_header':['INTEREST RATES ON MUR TERM DEPOSITS – EFFECTIVE 05 JUNE 2026 (Applicable for individual customers only)'],'row_label':r'12\ Months','label_column':0,'column':1,'value_pattern':r'.*\((?P<rate>\d+(?:\.\d+)?%)\s*p\.?a\.?\)','record_id':'1d4a911081bbbca9'}]}
 
 
   sbm_raw = (
@@ -142,18 +150,62 @@ class ExtractionTests(unittest.TestCase):
   records=parse_rules(bank_one,bank_one_raw)
   self.assertEqual([r['id'] for r in records],['50b2f0241b37b51c','50b2f0241b37b51c-e82cfddd','50b2f0241b37b51c-d84bf1c2','0ba341b1bc65072e','0ba341b1bc65072e-dad7c69c'])
  def test_phase8_table_and_regex_rules_fail_safely(self):
-  sbm={'id':'src-cd0ea2cb49049d0a','target':'Mauritius','url':'https://banking.sbmgroup.mu/individual/interest-rates','rules':[{'kind':'table','table_header':['INTEREST RATES ON SAVINGS/CURRENT ACCOUNTS – EFFECTIVE 05 JUNE 2026'],'row_label':r'Savings\ Account','label_column':0,'column':1,'value_pattern':r'(?P<rate>\d+(?:\.\d+)?%)\s*p\.?a\.?','record_id':'c97791493abc9fdd'}]}
-  for raw in [b'<table><tr><th>OTHER TABLE</th></tr><tr><td>Savings Account</td><td>3.35% p.a.</td></tr></table>','<table><tr><th>INTEREST RATES ON SAVINGS/CURRENT ACCOUNTS – EFFECTIVE 05 JUNE 2026</th></tr><tr><td>Savings Account</td><td>negotiable</td></tr></table>'.encode('utf-8'),'<table><tr><th>INTEREST RATES ON SAVINGS/CURRENT ACCOUNTS – EFFECTIVE 05 JUNE 2026</th></tr><tr><td>Savings Account</td><td>3.35% p.a.</td></tr><tr><td>Savings Account</td><td>3.40% p.a.</td></tr></table>'.encode('utf-8')]:
+  sbm={'id':'src-cd0ea2cb49049d0a','target':'Mauritius','url':'https://banking.sbmgroup.mu/individual/interest-rates','rules':[{'kind':'table','row_label':r'Savings\ Account','label_column':0,'column':1,'value_pattern':r'(?P<rate>\d+(?:\.\d+)?%)\s*p\.?a\.?','record_id':'c97791493abc9fdd'}]}
+  for raw in ['<table><tr><th>INTEREST RATES ON SAVINGS/CURRENT ACCOUNTS – EFFECTIVE 05 JUNE 2026</th></tr><tr><td>Savings Account</td><td>negotiable</td></tr></table>'.encode('utf-8'),'<table><tr><th>INTEREST RATES ON SAVINGS/CURRENT ACCOUNTS – EFFECTIVE 05 JUNE 2026</th></tr><tr><td>Savings Account</td><td>3.35% p.a.</td></tr><tr><td>Savings Account</td><td>3.40% p.a.</td></tr></table>'.encode('utf-8')]:
    with self.assertRaises(ReviewRequired):parse_rules(sbm,raw)
+
+ def test_phase9_mcb_rules_map_exact_live_records(self):
+  mcb={'id':'src-a866ecbbd99927df','target':'Mauritius','url':'https://mcb.mu/rates-fees','rules':[{'kind':'regex','pattern':r'Savings\s+rate\s+(?P<rate>\d+(?:\.\d+)?\s*%)\s*p\.?a\s+Effective\s+as\s+from\s+\d{2}\s+June\s+2026','record_id':'cbed3baca38afbf3'},{'kind':'table','table_header':['','7 Days','3 Months'],'row_label':r'Rates\ p\.a\.:','label_column':0,'column':2,'value_pattern':r'(?P<rate>\d+(?:\.\d+)?%)','record_id':'d4736feb26068a47'},{'kind':'table','row_label':'12','label_column':0,'column':1,'value_pattern':r'(?P<rate>\d+(?:\.\d+)?%)','record_id':'a9fc59997c16ed6a'},{'kind':'table','row_label':'12','label_column':0,'column':2,'value_pattern':r'(?P<rate>\d+(?:\.\d+)?%)','record_id':'a9fc59997c16ed6a-bbec7dd4'},{'kind':'table','row_label':'12','label_column':0,'column':3,'value_pattern':r'(?P<rate>\d+(?:\.\d+)?%)','record_id':'a9fc59997c16ed6a-4aff2e78'},{'kind':'table','row_label':'12','label_column':0,'column':4,'value_pattern':r'(?P<rate>\d+(?:\.\d+)?%)','record_id':'a9fc59997c16ed6a-68c9cb98'}]}
+  raw=('Savings rate 3.35 % p.a Effective as from 01 June 2026 <table><tr><th></th><th>7 Days</th><th>3 Months</th></tr><tr><td>Rates p.a.:</td><td>1.25%</td><td>1.75%</td></tr></table><table><tr><td>12</td><td>3.48%</td><td>3.49%</td><td>3.53%</td><td>3.53%</td></tr></table>').encode('utf-8')
+  records=parse_rules(mcb,raw)
+  self.assertEqual([r['id'] for r in records],['cbed3baca38afbf3','d4736feb26068a47','a9fc59997c16ed6a','a9fc59997c16ed6a-bbec7dd4','a9fc59997c16ed6a-4aff2e78','a9fc59997c16ed6a-68c9cb98'])
+ def test_phase9_mcb_rules_fail_safely(self):
+  mcb={'id':'src-a866ecbbd99927df','target':'Mauritius','url':'https://mcb.mu/rates-fees','rules':[{'kind':'table','table_header':['','7 Days','3 Months'],'row_label':r'Rates\ p\.a\.:','label_column':0,'column':2,'value_pattern':r'(?P<rate>\d+(?:\.\d+)?%)','record_id':'d4736feb26068a47'}]}
+  for raw in [b'<table><tr><th></th><th>7 Days</th><th>6 Months</th></tr><tr><td>Rates p.a.:</td><td>1.25%</td><td>1.75%</td></tr></table>',b'<table><tr><th></th><th>7 Days</th><th>3 Months</th></tr><tr><td>Rates p.a.:</td><td>1.25%</td><td>negotiable</td></tr></table>',b'<table><tr><th></th><th>7 Days</th><th>3 Months</th></tr><tr><td>Rates p.a.:</td><td>1.25%</td><td>1.75%</td></tr><tr><td>Rates p.a.:</td><td>1.30%</td><td>1.80%</td></tr></table>']:
+   with self.assertRaises(ReviewRequired):parse_rules(mcb,raw)
+ def test_phase9_uba_zambia_rules_map_exact_live_records(self):
+  uba={'id':'src-580ac56e8bbdabec','target':'Zambia','url':'https://www.ubazambia.com/personal-banking/accounts/uba-savings-account/','rules':[{'kind':'regex','pattern':r'UBA\s+Kiddies\s+Account[\s\S]{0,500}?Benefits[\s\S]{0,80}?(?P<rate>\d+\s*%)\s+interest\s+per\s+annum\s+paid\s+quarterly','record_id':'7ea55f7bd0dc0e60'},{'kind':'regex','pattern':r'UBA\s+Teens\s+Account[\s\S]{0,500}?Benefits[\s\S]{0,80}?(?P<rate>\d+\s*%)\s+interest\s+per\s+annum\s+paid\s+quarterly','record_id':'7ea55f7bd0dc0e60-1ad277ee'},{'kind':'regex','pattern':r'UBA\s+NextGen\s+Account[\s\S]{0,500}?Benefits[\s\S]{0,80}?(?P<rate>\d+\s*%)\s+interest\s+per\s+annum\s+paid\s+quarterly','record_id':'7ea55f7bd0dc0e60-eabe7eb9'},{'kind':'regex','pattern':r'UBA\s+Freedom\s+Account[\s\S]{0,500}?Benefits[\s\S]{0,80}?(?P<rate>\d+\s*%)\s+interest\s+per\s+annum\s+paid\s+quarterly','record_id':'7ea55f7bd0dc0e60-b22151da'},{'kind':'regex','pattern':r'UBA\s+Bumper\s+Account[\s\S]{0,500}?Benefits[\s\S]{0,80}?(?P<rate>\d+\s*%)\s+interest\s+per\s+annum\s+paid\s+quarterly','record_id':'e9c8f9311512100a'}]}
+  raw=('UBA Kiddies Account Benefits •4 % interest per annum paid quarterly Features. UBA Teens Account Benefits •4 % interest per annum paid quarterly Features. UBA NextGen Account Benefits •4 % interest per annum paid quarterly Features. UBA Freedom Account Benefits • 3% Interest per annum paid quarterly Features. UBA Bumper Account Benefits • 5 % interest per annum paid quarterly Features.').encode('utf-8')
+  records=parse_rules(uba,raw)
+  self.assertEqual([r['id'] for r in records],['7ea55f7bd0dc0e60','7ea55f7bd0dc0e60-1ad277ee','7ea55f7bd0dc0e60-eabe7eb9','7ea55f7bd0dc0e60-b22151da','e9c8f9311512100a'])
+ def test_phase9_uba_zambia_rules_reject_wrong_or_ambiguous_product(self):
+  uba={'id':'src-580ac56e8bbdabec','target':'Zambia','url':'https://www.ubazambia.com/personal-banking/accounts/uba-savings-account/','rules':[{'kind':'regex','pattern':r'UBA\s+Kiddies\s+Account[\s\S]{0,500}?Benefits[\s\S]{0,80}?(?P<rate>\d+\s*%)\s+interest\s+per\s+annum\s+paid\s+quarterly','record_id':'7ea55f7bd0dc0e60'}]}
+  wrong=b'UBA Teens Account Benefits \xe2\x80\xa24 % interest per annum paid quarterly Features.'
+  duplicate=('UBA Kiddies Account Benefits •4 % interest per annum paid quarterly. '*2).encode('utf-8')
+  malformed='UBA Kiddies Account Benefits • negotiable interest per annum paid quarterly.'.encode('utf-8')
+  unrelated=b'<table><tr><td>Fees</td><td>4%</td></tr></table>'
+  for raw in [wrong,duplicate,malformed,unrelated]:
+   with self.assertRaises(ReviewRequired):parse_rules(uba,raw)
+
  def test_phase8_source_rules_do_not_store_current_rates(self):
   import json
   from pathlib import Path
   sources=json.loads(Path('sources.json').read_text(encoding='utf-8'))
-  for sid in ['src-03f5f03cf8322000','src-85fc6b655cb3e5ad','src-cd0ea2cb49049d0a','src-e0c3794479e44377']:
+  for sid in ['src-03f5f03cf8322000','src-85fc6b655cb3e5ad','src-cd0ea2cb49049d0a','src-e0c3794479e44377','src-a866ecbbd99927df','src-580ac56e8bbdabec']:
    src=next(s for s in sources if s['id']==sid)
    for rule in src['rules']:
     self.assertNotIn('rate',rule)
     self.assertIn('record_id',rule)
+
+
+ def test_central_rules_parse_policy_rate(self):
+  src={'id':'cb-seychelles','target':'Seychelles CB data','url':'https://www.cbs.sc/','scope':'Central-bank published aggregate or policy data','rules':[{'kind':'regex','key':'mpr','metric':'Monetary Policy Rate','pattern':r'Monetary\s+Policy\s+Rate\s*:\s*(?:<[^>]+>\s*)?(?P<value>\d+(?:\.\d+)?%)','unit':'%'}]}
+  raw=b'<h5>Monetary Policy Rate : <a>1.75%</a></h5>'
+  records=parse_central_rules(src,raw)
+  self.assertEqual(records[0]['id'],'cb-seychelles:mpr');self.assertEqual(records[0]['target'],'Seychelles CB data');self.assertAlmostEqual(records[0]['value'],.0175);self.assertEqual(records[0]['source_url'],src['url'])
+ def test_central_rules_reject_duplicate_or_qualified_values(self):
+  src={'id':'cb-test','target':'Test CB data','url':'https://bank.example/','rules':[{'kind':'regex','key':'policy','metric':'Policy Rate','pattern':r'Policy\s+Rate\s+(?P<value>\d+(?:\.\d+)?%)'}]}
+  with self.assertRaises(ReviewRequired):parse_central_rules(src,b'Policy Rate 5% Policy Rate 6%')
+  src['rules'][0]['pattern']=r'Policy\s+Rate\s+(?P<value>Up to \d+(?:\.\d+)?%)'
+  with self.assertRaises(ReviewRequired):parse_central_rules(src,b'Policy Rate Up to 5%')
+ def test_central_source_targets_are_standardized_for_all_countries(self):
+  import json
+  from pathlib import Path
+  sources=json.loads(Path('sources.json').read_text(encoding='utf-8'))
+  countries={s['country'] for s in sources if s.get('group')=='central'}
+  self.assertEqual(countries,{'Mauritius','Seychelles','Ghana','Nigeria','Kenya','South Africa','Tanzania','Cote Divoire','Senegal','Egypt','Morocco','Botswana','Namibia','Uganda','Zambia'})
+  for src in [s for s in sources if s.get('group')=='central']:
+   self.assertEqual(src['target'],src['country']+' CB data')
 
  def test_units(self):
   import json

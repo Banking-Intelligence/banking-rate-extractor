@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "source_id": "cb-zambia",
+  "checked_at": "2026-09-30T09:11:39.189460+00:00",
+  "status": "review",
+  "records": [],
+  "fingerprint": "e54fc5d6c0a1b1bfe1d9cf400d7330ba19c4c5532ae6a8518c7cd668aa3dae63",
+  "source_url": "https://www.boz.zm/",
+  "message": "Publication retrieved; product/period mapping needs review",
+  "retrieval_method": "direct_http"
+}

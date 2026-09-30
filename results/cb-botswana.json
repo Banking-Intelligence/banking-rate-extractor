@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "source_id": "cb-botswana",
+  "checked_at": "2026-09-30T09:10:48.751678+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "cb-botswana:mopr",
+      "target": "Botswana CB data",
+      "metric": "Monetary Policy Rate",
+      "value": 0.055,
+      "unit": "%",
+      "period": "August 2026",
+      "bank": "",
+      "scope": "Central-bank published aggregate or policy data",
+      "source_url": "https://www.bankofbotswana.bw/",
+      "notes": "Home page economic-indicator panel; 5.50Monetary Policy RateAugust 2026",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-botswana:inflation",
+      "target": "Botswana CB data",
+      "metric": "Current Inflation Rate",
+      "value": 0.09300000000000001,
+      "unit": "%",
+      "period": "August 2026",
+      "bank": "",
+      "scope": "Central-bank published aggregate or policy data",
+      "source_url": "https://www.bankofbotswana.bw/",
+      "notes": "Home page economic-indicator panel; 9.3Current Inflation Rate August 2026",
+      "status": "Verified official source"
+    }
+  ],
+  "fingerprint": "d26176e3c878b9d05e16142e75d23e8f43ee380c7bc793597d0447fe879ec53c",
+  "source_url": "https://www.bankofbotswana.bw/",
+  "message": "",
+  "retrieval_method": "direct_http"
+}

@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-09-30T08:58:18.818383+00:00",
+  "checked_at": "2026-09-30T09:08:13.465203+00:00",
   "status": "ok",
   "records": [
     {
       "id": "cb-a3dcc512fefaad55:3112820741f306f9",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.1613,
       "unit": "%",
@@ -19,7 +19,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:e94d43e17fea03d6",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.14429999999999998,
       "unit": "%",
@@ -32,7 +32,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:2aa3a9dbf2cdbdda",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1106,
       "unit": "%",
@@ -45,7 +45,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:67dbd51ff2beb296",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.1405,
       "unit": "%",
@@ -58,7 +58,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:891fa8cbbb3b6e16",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1718,
       "unit": "%",
@@ -71,7 +71,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:e7e4e6d2bbdba1e9",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.2998,
       "unit": "%",
@@ -84,7 +84,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:f1372efb0a246125",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.172678,
       "unit": "%",
@@ -97,7 +97,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:fff34227f5344afc",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.159578,
       "unit": "%",
@@ -110,7 +110,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:8d2a83a39644c744",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.172678,
       "unit": "%",
@@ -123,7 +123,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:6b4f3f55e1865ff3",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.166078,
       "unit": "%",
@@ -136,7 +136,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:c487c4666545c604",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.1957,
       "unit": "%",
@@ -149,7 +149,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:d3063a48351aefad",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.16269999999999998,
       "unit": "%",
@@ -162,7 +162,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:9978bb41ef4e88a4",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.1589,
       "unit": "%",
@@ -175,7 +175,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:103f14b3146483b9",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1902,
       "unit": "%",
@@ -188,7 +188,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:c4d94dfb5c87aa36",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.138,
       "unit": "%",
@@ -201,7 +201,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:051088be10066a13",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.138,
       "unit": "%",
@@ -214,7 +214,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:c7200844a58fd4ed",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.138,
       "unit": "%",
@@ -227,7 +227,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:e34d8829de7debee",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.138,
       "unit": "%",
@@ -240,7 +240,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:1c8d975c09229214",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.2343,
       "unit": "%",
@@ -253,7 +253,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:6d1355b8b7351ec5",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1512,
       "unit": "%",
@@ -266,7 +266,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:6900ca70b3695d3b",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.14400000000000002,
       "unit": "%",
@@ -279,7 +279,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:a6ec07fff73ea84f",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.154,
       "unit": "%",
@@ -292,7 +292,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:fbe19a75374d33c0",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.30269999999999997,
       "unit": "%",
@@ -305,7 +305,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:02e054f88204070c",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.2375,
       "unit": "%",
@@ -318,7 +318,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:c965ee1eb7008a2a",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Digital Loans",
       "value": 0.16690000000000002,
       "unit": "%",
@@ -331,7 +331,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:a187bec900d8d4bd",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.10949999999999999,
       "unit": "%",
@@ -344,7 +344,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:4184349e02ab263c",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.22,
       "unit": "%",
@@ -357,7 +357,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:6926386d2799eac5",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.28,
       "unit": "%",
@@ -370,7 +370,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:4959b53339949e02",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.19,
       "unit": "%",
@@ -383,7 +383,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:831436c60383a9bd",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.31901399999999996,
       "unit": "%",
@@ -396,7 +396,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:0397f319340bc039",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.429514,
       "unit": "%",
@@ -409,7 +409,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:a16bedc2d1959897",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.155,
       "unit": "%",
@@ -422,7 +422,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:15b50cf9ed5fa46e",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.10869999999999999,
       "unit": "%",
@@ -435,7 +435,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:99bc91fa4555d4e4",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.108706,
       "unit": "%",
@@ -448,7 +448,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:8e0c0dd5e45ba604",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.165048,
       "unit": "%",
@@ -461,7 +461,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:18c4b7435675d8fe",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.165048,
       "unit": "%",
@@ -474,7 +474,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:db1f7bd8001fc92f",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.155048,
       "unit": "%",
@@ -487,7 +487,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:7e7c7e1ec1a03dc1",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Digital Loans",
       "value": 0.070048,
       "unit": "%",
@@ -500,7 +500,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:8e0bc9a1a6c745a2",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.160048,
       "unit": "%",
@@ -513,7 +513,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:46f0635ec70b9b23",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.153048,
       "unit": "%",
@@ -526,7 +526,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:bec248bc88b4cd7e",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.15710000000000002,
       "unit": "%",
@@ -539,7 +539,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:56b950acc65d405b",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.15710000000000002,
       "unit": "%",
@@ -552,7 +552,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:cb8af54c1cbf6370",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.18,
       "unit": "%",
@@ -565,7 +565,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:1dc83282f5db4bdf",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.18,
       "unit": "%",
@@ -578,7 +578,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:fec70a73483ba214",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.18,
       "unit": "%",
@@ -591,7 +591,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:5d625a674a7730c0",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.18,
       "unit": "%",
@@ -604,7 +604,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:5c72b48e215806a2",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.18,
       "unit": "%",
@@ -617,7 +617,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:7d4b1b1e0279d1fa",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.235,
       "unit": "%",
@@ -630,7 +630,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:36204b390d27db19",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.24,
       "unit": "%",
@@ -643,7 +643,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:1f03f405deafe11c",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.25,
       "unit": "%",
@@ -656,7 +656,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:a9299d5b7194beeb",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.235,
       "unit": "%",
@@ -669,7 +669,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:5ce03a8167d7352c",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.163406,
       "unit": "%",
@@ -682,7 +682,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:70857817d6ea63b2",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.16170600000000002,
       "unit": "%",
@@ -695,7 +695,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:cd797abcf97eb866",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.165706,
       "unit": "%",
@@ -708,7 +708,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:919847307c811aba",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.161206,
       "unit": "%",
@@ -721,7 +721,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:f232d00c2dc1af3b",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.1606,
       "unit": "%",
@@ -734,7 +734,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:7c2437ab6784cbc4",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1656,
       "unit": "%",
@@ -747,7 +747,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:d225b886b278df13",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1484,
       "unit": "%",
@@ -760,7 +760,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:585c72ee528bc053",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.15560000000000002,
       "unit": "%",
@@ -773,7 +773,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:bca699ec385ddf7f",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1761,
       "unit": "%",
@@ -786,7 +786,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:ffe6ac7aea3d81a9",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.16149999999999998,
       "unit": "%",
@@ -799,7 +799,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:fa98636fd4abb5ca",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1565,
       "unit": "%",
@@ -812,7 +812,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:0e421a929dbfe796",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1465,
       "unit": "%",
@@ -825,7 +825,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:0e0e0da729ae00af",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.16649999999999998,
       "unit": "%",
@@ -838,7 +838,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:442fa2ef5897301c",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.16649999999999998,
       "unit": "%",
@@ -851,7 +851,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:41637ed4f870918b",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.1698,
       "unit": "%",
@@ -864,7 +864,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:de1a9b97eb7e214e",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1497,
       "unit": "%",
@@ -877,7 +877,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:4fda03a23ddc3734",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.15130000000000002,
       "unit": "%",
@@ -890,7 +890,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:0051951910b3a1e8",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.17,
       "unit": "%",
@@ -903,7 +903,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:aec909e0c46c1db6",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.17,
       "unit": "%",
@@ -916,7 +916,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:46db6177a64fa672",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.1741,
       "unit": "%",
@@ -929,7 +929,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:ccc454121537c1b5",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1741,
       "unit": "%",
@@ -942,7 +942,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:8742d9b463fbd5f0",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.15810000000000002,
       "unit": "%",
@@ -955,7 +955,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:1185bd2f55f8d509",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Digital Loans",
       "value": 0.29100000000000004,
       "unit": "%",
@@ -968,7 +968,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:acad0a415a8f52f2",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.1741,
       "unit": "%",
@@ -981,7 +981,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:f56ab2e5bd8c41d8",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1691,
       "unit": "%",
@@ -994,7 +994,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:38f20d9e407de469",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.1889,
       "unit": "%",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:dd8d952d363c0e98",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1889,
       "unit": "%",
@@ -1020,7 +1020,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:d083ac402ba6dfff",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1834,
       "unit": "%",
@@ -1033,7 +1033,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:c92f3cddb87ada87",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Digital Loans",
       "value": 0.2211,
       "unit": "%",
@@ -1046,7 +1046,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:ab1976d1a9aefb12",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.1889,
       "unit": "%",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:426e47828d42773e",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1889,
       "unit": "%",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:be16ba4887b76634",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.135,
       "unit": "%",
@@ -1085,7 +1085,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:0336a8b015c5997b",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1936,
       "unit": "%",
@@ -1098,7 +1098,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:fdb87bd01452da03",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.2175,
       "unit": "%",
@@ -1111,7 +1111,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:2d95952d432013ad",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.2175,
       "unit": "%",
@@ -1124,7 +1124,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:65b8cfce49cfa770",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.2175,
       "unit": "%",
@@ -1137,7 +1137,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:bc076b81f0bb677f",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.2175,
       "unit": "%",
@@ -1150,7 +1150,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:3542902ceba9e82c",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.2175,
       "unit": "%",
@@ -1163,7 +1163,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:e2df71675a075bbb",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.19269999999999998,
       "unit": "%",
@@ -1176,7 +1176,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:5fc915bc9dfef28a",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.20010000000000003,
       "unit": "%",
@@ -1189,7 +1189,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:717a52f2dcacad47",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1527,
       "unit": "%",
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:2fae32e826bd69ed",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.17629999999999998,
       "unit": "%",
@@ -1215,7 +1215,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:a8704ad72b1411b9",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.2145,
       "unit": "%",
@@ -1228,7 +1228,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:392eda26acd6c412",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.165115,
       "unit": "%",
@@ -1241,7 +1241,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:955c427aa329d5d0",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.16217099999999998,
       "unit": "%",
@@ -1254,7 +1254,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:40165928d5d555d9",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.17,
       "unit": "%",
@@ -1267,7 +1267,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:27db84f841c9d34e",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.19899999999999998,
       "unit": "%",
@@ -1280,7 +1280,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:82e92547859e9795",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.196,
       "unit": "%",
@@ -1293,7 +1293,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:fbe1eedff5de9dae",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Digital Loans",
       "value": 0.1942,
       "unit": "%",
@@ -1306,7 +1306,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:9e9597fe226985be",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.18460000000000001,
       "unit": "%",
@@ -1319,7 +1319,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:d35e0d769997cf01",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.20920000000000002,
       "unit": "%",
@@ -1332,7 +1332,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:c54c61695da14e82",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.1705,
       "unit": "%",
@@ -1345,7 +1345,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:eccc32582114a8b3",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1975,
       "unit": "%",
@@ -1358,7 +1358,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:3f87c81d89a0a35b",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.14880000000000002,
       "unit": "%",
@@ -1371,7 +1371,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:1ab2fb1bf087b6c1",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.1668,
       "unit": "%",
@@ -1384,7 +1384,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:f1a1157ba1bc6e8b",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.2532,
       "unit": "%",
@@ -1397,7 +1397,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:fac48d61617340b8",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.1588,
       "unit": "%",
@@ -1410,7 +1410,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:95f7ac6b6127d200",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1728,
       "unit": "%",
@@ -1423,7 +1423,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:b95e2a4a015ecf4c",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1321,
       "unit": "%",
@@ -1436,7 +1436,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:7a23bf22eef45210",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.13699999999999998,
       "unit": "%",
@@ -1449,7 +1449,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:a4f8b2a88bd955d1",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.15539999999999998,
       "unit": "%",
@@ -1462,7 +1462,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:3d3520020a628e06",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.23,
       "unit": "%",
@@ -1475,7 +1475,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:9dc1487f9af036e5",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.230014,
       "unit": "%",
@@ -1488,7 +1488,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:15d83088ed277e3c",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.230014,
       "unit": "%",
@@ -1501,7 +1501,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:87c5395b5e34cc7e",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.20370000000000002,
       "unit": "%",
@@ -1514,7 +1514,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:54428a6ad577064a",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.18310600000000002,
       "unit": "%",
@@ -1527,7 +1527,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:56977a0f87fc57af",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.203706,
       "unit": "%",
@@ -1540,7 +1540,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:ab1b8abebb05242d",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.206206,
       "unit": "%",
@@ -1553,7 +1553,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:dd3d17f80a59d543",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.152,
       "unit": "%",
@@ -1566,7 +1566,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:d55db700d9978bd7",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1519,
       "unit": "%",
@@ -1579,7 +1579,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:168c1bcdd66e2a50",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1519,
       "unit": "%",
@@ -1592,7 +1592,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:0015521e7f0bede6",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1519,
       "unit": "%",
@@ -1605,7 +1605,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:725bc98f734f1eac",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.2139,
       "unit": "%",
@@ -1618,7 +1618,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:4517e299367efc3c",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1963,
       "unit": "%",
@@ -1631,7 +1631,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:3a89e9e1ff892667",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.2214,
       "unit": "%",
@@ -1644,7 +1644,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:75920aa4277b481f",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.221,
       "unit": "%",
@@ -1657,7 +1657,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:dd6b901d963cf146",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.16440000000000002,
       "unit": "%",
@@ -1670,7 +1670,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:1e0ee3d59267d7de",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1456,
       "unit": "%",
@@ -1683,7 +1683,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:6bff15db08ebc31d",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.1426,
       "unit": "%",
@@ -1696,7 +1696,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:09ea80afb7478018",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1437,
       "unit": "%",
@@ -1709,7 +1709,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:73ef5d73b5dff530",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.142448,
       "unit": "%",
@@ -1722,7 +1722,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:af561f2b33f18ee8",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.14354799999999998,
       "unit": "%",
@@ -1735,7 +1735,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:457958be7e8e5d94",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.16399999999999998,
       "unit": "%",
@@ -1748,7 +1748,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:e6c9e79ba5e3155e",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.193,
       "unit": "%",
@@ -1761,7 +1761,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:a5112d945613e883",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1427,
       "unit": "%",
@@ -1774,7 +1774,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:deef53bf31abe152",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Digital Loans",
       "value": 0.225,
       "unit": "%",
@@ -1787,7 +1787,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:e20754f8ff505872",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.154,
       "unit": "%",
@@ -1800,7 +1800,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:287cc1c3e7b0d194",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.17300000000000001,
       "unit": "%",
@@ -1813,7 +1813,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:b010e96a26e9125d",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1577,
       "unit": "%",
@@ -1826,7 +1826,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:dd51504608a2893a",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1577,
       "unit": "%",
@@ -1839,7 +1839,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:dbd151b70b42b9e6",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1577,
       "unit": "%",
@@ -1852,7 +1852,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:e85a5e96712459ae",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.145,
       "unit": "%",
@@ -1865,7 +1865,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:0262a299a682925e",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.15,
       "unit": "%",
@@ -1878,7 +1878,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:c9279f2b87d33836",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.14,
       "unit": "%",
@@ -1891,7 +1891,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:c5c126897d173ef6",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.14,
       "unit": "%",
@@ -1904,7 +1904,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:75e0f91ff24f8943",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.145,
       "unit": "%",
@@ -1917,7 +1917,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:b6ca98ec4f9f369b",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.19,
       "unit": "%",
@@ -1930,7 +1930,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:562449c1bab11795",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.19,
       "unit": "%",
@@ -1943,7 +1943,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:b8dc3c1a405690ca",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Digital Loans",
       "value": 0.12,
       "unit": "%",
@@ -1956,7 +1956,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:322834d6d70cfdcc",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.2821,
       "unit": "%",
@@ -1969,7 +1969,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:d9dca5d10d43532d",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.276,
       "unit": "%",
@@ -1982,7 +1982,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:8bf22446151334c9",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.2662,
       "unit": "%",
@@ -1995,7 +1995,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:ab201f5e747789cf",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.2768,
       "unit": "%",
@@ -2008,7 +2008,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:48f2e4481b0c6b28",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.22190000000000001,
       "unit": "%",
@@ -2021,7 +2021,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:6ac44ece79ff2c5b",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.1783,
       "unit": "%",
@@ -2034,7 +2034,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:7b3472400aca3299",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1772,
       "unit": "%",
@@ -2047,7 +2047,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:59f43e5a0ef76607",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.1407,
       "unit": "%",
@@ -2060,7 +2060,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:f6a051694285a50f",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1341,
       "unit": "%",
@@ -2073,7 +2073,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:ce6297e50daf2108",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.277506,
       "unit": "%",
@@ -2086,7 +2086,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:8e90c5012c8a129a",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.155506,
       "unit": "%",
@@ -2099,7 +2099,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:57c13ec244f13ce1",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.14660600000000001,
       "unit": "%",
@@ -2112,7 +2112,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:8fbe06138548c0e2",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.110006,
       "unit": "%",
@@ -2125,7 +2125,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:6136dfd742bcd954",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Digital Loans",
       "value": 0.180506,
       "unit": "%",
@@ -2138,7 +2138,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:0ac2974359a4c41f",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.155006,
       "unit": "%",
@@ -2151,7 +2151,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:98f0d4500fd1fb28",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.15490600000000002,
       "unit": "%",
@@ -2164,7 +2164,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:b7f940899773e50e",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.1638,
       "unit": "%",
@@ -2177,7 +2177,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:38035cb920fdd2ee",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.09359999999999999,
       "unit": "%",
@@ -2190,7 +2190,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:c5f1d8bec986002d",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.1527,
       "unit": "%",
@@ -2203,7 +2203,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:db2ead87971c57c5",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1684,
       "unit": "%",
@@ -2216,7 +2216,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:23fcf4a1f8321d31",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.2577,
       "unit": "%",
@@ -2229,7 +2229,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:608376b417c64be4",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Digital Loans",
       "value": 1.02,
       "unit": "%",
@@ -2242,7 +2242,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:6b52aacd128bb122",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.2577,
       "unit": "%",
@@ -2255,7 +2255,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:d7f2a9c1b33e2e25",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.16210000000000002,
       "unit": "%",
@@ -2268,7 +2268,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:d5343967b6721b4c",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.156,
       "unit": "%",
@@ -2281,7 +2281,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:8a12f44d6366bae6",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.1471,
       "unit": "%",
@@ -2294,7 +2294,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:34e1caf610051967",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Asset Finance",
       "value": 0.1466,
       "unit": "%",
@@ -2307,7 +2307,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:ba63ec4850d8b84b",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.147,
       "unit": "%",
@@ -2320,7 +2320,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:00b890d3a46421a1",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Corporate",
       "value": 0.14730000000000001,
       "unit": "%",
@@ -2333,7 +2333,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:fc2ed0c763e56426",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Mortgages",
       "value": 0.1518,
       "unit": "%",
@@ -2346,7 +2346,7 @@
     },
     {
       "id": "cb-a3dcc512fefaad55:ea1d611601cf62c3",
-      "target": "Kenyas scrapped CB data",
+      "target": "Kenya CB data",
       "metric": "Personal",
       "value": 0.14859999999999998,
       "unit": "%",
@@ -2358,7 +2358,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "a9510043f439c9c9c985e429de59347abf82359a5dcd27faec602055dbb175a5",
+  "fingerprint": "d519677108ab299ac98206eaac56811cff4b68fc574379b049e075106ba9c1ed",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": "",
   "retrieval_method": "direct_http"

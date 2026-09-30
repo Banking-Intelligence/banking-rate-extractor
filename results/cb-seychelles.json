@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source_id": "cb-seychelles",
+  "checked_at": "2026-09-30T09:10:40.949129+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "cb-seychelles:mpr",
+      "target": "Seychelles CB data",
+      "metric": "Monetary Policy Rate",
+      "value": 0.0175,
+      "unit": "%",
+      "period": "",
+      "bank": "",
+      "scope": "Central-bank published aggregate or policy data",
+      "source_url": "https://www.cbs.sc/",
+      "notes": "Home page policy-rate panel; Monetary Policy Rate : 1.75%",
+      "status": "Verified official source"
+    }
+  ],
+  "fingerprint": "0b2830591ff2b5e62d7999d3c4135d1f4529dce96895f18dca263ebf02cb2b1d",
+  "source_url": "https://www.cbs.sc/",
+  "message": "",
+  "retrieval_method": "direct_http"
+}

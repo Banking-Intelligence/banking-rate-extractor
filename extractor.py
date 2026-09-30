@@ -30,6 +30,7 @@ def clean(value):
     return re.sub(r'\s+', ' ', str(value or '')).strip()
 
 def rate(value):
+    """Read a published rate or clear range and return a safe numeric value."""
     """Only single percentages and two-ended ranges. Returns decimal Excel values."""
     s = clean(value).replace('−','-').replace('–','-').replace('—','-').replace('�','-')
     s = re.sub(r'(?<=\d),(?=\d)', '.', s)
@@ -75,6 +76,7 @@ def text_content(raw):
     return clean(doc.text_content())
 
 def allowed(url,source):
+    """Check that a URL belongs to the official approved publisher domain."""
     p=urllib.parse.urlparse(url)
     if p.scheme!='https' or p.username or p.password or p.port not in (None,443):return False
     return (p.hostname or '').lower() in source['allowed_hosts']
@@ -110,6 +112,7 @@ def read_limited_response(response):
     return body
 
 def retrieve_http(url, source):
+    """Try the normal official HTTPS request first."""
     if not allowed(url, source):
         raise ReviewRequired('URL is not an approved HTTPS publisher URL')
     req = urllib.request.Request(url, headers={
@@ -124,6 +127,7 @@ def retrieve_http(url, source):
     return {'body': body, 'url': final, 'retrieval_method': 'direct_http'}
 
 def retrieve_jina_reader(url, source):
+    """Use Jina Reader only as a fallback while keeping the official source URL."""
     if not allowed(url, source):
         raise ReviewRequired('URL is not an approved HTTPS publisher URL')
     reader_url = 'https://r.jina.ai/' + url
@@ -141,6 +145,7 @@ def crawl4ai_enabled(source):
     return source.get('retrieval_fallback') == 'crawl4ai'
 
 def retrieve_crawl4ai(url, source):
+    """Render approved dynamic pages when direct text retrieval is not enough."""
     if not allowed(url, source):
         raise ReviewRequired('URL is not an approved HTTPS publisher URL')
 
@@ -179,6 +184,7 @@ def retrieve_crawl4ai(url, source):
     return {'body': body, 'url': final, 'retrieval_method': 'crawl4ai', 'render_status': getattr(result, 'status_code', '')}
 
 def retrieve(url, source):
+    """Run the safe retrieval chain and report which method produced content."""
     try:
         return retrieve_http(url, source)
     except Exception as exc:
@@ -194,6 +200,7 @@ def fetch(url,source):
     return retrieved['body'], retrieved['url'], {'retrieval_method': retrieved.get('retrieval_method', 'direct_http')}
 
 def observation(source,key,metric,value,period='',unit='%',bank='',notes=''):
+    """Build one standard central-bank observation record."""
     return {'id':source['id']+':'+key,'target':source['target'],'metric':metric,'value':value,
             'unit':unit,'period':period,'bank':bank,'scope':source.get('scope',''),
             'source_url':source['url'],'notes':notes,'status':'Verified official source'}
@@ -248,6 +255,47 @@ def parse_morocco(source,raw):
             out.append(observation(source,hashlib.sha256(row[0].encode()).hexdigest()[:12],row[0],float(cells[-1])/100,period,notes='Published '+dates[1][1]))
     return out
 
+
+
+def central_value(text, unit='%'):
+    """Parse a central-bank numeric value; percentages are stored as spreadsheet rates."""
+    s=clean(text)
+    if unit=='%' and re.fullmatch(r'\d+(?:[.,]\d+)?',s):
+        return float(s.replace(',','.'))/100,s
+    rr=rate(s)
+    return rr['rate'], rr['raw']
+
+def parse_central_rules(source,raw):
+    """Apply conservative central-bank rules for official macro/rate indicators."""
+    out=[];text=text_content(raw);ts=(tables(raw)+markdown_tables(raw)) if not raw.startswith(b'%PDF') else []
+    for rule in source.get('rules',[]):
+        metric=rule['metric']; key=rule.get('key') or hashlib.sha256(metric.encode()).hexdigest()[:12]
+        unit=rule.get('unit','%'); period=rule.get('period',''); notes=rule.get('notes','')
+        evidence=''; value_text=''
+        if rule['kind']=='regex':
+            matches=list(re.finditer(rule['pattern'],text,re.I|re.S))
+            if len(matches)!=1:raise ReviewRequired('Central-bank metric is missing or ambiguous: '+metric)
+            match=matches[0]
+            value_text=match.group(rule.get('value_group','value'))
+            if rule.get('period_group') and match.groupdict().get(rule['period_group']):period=match.group(rule['period_group'])
+            evidence=re.sub(r'\s+',' ',match.group(0)).strip()
+        elif rule['kind']=='table':
+            selected=[t for t in ts if table_header_matches(t, rule.get('table_header'))]
+            label_col=rule.get('label_column',0)
+            matches=[r for t in selected for r in t if len(r)>label_col and row_label_matches(rule['row_label'],r[label_col])]
+            if len(matches)!=1:raise ReviewRequired('Central-bank table row is missing or ambiguous: '+metric)
+            row=matches[0]; idx=rule['column']
+            if idx>=len(row):raise ReviewRequired('Central-bank value column changed: '+metric)
+            value_text=row[idx]
+            if rule.get('period_column') is not None and rule['period_column']<len(row):period=row[rule['period_column']]
+            evidence=' | '.join(row)
+        else:
+            raise ReviewRequired('Unsupported central-bank rule kind: '+str(rule.get('kind')))
+        value,raw_value=central_value(value_text,unit)
+        out.append(observation(source,key,metric,value,period,unit,notes=(notes+'; ' if notes else '')+evidence[:500]))
+    if not out:raise ReviewRequired('No reviewed central-bank rules for this publication')
+    return out
+
 def parse_bom_key(source,raw):
     for t in tables(raw):
         for r in t:
@@ -273,6 +321,7 @@ def row_label_matches(pattern, value):
     return bool(compact_literal and compact_literal == compact_value)
 
 def parse_rules(source,raw):
+    """Apply deterministic source rules and reject missing or ambiguous matches."""
     out=[];ts=(tables(raw)+markdown_tables(raw)) if not raw.startswith(b'%PDF') else []; text=text_content(raw)
     for rule in source.get('rules',[]):
         if rule['kind']=='table':
@@ -299,9 +348,10 @@ def parse_rules(source,raw):
     return out
 
 ADAPTERS={'sarb':parse_sarb,'kenya':parse_kenya,'morocco_term':parse_morocco,'morocco_lending':parse_morocco,
-          'morocco_savings':parse_morocco,'bom_key':parse_bom_key,'rules':parse_rules}
+          'morocco_savings':parse_morocco,'bom_key':parse_bom_key,'central_rules':parse_central_rules,'rules':parse_rules}
 
 def parse_with_handler(source, raw, url, retrieval_meta):
+    """Choose the right parser and attach provenance metadata to every record."""
     fingerprint=hashlib.sha256(raw).hexdigest()
     handler=ADAPTERS.get(source['adapter'])
     if handler:
@@ -320,6 +370,7 @@ def parse_with_handler(source, raw, url, retrieval_meta):
             'message':'Publication retrieved; product/period mapping needs review','evidence':snippets,**retrieval_meta}
 
 def fetch_publication(source):
+    """Fetch one publication and keep enough metadata for review diagnostics."""
     raw,url,retrieval_meta=fetch(source['url'],source)
     current=dict(source,url=url)
     if source.get('publication_link_pattern'):
@@ -331,6 +382,7 @@ def fetch_publication(source):
     return current, raw, url, retrieval_meta
 
 def extract(source):
+    """Return ok, review, or failed for one configured source without guessing."""
     current,raw,url,retrieval_meta=fetch_publication(source)
     try:
         return parse_with_handler(current, raw, url, retrieval_meta)

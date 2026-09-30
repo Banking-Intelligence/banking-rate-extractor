@@ -1050,11 +1050,62 @@
       "mcb.mu",
       "www.mcb.mu"
     ],
-    "adapter": "review",
+    "adapter": "rules",
     "enabled": true,
     "scope": "Bank-published product rates",
-    "rules": [],
-    "update_mode": "Retrieve and flag for review"
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "Savings\\s+rate\\s+(?P<rate>\\d+(?:\\.\\d+)?\\s*%)\\s*p\\.?a\\s+Effective\\s+as\\s+from\\s+\\d{2}\\s+June\\s+2026",
+        "record_id": "cbed3baca38afbf3"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "",
+          "7 Days",
+          "3 Months"
+        ],
+        "row_label": "Rates\\ p\\.a\\.:",
+        "label_column": 0,
+        "column": 2,
+        "value_pattern": "(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "d4736feb26068a47"
+      },
+      {
+        "kind": "table",
+        "row_label": "12",
+        "label_column": 0,
+        "column": 1,
+        "value_pattern": "(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "a9fc59997c16ed6a"
+      },
+      {
+        "kind": "table",
+        "row_label": "12",
+        "label_column": 0,
+        "column": 2,
+        "value_pattern": "(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "a9fc59997c16ed6a-bbec7dd4"
+      },
+      {
+        "kind": "table",
+        "row_label": "12",
+        "label_column": 0,
+        "column": 3,
+        "value_pattern": "(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "a9fc59997c16ed6a-4aff2e78"
+      },
+      {
+        "kind": "table",
+        "row_label": "12",
+        "label_column": 0,
+        "column": 4,
+        "value_pattern": "(?P<rate>\\d+(?:\\.\\d+)?%)",
+        "record_id": "a9fc59997c16ed6a-68c9cb98"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
   },
   {
     "id": "src-e0c3794479e44377",
@@ -1078,12 +1129,13 @@
       },
       {
         "kind": "regex",
-        "pattern": "on\\s+balance\\s+between\\s+Rs\\s*10,000\\s+and\\s+Rs\\s*1,000,000\\s+(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\s+on\\s+balance\\s+between\\s+Rs\\s*1,000,000\\s+and\\s+Rs\\s*2,000,000", "record_id": "50b2f0241b37b51c-e82cfddd"
+        "pattern": "on\\s+balance\\s+between\\s+Rs\\s*10,000\\s+and\\s+Rs\\s*1,000,000\\s+(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\s+on\\s+balance\\s+between\\s+Rs\\s*1,000,000\\s+and\\s+Rs\\s*2,000,000",
+        "record_id": "50b2f0241b37b51c-e82cfddd"
       },
       {
         "kind": "regex",
-        "pattern": "on\\s+balance\\s+between\\s+Rs\\s*1,000,000\\s+and\\s+Rs\\s*2,000,000\\s+(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\s+on\\s+balance\\s+above\\s+Rs\\s*2,000,000"
-        ,"record_id": "50b2f0241b37b51c-d84bf1c2"
+        "pattern": "on\\s+balance\\s+between\\s+Rs\\s*1,000,000\\s+and\\s+Rs\\s*2,000,000\\s+(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\s+on\\s+balance\\s+above\\s+Rs\\s*2,000,000",
+        "record_id": "50b2f0241b37b51c-d84bf1c2"
       },
       {
         "kind": "regex",
@@ -1240,9 +1292,6 @@
     "rules": [
       {
         "kind": "table",
-        "table_header": [
-          "INTEREST RATES ON SAVINGS/CURRENT ACCOUNTS – EFFECTIVE 05 JUNE 2026"
-        ],
         "row_label": "Savings\\ Account",
         "label_column": 0,
         "column": 1,
@@ -1477,11 +1526,37 @@
       "ubazambia.com",
       "www.ubazambia.com"
     ],
-    "adapter": "review",
+    "adapter": "rules",
     "enabled": true,
     "scope": "Bank-published product rates",
-    "rules": [],
-    "update_mode": "Retrieve and flag for review"
+    "rules": [
+      {
+        "kind": "regex",
+        "pattern": "UBA\\s+Kiddies\\s+Account[\\s\\S]{0,500}?Benefits[\\s\\S]{0,80}?(?P<rate>\\d+\\s*%)\\s+interest\\s+per\\s+annum\\s+paid\\s+quarterly",
+        "record_id": "7ea55f7bd0dc0e60"
+      },
+      {
+        "kind": "regex",
+        "pattern": "UBA\\s+Teens\\s+Account[\\s\\S]{0,500}?Benefits[\\s\\S]{0,80}?(?P<rate>\\d+\\s*%)\\s+interest\\s+per\\s+annum\\s+paid\\s+quarterly",
+        "record_id": "7ea55f7bd0dc0e60-1ad277ee"
+      },
+      {
+        "kind": "regex",
+        "pattern": "UBA\\s+NextGen\\s+Account[\\s\\S]{0,500}?Benefits[\\s\\S]{0,80}?(?P<rate>\\d+\\s*%)\\s+interest\\s+per\\s+annum\\s+paid\\s+quarterly",
+        "record_id": "7ea55f7bd0dc0e60-eabe7eb9"
+      },
+      {
+        "kind": "regex",
+        "pattern": "UBA\\s+Freedom\\s+Account[\\s\\S]{0,500}?Benefits[\\s\\S]{0,80}?(?P<rate>\\d+\\s*%)\\s+interest\\s+per\\s+annum\\s+paid\\s+quarterly",
+        "record_id": "7ea55f7bd0dc0e60-b22151da"
+      },
+      {
+        "kind": "regex",
+        "pattern": "UBA\\s+Bumper\\s+Account[\\s\\S]{0,500}?Benefits[\\s\\S]{0,80}?(?P<rate>\\d+\\s*%)\\s+interest\\s+per\\s+annum\\s+paid\\s+quarterly",
+        "record_id": "e9c8f9311512100a"
+      }
+    ],
+    "update_mode": "Automatic reviewed mapping"
   },
   {
     "id": "src-981fab275d20596e",
@@ -4697,7 +4772,7 @@
     "group": "central",
     "country": "South Africa",
     "name": "South African Reserve Bank",
-    "target": "South Africas scrapped CB data",
+    "target": "South Africa CB data",
     "url": "https://custom.resbank.co.za/SarbWebApi/WebIndicators/CurrentMarketRates",
     "allowed_hosts": [
       "custom.resbank.co.za",
@@ -4713,7 +4788,7 @@
     "group": "central",
     "country": "Kenya",
     "name": "Kenya Bankers Association / CBK Cost of Credit",
-    "target": "Kenyas scrapped CB data",
+    "target": "Kenya CB data",
     "url": "https://www.costofcredit.co.ke/site/interest-rate",
     "allowed_hosts": [
       "costofcredit.co.ke",
@@ -4729,7 +4804,7 @@
     "group": "central",
     "country": "Morocco",
     "name": "Bank Al-Maghrib — Term deposits",
-    "target": "Morocco CB Data",
+    "target": "Morocco CB data",
     "url": "https://www.bkam.ma/en/Statistics/Interest-rate/Rates-on-term-deposits",
     "allowed_hosts": [
       "bkam.ma",
@@ -4745,7 +4820,7 @@
     "group": "central",
     "country": "Morocco",
     "name": "Bank Al-Maghrib — Passbook savings",
-    "target": "Morocco CB Data",
+    "target": "Morocco CB data",
     "url": "https://www.bkam.ma/en/Statistics/Interest-rate/Interest-rates-on-savings-accounts",
     "allowed_hosts": [
       "bkam.ma",
@@ -4761,7 +4836,7 @@
     "group": "central",
     "country": "Morocco",
     "name": "Bank Al-Maghrib — Lending survey",
-    "target": "Morocco CB Data",
+    "target": "Morocco CB data",
     "url": "https://www.bkam.ma/en/Statistics/Interest-rate/Lending-rates",
     "allowed_hosts": [
       "bkam.ma",
@@ -4777,7 +4852,7 @@
     "group": "central",
     "country": "Ghana",
     "name": "Bank of Ghana — July 2026 summary",
-    "target": "Ghana CB Data",
+    "target": "Ghana CB data",
     "url": "https://www.bog.gov.gh/wp-content/uploads/2026/07/Summary-of-Economic-and-Financial-Data-July-2026-1.pdf",
     "allowed_hosts": [
       "bog.gov.gh",
@@ -4793,7 +4868,7 @@
     "group": "central",
     "country": "Tanzania",
     "name": "Bank of Tanzania — Monthly Economic Review",
-    "target": "Tanzanias scrapped CB data",
+    "target": "Tanzania CB data",
     "url": "https://www.bot.go.tz/Publications/Regular/Monthly%20Economic%20Review/en/2026090916364778.pdf",
     "allowed_hosts": [
       "bot.go.tz",
@@ -4809,7 +4884,7 @@
     "group": "central",
     "country": "Uganda",
     "name": "Bank of Uganda — bank charges April 2026",
-    "target": "Ugandas scrapped CB data",
+    "target": "Uganda CB data",
     "url": "https://bou.or.ug/uploads/Commercial_Banks_Interest_Rates_and_Bank_Charges_as_at_01_April_2026_25716d34bb.pdf",
     "allowed_hosts": [
       "bou.or.ug",
@@ -4825,7 +4900,7 @@
     "group": "central",
     "country": "Nigeria",
     "name": "Central Bank of Nigeria",
-    "target": "Bank_of_Nigeria_Data",
+    "target": "Nigeria CB data",
     "url": "https://www.cbn.gov.ng/Documents/depositandlending.html",
     "allowed_hosts": [
       "www.cbn.gov.ng"
@@ -4840,7 +4915,7 @@
     "group": "central",
     "country": "Egypt",
     "name": "Central Bank of Egypt",
-    "target": "Egypts scrapped CB data",
+    "target": "Egypt CB data",
     "url": "https://www.cbe.org.eg/en/economic-research/statistics/monthly-interest-rates",
     "allowed_hosts": [
       "www.cbe.org.eg"
@@ -4855,28 +4930,148 @@
     "group": "central",
     "country": "Mauritius",
     "name": "Bank of Mauritius",
-    "target": "Mauritius CB Data",
+    "target": "Mauritius CB data",
     "url": "https://www.bom.mu/repo-rate",
     "allowed_hosts": [
       "www.bom.mu"
     ],
-    "adapter": "bom_key",
+    "adapter": "review",
     "scope": "Central bank policy rate",
     "enabled": true,
-    "update_mode": "Automatic reviewed mapping"
+    "update_mode": "Retrieve and flag for review"
   },
   {
     "id": "cb-namibia",
     "group": "central",
     "country": "Namibia",
     "name": "Bank of Namibia",
-    "target": "Namibia CB Data",
+    "target": "Namibia CB data",
     "url": "https://www.bon.com.na/",
     "allowed_hosts": [
       "www.bon.com.na"
     ],
+    "adapter": "central_rules",
+    "scope": "Central-bank published aggregate or policy data",
+    "enabled": true,
+    "update_mode": "Automatic reviewed mapping",
+    "rules": [
+      {
+        "kind": "regex",
+        "key": "repo",
+        "metric": "Repo Rate",
+        "pattern": "Repo\\s+Rate\\s+Maintained\\s+at\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*Percent",
+        "unit": "%",
+        "notes": "Home page monetary-policy headline"
+      }
+    ]
+  },
+  {
+    "id": "cb-seychelles",
+    "group": "central",
+    "country": "Seychelles",
+    "name": "Central Bank of Seychelles",
+    "target": "Seychelles CB data",
+    "url": "https://www.cbs.sc/",
+    "allowed_hosts": [
+      "www.cbs.sc",
+      "cbs.sc"
+    ],
+    "adapter": "central_rules",
+    "scope": "Central-bank published aggregate or policy data",
+    "enabled": true,
+    "update_mode": "Automatic reviewed mapping",
+    "rules": [
+      {
+        "kind": "regex",
+        "key": "mpr",
+        "metric": "Monetary Policy Rate",
+        "pattern": "Monetary\\s+Policy\\s+Rate\\s*:\\s*(?:<[^>]+>\\s*)?(?P<value>\\d+(?:\\.\\d+)?%)",
+        "unit": "%",
+        "notes": "Home page policy-rate panel"
+      }
+    ]
+  },
+  {
+    "id": "cb-botswana",
+    "group": "central",
+    "country": "Botswana",
+    "name": "Bank of Botswana",
+    "target": "Botswana CB data",
+    "url": "https://www.bankofbotswana.bw/",
+    "allowed_hosts": [
+      "www.bankofbotswana.bw",
+      "bankofbotswana.bw"
+    ],
+    "adapter": "central_rules",
+    "scope": "Central-bank published aggregate or policy data",
+    "enabled": true,
+    "update_mode": "Automatic reviewed mapping",
+    "rules": [
+      {
+        "kind": "regex",
+        "key": "mopr",
+        "metric": "Monetary Policy Rate",
+        "pattern": "(?P<value>\\d+(?:\\.\\d+)?)\\s*Monetary\\s+Policy\\s+Rate\\s*(?P<period>[A-Za-z]+\\s+\\d{4})",
+        "unit": "%",
+        "period_group": "period",
+        "notes": "Home page economic-indicator panel"
+      },
+      {
+        "kind": "regex",
+        "key": "inflation",
+        "metric": "Current Inflation Rate",
+        "pattern": "(?P<value>\\d+(?:\\.\\d+)?)\\s*Current\\s+Inflation\\s+Rate\\s*(?P<period>[A-Za-z]+\\s+\\d{4})",
+        "unit": "%",
+        "period_group": "period",
+        "notes": "Home page economic-indicator panel"
+      }
+    ]
+  },
+  {
+    "id": "cb-cote-divoire",
+    "group": "central",
+    "country": "Cote Divoire",
+    "name": "BCEAO — Côte d’Ivoire",
+    "target": "Cote Divoire CB data",
+    "url": "https://www.bceao.int/",
+    "allowed_hosts": [
+      "www.bceao.int",
+      "bceao.int"
+    ],
     "adapter": "review",
-    "scope": "Central bank policy rate",
+    "scope": "Regional central-bank data for WAEMU member country; country-specific mapping needs review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "cb-senegal",
+    "group": "central",
+    "country": "Senegal",
+    "name": "BCEAO — Senegal",
+    "target": "Senegal CB data",
+    "url": "https://www.bceao.int/",
+    "allowed_hosts": [
+      "www.bceao.int",
+      "bceao.int"
+    ],
+    "adapter": "review",
+    "scope": "Regional central-bank data for WAEMU member country; country-specific mapping needs review",
+    "enabled": true,
+    "update_mode": "Retrieve and flag for review"
+  },
+  {
+    "id": "cb-zambia",
+    "group": "central",
+    "country": "Zambia",
+    "name": "Bank of Zambia",
+    "target": "Zambia CB data",
+    "url": "https://www.boz.zm/",
+    "allowed_hosts": [
+      "www.boz.zm",
+      "boz.zm"
+    ],
+    "adapter": "review",
+    "scope": "Central-bank published aggregate or policy data",
     "enabled": true,
     "update_mode": "Retrieve and flag for review"
   }
