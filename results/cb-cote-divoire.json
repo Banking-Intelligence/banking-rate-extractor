@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "cb-cote-divoire",
-  "checked_at": "2026-09-30T09:34:13.351315+00:00",
+  "checked_at": "2026-09-30T10:00:50.524607+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "bff57abd435a8a20c63ea7d6b0fb810fe79924719a28692f9282d28ea3fdfaf2",
+  "fingerprint": "a2fd377a55c0c9597db19f35b1c23606a9e334a4f79bf3cfc73b71acf02b0332",
   "source_url": "https://www.bceao.int/",
   "message": "Publication retrieved; product/period mapping needs review",
   "retrieval_method": "direct_http"
