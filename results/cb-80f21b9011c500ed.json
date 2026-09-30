@@ -1,25 +1,12 @@
 {
   "schema_version": 1,
   "source_id": "cb-80f21b9011c500ed",
-  "checked_at": "2026-09-30T09:09:02.678235+00:00",
-  "status": "ok",
-  "records": [
-    {
-      "id": "cb-80f21b9011c500ed:passbook",
-      "target": "Morocco CB data",
-      "metric": "Regulated passbook savings rate",
-      "value": 0.0182,
-      "unit": "%",
-      "period": "01/07/2026 to 31/12/2026",
-      "bank": "",
-      "scope": "Central-bank published aggregate or policy data",
-      "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Interest-rates-on-savings-accounts",
-      "notes": "",
-      "status": "Verified official source"
-    }
-  ],
-  "fingerprint": "b0b2b4d970c107398d65238f46885b4d6c0d42e7606af05f167c33f974db2189",
+  "checked_at": "2026-09-30T09:33:18.466172+00:00",
+  "status": "review",
+  "records": [],
+  "fingerprint": "322d0e7a6ef5be2efc7b8f3729d395af1e37f921dbe80e53463f2a4bda290f64",
   "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Interest-rates-on-savings-accounts",
-  "message": "",
-  "retrieval_method": "direct_http"
+  "message": "Savings table changed",
+  "stage": "parsing",
+  "retrieval_method": "jina_reader"
 }
