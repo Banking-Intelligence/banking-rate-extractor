@@ -25,6 +25,7 @@ def source_is_publishable(source, group):
 
 
 def build_result(source, extract_fn=extract, now=None):
+    """Wrap extractor output in the stable JSON contract Apps Script expects."""
     checked_at = (now or dt.datetime.now(dt.timezone.utc)).isoformat()
     base = {
         "schema_version": SCHEMA_VERSION,
@@ -49,6 +50,7 @@ def build_result(source, extract_fn=extract, now=None):
 
 
 def run(group, results_dir=RESULTS_DIR):
+    """Process all publishable sources in a group and save their result files."""
     sources = json.loads(CONFIG.read_text(encoding="utf-8"))
     selected = [s for s in sources if source_is_publishable(s, group)]
     results_dir.mkdir(parents=True, exist_ok=True)

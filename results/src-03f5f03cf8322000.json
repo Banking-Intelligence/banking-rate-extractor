@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-03f5f03cf8322000",
-  "checked_at": "2026-09-28T08:54:41.609859+00:00",
+  "checked_at": "2026-10-01T20:49:57.021489+00:00",
   "status": "ok",
   "records": [
     {
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "c8f0145ec59be068e4710708da9f138c5c96b5152dfa22d99ab2ae4da78f6460",
+  "fingerprint": "f27b71320f25b526c8ebcbd9cd2502a8f377950aeefbdc97f38646e29c3bbc5f",
   "source_url": "https://www.bicici.ci/special-epargne",
   "message": "",
   "retrieval_method": "direct_http"

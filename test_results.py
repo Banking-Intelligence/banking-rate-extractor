@@ -1,3 +1,10 @@
+"""
+Result-contract tests.
+
+These tests make sure generated JSON files keep the shape expected by Apps
+Script and that failed or review-needed sources do not publish fake records.
+"""
+
 import datetime as dt
 import tempfile
 import unittest

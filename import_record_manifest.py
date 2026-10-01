@@ -64,6 +64,7 @@ def load_manifest(path):
 
 
 def validate_manifest_rows(rows, countries=None, allow_sensitive=False):
+    """Validate exported workbook row identities before using them for matching."""
     if not rows:
         raise ManifestError("Manifest is empty")
     columns = set().union(*(row.keys() for row in rows))
@@ -115,6 +116,7 @@ def validate_manifest_rows(rows, countries=None, allow_sensitive=False):
 
 
 def sanitized_manifest(validated):
+    """Keep only safe identity fields for repo-side matching."""
     return {"schema_version": SCHEMA_VERSION, "records": [{k: r.get(k, "") for k in SANITIZED_COLUMNS} for r in validated["records"]]}
 
 
@@ -169,6 +171,7 @@ def classify_source_match(source, records):
 
 
 def match_sources(validated, sources=None):
+    """Classify each review publication as exact, candidate, ambiguous, or none."""
     sources = sources if sources is not None else json.loads(CONFIG.read_text(encoding="utf-8"))
     records = validated["records"]
     rows = []

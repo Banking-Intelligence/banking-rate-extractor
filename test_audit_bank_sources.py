@@ -1,3 +1,10 @@
+"""
+Bank-source audit tests.
+
+These tests keep the audit tool conservative so homepage/directory records are
+not mistaken for safe product-rate automation candidates.
+"""
+
 import unittest
 
 from audit_bank_sources import audit_source, classify_rate_meaning, rank_candidates, source_kind, tier_for

@@ -1,3 +1,10 @@
+"""
+Record manifest tests.
+
+These tests make sure exported workbook identities are valid, unique, and safe
+to use for matching source publications to existing rows.
+"""
+
 import tempfile
 import unittest
 from pathlib import Path
