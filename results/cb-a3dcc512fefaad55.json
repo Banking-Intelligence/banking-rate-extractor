@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-10-01T07:39:28.224562+00:00",
+  "checked_at": "2026-10-01T18:31:07.097974+00:00",
   "status": "ok",
   "records": [
     {
@@ -1269,9 +1269,9 @@
       "id": "cb-a3dcc512fefaad55:27db84f841c9d34e",
       "target": "Kenya CB data",
       "metric": "Business (MSME + Trade Finance)",
-      "value": 0.19899999999999998,
+      "value": 0.196,
       "unit": "%",
-      "period": "2026-08-25",
+      "period": "2026-09-04",
       "bank": "HFCB",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -1284,7 +1284,7 @@
       "metric": "Corporate",
       "value": 0.196,
       "unit": "%",
-      "period": "2026-09-04",
+      "period": "2026-10-01",
       "bank": "HFCB",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -1308,9 +1308,9 @@
       "id": "cb-a3dcc512fefaad55:9e9597fe226985be",
       "target": "Kenya CB data",
       "metric": "Mortgages",
-      "value": 0.18460000000000001,
+      "value": 0.1895,
       "unit": "%",
-      "period": "2026-08-25",
+      "period": "2026-10-01",
       "bank": "HFCB",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -1321,9 +1321,9 @@
       "id": "cb-a3dcc512fefaad55:d35e0d769997cf01",
       "target": "Kenya CB data",
       "metric": "Personal",
-      "value": 0.20920000000000002,
+      "value": 0.11960000000000001,
       "unit": "%",
-      "period": "2026-08-25",
+      "period": "2026-09-04",
       "bank": "HFCB",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -2410,7 +2410,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "11d1dc3138d3221b3bdb401670faca24eda13e1dafc661c2bb2811b622367202",
+  "fingerprint": "f2637d9723d904635f6ce43d790a7e51ca92cc7e5e54ecc0e8330a17b24cdd9a",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": "",
   "retrieval_method": "direct_http"

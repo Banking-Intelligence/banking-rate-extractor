@@ -5024,6 +5024,15 @@
         "unit": "%",
         "period_group": "period",
         "notes": "Home page economic-indicator panel"
+      },
+      {
+        "kind": "regex",
+        "key": "avg_prime_lending",
+        "metric": "Average Prime Lending Rate",
+        "pattern": "(?P<value>\\d+(?:\\.\\d+)?)\\s*Average\\s+Prime\\s+Lending\\s+Rate\\s*(?P<period>[A-Za-z]+\\s+\\d{4})",
+        "unit": "%",
+        "period_group": "period",
+        "notes": "Home page economic-indicator panel"
       }
     ]
   },
@@ -5033,15 +5042,16 @@
     "country": "Cote Divoire",
     "name": "BCEAO — Côte d’Ivoire",
     "target": "Cote Divoire CB data",
-    "url": "https://www.bceao.int/",
+    "url": "https://www.bceao.int/sites/default/files/2026-09/Monthly%20Statistical%20Bulletin%20-%20July%202026.pdf",
     "allowed_hosts": [
       "www.bceao.int",
       "bceao.int"
     ],
-    "adapter": "review",
-    "scope": "Regional central-bank data for WAEMU member country; country-specific mapping needs review",
+    "adapter": "bceao_country",
+    "scope": "Country-specific average lending and deposit rates from BCEAO monthly statistical bulletin",
     "enabled": true,
-    "update_mode": "Retrieve and flag for review"
+    "update_mode": "Automatic reviewed mapping",
+    "bceao_country_label": "Côte d'Ivoire"
   },
   {
     "id": "cb-senegal",
@@ -5049,15 +5059,16 @@
     "country": "Senegal",
     "name": "BCEAO — Senegal",
     "target": "Senegal CB data",
-    "url": "https://www.bceao.int/",
+    "url": "https://www.bceao.int/sites/default/files/2026-09/Monthly%20Statistical%20Bulletin%20-%20July%202026.pdf",
     "allowed_hosts": [
       "www.bceao.int",
       "bceao.int"
     ],
-    "adapter": "review",
-    "scope": "Regional central-bank data for WAEMU member country; country-specific mapping needs review",
+    "adapter": "bceao_country",
+    "scope": "Country-specific average lending and deposit rates from BCEAO monthly statistical bulletin",
     "enabled": true,
-    "update_mode": "Retrieve and flag for review"
+    "update_mode": "Automatic reviewed mapping",
+    "bceao_country_label": "Senegal"
   },
   {
     "id": "cb-zambia",
@@ -5065,14 +5076,18 @@
     "country": "Zambia",
     "name": "Bank of Zambia",
     "target": "Zambia CB data",
-    "url": "https://www.boz.zm/",
+    "url": "https://www.boz.zm/markets-securities/overnight-interbank-interest-rates",
     "allowed_hosts": [
       "www.boz.zm",
       "boz.zm"
     ],
-    "adapter": "review",
-    "scope": "Central-bank published aggregate or policy data",
+    "adapter": "zambia_api",
+    "scope": "Official Bank of Zambia overnight market rates",
     "enabled": true,
-    "update_mode": "Retrieve and flag for review"
+    "update_mode": "Automatic reviewed mapping",
+    "data_urls": {
+      "interbank": "https://www.boz.zm/api/v1/views/overnight_interbank_interest_rates",
+      "olf": "https://www.boz.zm/api/v1/views/overnight_lending_facility_rates"
+    }
   }
 ]

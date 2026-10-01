@@ -1,12 +1,77 @@
 {
   "schema_version": 1,
   "source_id": "cb-1a509fe254888a6e",
-  "checked_at": "2026-10-01T07:39:36.861371+00:00",
-  "status": "review",
-  "records": [],
-  "fingerprint": "3b53b7302fb4e928b652b128d47dbef4310062e7d4a5f54b8b0283d34d2bbf72",
+  "checked_at": "2026-10-01T18:31:57.371599+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "cb-1a509fe254888a6e:fcee388f05d9",
+      "target": "Morocco CB data",
+      "metric": "Lending rates",
+      "value": 0.0481,
+      "unit": "%",
+      "period": "Q2-2026",
+      "bank": "",
+      "scope": "Central-bank published aggregate or policy data",
+      "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Lending-rates",
+      "notes": "Published 11 August 2026",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-1a509fe254888a6e:5ad4095fb7eb",
+      "target": "Morocco CB data",
+      "metric": "Accounts receivable and cash loans",
+      "value": 0.0463,
+      "unit": "%",
+      "period": "Q2-2026",
+      "bank": "",
+      "scope": "Central-bank published aggregate or policy data",
+      "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Lending-rates",
+      "notes": "Published 11 August 2026",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-1a509fe254888a6e:a3dbdd0c93c0",
+      "target": "Morocco CB data",
+      "metric": "Equipment loans",
+      "value": 0.04650000000000001,
+      "unit": "%",
+      "period": "Q2-2026",
+      "bank": "",
+      "scope": "Central-bank published aggregate or policy data",
+      "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Lending-rates",
+      "notes": "Published 11 August 2026",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-1a509fe254888a6e:2f8833fce544",
+      "target": "Morocco CB data",
+      "metric": "Mortgage",
+      "value": 0.0506,
+      "unit": "%",
+      "period": "Q2-2026",
+      "bank": "",
+      "scope": "Central-bank published aggregate or policy data",
+      "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Lending-rates",
+      "notes": "Published 11 August 2026",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-1a509fe254888a6e:bbf33e0ed819",
+      "target": "Morocco CB data",
+      "metric": "Consumer credit",
+      "value": 0.0681,
+      "unit": "%",
+      "period": "Q2-2026",
+      "bank": "",
+      "scope": "Central-bank published aggregate or policy data",
+      "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Lending-rates",
+      "notes": "Published 11 August 2026",
+      "status": "Verified official source"
+    }
+  ],
+  "fingerprint": "5586fa7a7006d5e746de04f52260e5dbfbd47de285ff08ce1cb3aadc4ed18ed0",
   "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Lending-rates",
-  "message": "Lending table changed",
-  "stage": "parsing",
-  "retrieval_method": "jina_reader"
+  "message": "",
+  "retrieval_method": "direct_http"
 }

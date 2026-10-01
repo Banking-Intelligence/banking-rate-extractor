@@ -1,11 +1,38 @@
 {
   "schema_version": 1,
   "source_id": "cb-zambia",
-  "checked_at": "2026-10-01T07:40:19.114001+00:00",
-  "status": "review",
-  "records": [],
-  "fingerprint": "e54fc5d6c0a1b1bfe1d9cf400d7330ba19c4c5532ae6a8518c7cd668aa3dae63",
-  "source_url": "https://www.boz.zm/",
-  "message": "Publication retrieved; product/period mapping needs review",
-  "retrieval_method": "direct_http"
+  "checked_at": "2026-10-01T18:34:40.228961+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "cb-zambia:overnight_interbank",
+      "target": "Zambia CB data",
+      "metric": "Overnight interbank interest rate",
+      "value": 0.1075,
+      "unit": "%",
+      "period": "2026-10-01T13:30:00Z",
+      "bank": "",
+      "scope": "Official Bank of Zambia overnight market rates",
+      "source_url": "https://www.boz.zm/markets-securities/overnight-interbank-interest-rates",
+      "notes": "Overnight Interbank Interest Rate",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-zambia:overnight_lending_facility",
+      "target": "Zambia CB data",
+      "metric": "Overnight lending facility rate",
+      "value": 0.2225,
+      "unit": "%",
+      "period": "2026-09-30T12:00:00Z",
+      "bank": "",
+      "scope": "Official Bank of Zambia overnight market rates",
+      "source_url": "https://www.boz.zm/markets-securities/overnight-interbank-interest-rates",
+      "notes": "Overnight Lending Facility Rate",
+      "status": "Verified official source"
+    }
+  ],
+  "fingerprint": "bb2920838d3c91ce279c5da7dfa497ead0e5b2de81fd5c836ea9ddf44642aa11",
+  "source_url": "https://www.boz.zm/markets-securities/overnight-interbank-interest-rates",
+  "message": "",
+  "retrieval_method": "official_json_api"
 }

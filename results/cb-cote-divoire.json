@@ -1,11 +1,38 @@
 {
   "schema_version": 1,
   "source_id": "cb-cote-divoire",
-  "checked_at": "2026-10-01T07:40:17.714290+00:00",
-  "status": "review",
-  "records": [],
-  "fingerprint": "b9d621c5fe0a23dd0113bfe8ac94358370201eb8b34ee55e7430bd961ab7bfaa",
-  "source_url": "https://www.bceao.int/",
-  "message": "Publication retrieved; product/period mapping needs review",
+  "checked_at": "2026-10-01T18:33:46.684566+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "cb-cote-divoire:avg_lending_combined",
+      "target": "Cote Divoire CB data",
+      "metric": "Average lending rate — combined",
+      "value": 0.0635,
+      "unit": "%",
+      "period": "July 2026",
+      "bank": "",
+      "scope": "Country-specific average lending and deposit rates from BCEAO monthly statistical bulletin",
+      "source_url": "https://www.bceao.int/sites/default/files/2026-09/Monthly%20Statistical%20Bulletin%20-%20July%202026.pdf",
+      "notes": "Côte d'Ivoire 8.45 7.34 6.72 9.86 6.27 6.13 7.09 7.14 8.47 5.43 5.12 4.91 6.33 6.35 ",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-cote-divoire:avg_deposit_combined",
+      "target": "Cote Divoire CB data",
+      "metric": "Average deposit rate — combined",
+      "value": 0.044500000000000005,
+      "unit": "%",
+      "period": "July 2026",
+      "bank": "",
+      "scope": "Country-specific average lending and deposit rates from BCEAO monthly statistical bulletin",
+      "source_url": "https://www.bceao.int/sites/default/files/2026-09/Monthly%20Statistical%20Bulletin%20-%20July%202026.pdf",
+      "notes": "Côte d'Ivoire 6.07 5.63 5.27 5.35 4.25 4.24 4.90 4.77 4.66 4.15 5.48 5.53 4.61 4.45 ",
+      "status": "Verified official source"
+    }
+  ],
+  "fingerprint": "2188bc66e5db1b37a2188c12e97e997cb02c41e0ac1c2901b158644f28e5cad9",
+  "source_url": "https://www.bceao.int/sites/default/files/2026-09/Monthly%20Statistical%20Bulletin%20-%20July%202026.pdf",
+  "message": "",
   "retrieval_method": "direct_http"
 }

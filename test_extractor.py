@@ -8,7 +8,7 @@ mapping for automated bank sources.
 
 import unittest, math, ssl, urllib.error
 from unittest import mock
-from extractor import rate,ReviewRequired,allowed,parse_sarb,retrieve,parse_rules,parse_central_rules,row_label_matches,extract
+from extractor import rate,ReviewRequired,allowed,parse_sarb,retrieve,parse_rules,parse_central_rules,parse_bceao_country,parse_zambia_api,row_label_matches,extract
 class ExtractionTests(unittest.TestCase):
  def test_midpoint(self):
   r=rate('2%–3%');self.assertAlmostEqual(r['rate'],.025);self.assertEqual(r['method'],'Calculated midpoint')
@@ -188,6 +188,35 @@ class ExtractionTests(unittest.TestCase):
     self.assertIn('record_id',rule)
 
 
+ def test_bceao_country_parser_uses_exact_country_rows(self):
+  raw=b"""Monthly Statistical Bulletin - July 2026
+Table 2.2.2.4.1 : Lending rates according to the type of borrower (%)
+Cote d'Ivoire 8.45 7.34 6.72 9.86 6.27 6.13 7.09 7.14 8.47 5.43 5.12 4.91 6.33 6.35
+Senegal 6.39 12.00 5.68 5.57 8.04 8.17 7.53 7.79 6.13 6.24 6.03
+Table 2.2.2.4.2 : Average lending rates according to loan purpose (%)
+Table 2.2.2.4.3 : Average deposit rates by type of depositor (%)
+Cote d'Ivoire 6.07 5.63 5.27 5.35 4.25 4.24 4.90 4.77 4.66 4.15 5.48 5.53 4.61 4.45
+Senegal 5.90 5.26 4.20 5.31 5.80 5.73 5.90 5.92 3.50 5.87 7.10 5.86 5.50 5.76
+Source : BCEAO."""
+  sen={'id':'cb-senegal','country':'Senegal','target':'Senegal CB data','url':'https://www.bceao.int/bulletin.pdf','scope':'BCEAO','bceao_country_label':'Senegal'}
+  ci={'id':'cb-cote-divoire','country':'Cote Divoire','target':'Cote Divoire CB data','url':'https://www.bceao.int/bulletin.pdf','scope':'BCEAO','bceao_country_label':"Cote d'Ivoire"}
+  sen_records=parse_bceao_country(sen,raw);ci_records=parse_bceao_country(ci,raw)
+  self.assertEqual([r['id'] for r in sen_records],['cb-senegal:avg_lending_combined','cb-senegal:avg_deposit_combined'])
+  self.assertAlmostEqual(sen_records[0]['value'],.0603);self.assertAlmostEqual(sen_records[1]['value'],.0576)
+  self.assertAlmostEqual(ci_records[0]['value'],.0635);self.assertAlmostEqual(ci_records[1]['value'],.0445)
+  self.assertEqual(sen_records[0]['period'],'July 2026')
+
+ def test_zambia_api_parser_uses_latest_official_records(self):
+  src={'id':'cb-zambia','target':'Zambia CB data','url':'https://www.boz.zm/markets-securities/overnight-interbank-interest-rates','scope':'Official Bank of Zambia overnight market rates'}
+  payload={
+   'interbank':[{'overnight_interest_rate_date':'<time datetime="2026-10-01T13:30:00Z">1 Oct 2026 - 15:30</time>','overnight_interbank_interest_rate':'10.7500','overnight_interest_rate_description':'<p>Overnight Interbank Interest Rate</p>'}],
+   'olf':[{'overnight_lending_facility_rate_date':'<time datetime="2026-09-30T12:00:00Z">30 Sep 2026 - 12:00</time>','overnight_lending_facility_rate':'22.25','overnight_lending_facility_rate_description':'Overnight Lending Facility Rate'}]
+  }
+  import json
+  records=parse_zambia_api(src,json.dumps(payload).encode())
+  self.assertEqual([r['id'] for r in records],['cb-zambia:overnight_interbank','cb-zambia:overnight_lending_facility'])
+  self.assertAlmostEqual(records[0]['value'],.1075);self.assertAlmostEqual(records[1]['value'],.2225)
+  self.assertEqual(records[0]['source_url'],src['url'])
  def test_central_rules_parse_policy_rate(self):
   src={'id':'cb-seychelles','target':'Seychelles CB data','url':'https://www.cbs.sc/','scope':'Central-bank published aggregate or policy data','rules':[{'kind':'regex','key':'mpr','metric':'Monetary Policy Rate','pattern':r'Monetary\s+Policy\s+Rate\s*:\s*(?:<[^>]+>\s*)?(?P<value>\d+(?:\.\d+)?%)','unit':'%'}]}
   raw=b'<h5>Monetary Policy Rate : <a>1.75%</a></h5>'

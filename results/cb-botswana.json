@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-botswana",
-  "checked_at": "2026-10-01T07:40:14.404263+00:00",
+  "checked_at": "2026-10-01T18:33:43.619034+00:00",
   "status": "ok",
   "records": [
     {
@@ -29,9 +29,22 @@
       "source_url": "https://www.bankofbotswana.bw/",
       "notes": "Home page economic-indicator panel; 9.3Current Inflation Rate August 2026",
       "status": "Verified official source"
+    },
+    {
+      "id": "cb-botswana:avg_prime_lending",
+      "target": "Botswana CB data",
+      "metric": "Average Prime Lending Rate",
+      "value": 0.0719,
+      "unit": "%",
+      "period": "July 2026",
+      "bank": "",
+      "scope": "Central-bank published aggregate or policy data",
+      "source_url": "https://www.bankofbotswana.bw/",
+      "notes": "Home page economic-indicator panel; 7.19Average Prime Lending RateJuly 2026",
+      "status": "Verified official source"
     }
   ],
-  "fingerprint": "a773d7393b682ba4a3a6f1ce9c7c1858c89049113800f6ac7f26810c9572c38f",
+  "fingerprint": "216d941e8a063b273a48bba4ac73194a78fe5227b573637686175a3b2405d068",
   "source_url": "https://www.bankofbotswana.bw/",
   "message": "",
   "retrieval_method": "direct_http"

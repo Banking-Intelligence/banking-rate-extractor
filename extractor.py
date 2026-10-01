@@ -304,6 +304,57 @@ def parse_central_rules(source,raw):
     if not out:raise ReviewRequired('No reviewed central-bank rules for this publication')
     return out
 
+
+def parse_bceao_country(source, raw):
+    """Extract country-specific BCEAO average lending and deposit rates from the official monthly bulletin PDF."""
+    text=text_content(raw)
+    period_match=re.search(r'Monthly Statistical Bulletin\s*-\s*([A-Za-z]+\s+\d{4})', text, re.I)
+    period=period_match.group(1) if period_match else ''
+    country=source.get('bceao_country_label') or source.get('country','')
+    labels=[country]
+    if 'ivoire' in country.lower():
+        labels += [r"C.te d.Ivoire", r"Cote d.Ivoire", r"COTE D.IVOIRE"]
+    def section_between(start, end):
+        m=re.search(start+r'(?P<body>.*?)'+end, text, re.I|re.S)
+        if not m: raise ReviewRequired('BCEAO table section missing: '+start)
+        return m.group('body')
+    def row_last_value(section, key, name):
+        collapsed=clean(section)
+        for label in labels:
+            m=re.search(label+r'\s+(?P<vals>(?:\d+[.,]\d+\s*){2,})', collapsed, re.I)
+            if m:
+                nums=re.findall(r'\d+[.,]\d+', m.group('vals'))
+                if nums:
+                    return observation(source, key, name, float(nums[-1].replace(',','.'))/100, period or 'Latest BCEAO bulletin period', '%', notes=m.group(0)[:500])
+        raise ReviewRequired('BCEAO country row missing or ambiguous: '+source.get('country',''))
+    lending=section_between(r'Table\s+2\.2\.2\.4\.1\s*:\s*Lending rates according to the type of borrower', r'Table\s+2\.2\.2\.4\.2')
+    deposit=section_between(r'Table\s+2\.2\.2\.4\.3\s*:\s*Average deposit rates by type of depositor', r'Source\s*:\s*BCEAO')
+    return [
+        row_last_value(lending, 'avg_lending_combined', 'Average lending rate — combined'),
+        row_last_value(deposit, 'avg_deposit_combined', 'Average deposit rate — combined')
+    ]
+
+
+def parse_zambia_api(source, raw):
+    """Use official Bank of Zambia JSON endpoints and take the latest published record from each endpoint."""
+    payload=json.loads(raw.decode('utf-8'))
+    def first_record(key):
+        rows=payload.get(key)
+        if not isinstance(rows,list) or not rows:
+            raise ReviewRequired('Bank of Zambia API returned no records: '+key)
+        return rows[0]
+    def time_period(html_text):
+        m=re.search(r'datetime=\\?"([^"\\]+)', html_text or '')
+        if m: return m.group(1)
+        return clean(re.sub(r'<[^>]+>',' ',html_text or ''))
+    interbank=first_record('interbank')
+    olf=first_record('olf')
+    return [
+        observation(source,'overnight_interbank','Overnight interbank interest rate',float(interbank['overnight_interbank_interest_rate'])/100,time_period(interbank.get('overnight_interest_rate_date','')),'%',notes=clean(re.sub(r'<[^>]+>',' ',interbank.get('overnight_interest_rate_description','')))),
+        observation(source,'overnight_lending_facility','Overnight lending facility rate',float(olf['overnight_lending_facility_rate'])/100,time_period(olf.get('overnight_lending_facility_rate_date','')),'%',notes=clean(re.sub(r'<[^>]+>',' ',olf.get('overnight_lending_facility_rate_description',''))))
+    ]
+
+
 def parse_bom_key(source,raw):
     for t in tables(raw):
         for r in t:
@@ -356,7 +407,7 @@ def parse_rules(source,raw):
     return out
 
 ADAPTERS={'sarb':parse_sarb,'kenya':parse_kenya,'morocco_term':parse_morocco,'morocco_lending':parse_morocco,
-          'morocco_savings':parse_morocco,'bom_key':parse_bom_key,'central_rules':parse_central_rules,'rules':parse_rules}
+          'morocco_savings':parse_morocco,'bom_key':parse_bom_key,'bceao_country':parse_bceao_country,'zambia_api':parse_zambia_api,'central_rules':parse_central_rules,'rules':parse_rules}
 
 def parse_with_handler(source, raw, url, retrieval_meta):
     """Choose the right parser and attach provenance metadata to every record."""
@@ -379,6 +430,15 @@ def parse_with_handler(source, raw, url, retrieval_meta):
 
 def fetch_publication(source):
     """Fetch one publication and keep enough metadata for review diagnostics."""
+    if source.get('data_urls'):
+        payload={};methods=[];effective=[]
+        for key,data_url in source['data_urls'].items():
+            part_raw,part_url,part_meta=fetch(data_url,source)
+            payload[key]=json.loads(part_raw.decode('utf-8'))
+            methods.append(part_meta.get('retrieval_method','direct'))
+            effective.append(part_url)
+        raw=json.dumps(payload,sort_keys=True).encode('utf-8')
+        return dict(source,url=source['url']), raw, source['url'], {'retrieval_method':'official_json_api','data_urls':effective,'component_methods':methods}
     raw,url,retrieval_meta=fetch(source['url'],source)
     current=dict(source,url=url)
     if source.get('publication_link_pattern'):

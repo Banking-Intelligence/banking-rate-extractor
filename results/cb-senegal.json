@@ -1,11 +1,38 @@
 {
   "schema_version": 1,
   "source_id": "cb-senegal",
-  "checked_at": "2026-10-01T07:40:18.506791+00:00",
-  "status": "review",
-  "records": [],
-  "fingerprint": "b9d621c5fe0a23dd0113bfe8ac94358370201eb8b34ee55e7430bd961ab7bfaa",
-  "source_url": "https://www.bceao.int/",
-  "message": "Publication retrieved; product/period mapping needs review",
+  "checked_at": "2026-10-01T18:34:10.076186+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "cb-senegal:avg_lending_combined",
+      "target": "Senegal CB data",
+      "metric": "Average lending rate — combined",
+      "value": 0.0603,
+      "unit": "%",
+      "period": "July 2026",
+      "bank": "",
+      "scope": "Country-specific average lending and deposit rates from BCEAO monthly statistical bulletin",
+      "source_url": "https://www.bceao.int/sites/default/files/2026-09/Monthly%20Statistical%20Bulletin%20-%20July%202026.pdf",
+      "notes": "Senegal 6.39 12.00 5.68 5.57 8.04 8.17 7.53 7.79 6.13 6.24 6.03 ",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-senegal:avg_deposit_combined",
+      "target": "Senegal CB data",
+      "metric": "Average deposit rate — combined",
+      "value": 0.0576,
+      "unit": "%",
+      "period": "July 2026",
+      "bank": "",
+      "scope": "Country-specific average lending and deposit rates from BCEAO monthly statistical bulletin",
+      "source_url": "https://www.bceao.int/sites/default/files/2026-09/Monthly%20Statistical%20Bulletin%20-%20July%202026.pdf",
+      "notes": "Senegal 5.90 5.26 4.20 5.31 5.80 5.73 5.90 5.92 3.50 5.87 7.10 5.86 5.50 5.76 ",
+      "status": "Verified official source"
+    }
+  ],
+  "fingerprint": "2188bc66e5db1b37a2188c12e97e997cb02c41e0ac1c2901b158644f28e5cad9",
+  "source_url": "https://www.bceao.int/sites/default/files/2026-09/Monthly%20Statistical%20Bulletin%20-%20July%202026.pdf",
+  "message": "",
   "retrieval_method": "direct_http"
 }
