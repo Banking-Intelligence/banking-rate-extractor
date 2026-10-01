@@ -1,38 +1,12 @@
 {
   "schema_version": 1,
   "source_id": "cb-6723870326e29905",
-  "checked_at": "2026-10-01T20:46:49.914288+00:00",
-  "status": "ok",
-  "records": [
-    {
-      "id": "cb-6723870326e29905:6",
-      "target": "Morocco CB data",
-      "metric": "6-month term deposits weighted average",
-      "value": 0.0215,
-      "unit": "%",
-      "period": "August - 2026",
-      "bank": "",
-      "scope": "Central-bank published aggregate or policy data",
-      "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Rates-on-term-deposits",
-      "notes": "",
-      "status": "Verified official source"
-    },
-    {
-      "id": "cb-6723870326e29905:12",
-      "target": "Morocco CB data",
-      "metric": "12-month term deposits weighted average",
-      "value": 0.0265,
-      "unit": "%",
-      "period": "August - 2026",
-      "bank": "",
-      "scope": "Central-bank published aggregate or policy data",
-      "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Rates-on-term-deposits",
-      "notes": "",
-      "status": "Verified official source"
-    }
-  ],
-  "fingerprint": "64c65d4942caa78f068cb517c22cb2d169865fa3a675f8d1cc60f87756c4e5a6",
+  "checked_at": "2026-10-01T20:55:09.784995+00:00",
+  "status": "review",
+  "records": [],
+  "fingerprint": "6d0a5c00b49da18e6a04b116d15a68aed4c4627f81b122a7938ab40662103dd1",
   "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Rates-on-term-deposits",
-  "message": "",
-  "retrieval_method": "direct_http"
+  "message": "Term deposit table changed",
+  "stage": "parsing",
+  "retrieval_method": "jina_reader"
 }
