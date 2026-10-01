@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "src-97dac4e1b8d5eb32",
-  "checked_at": "2026-10-01T20:48:57.736498+00:00",
+  "checked_at": "2026-10-01T20:58:08.426096+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "0d74ec80f3f663dd024f3815e69b1871e0fa8aea22b2f5308fe76fc6edffe848",
+  "fingerprint": "da3a641f6c995fac05ef3ed9fd9425eb462f44a2e0e56fa23bab8ffb3e347e17",
   "source_url": "https://www.fnbnamibia.com.na/rates-pricing/accessAfterAFixedPeriod.html",
   "message": "Product row is missing or ambiguous: 3\\ Months",
   "stage": "parsing",

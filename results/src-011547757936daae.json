@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-011547757936daae",
-  "checked_at": "2026-10-01T20:49:45.569582+00:00",
+  "checked_at": "2026-10-01T20:58:28.727106+00:00",
   "status": "ok",
   "records": [
     {
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "3542436ab32cc7dc389731b31a037ae58e49296f46a807f833e0cb362da5cc1b",
+  "fingerprint": "79337b6050ab78345a3a43e346c82cf4182a9849ed773d4df54ea0b7370ae3ab",
   "source_url": "https://www.bcpbank.mu/content/bank-mauritius-template-fees-charges-and-commissions",
   "message": "",
   "retrieval_method": "direct_http"

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-e0c3794479e44377",
-  "checked_at": "2026-10-01T20:49:34.722562+00:00",
+  "checked_at": "2026-10-01T20:58:24.513355+00:00",
   "status": "ok",
   "records": [
     {
@@ -85,7 +85,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "7bc7bf64d228d376c93d1745477c913380665bf75bdd03d0589c4b32e595fbae",
+  "fingerprint": "bfd039a3f52387ab1d807cd991db303682342a9f161405fee0bc3ec1bdec6116",
   "source_url": "https://bankone.mu/en/tarrifs/",
   "message": "",
   "retrieval_method": "direct_http"

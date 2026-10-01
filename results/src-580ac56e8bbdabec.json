@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-580ac56e8bbdabec",
-  "checked_at": "2026-10-01T20:50:08.202263+00:00",
+  "checked_at": "2026-10-01T20:59:26.061193+00:00",
   "status": "ok",
   "records": [
     {
@@ -85,7 +85,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "4c4f36fb1594d427b103a859a76e7e84c4ceab061c64323b640073408cd6f3b9",
+  "fingerprint": "16a919c3409578219be32ba49a70687bc596bac7a0795cdf87d2f26c2cd8973d",
   "source_url": "https://www.ubazambia.com/personal-banking/accounts/uba-savings-account/",
   "message": "",
   "retrieval_method": "direct_http"
