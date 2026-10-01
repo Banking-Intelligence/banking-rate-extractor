@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "cb-80f21b9011c500ed",
-  "checked_at": "2026-09-30T09:59:23.800825+00:00",
+  "checked_at": "2026-10-01T07:39:35.113614+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "9a666023efba18adeb348fa1e3d34b3a98f59749ec5ef9970d2055b1bc924309",
+  "fingerprint": "12ab837ad13ff2df220914bde16b9da8775297266f12b37b745b57b16339c394",
   "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Interest-rates-on-savings-accounts",
   "message": "Savings table changed",
   "stage": "parsing",
