@@ -130,6 +130,116 @@
       "product_tenor": "Savings Account (High-Yield) / POP Save",
       "currency": "MUR",
       "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-a866ecbbd99927df",
+      "record_id": "cbed3baca38afbf3",
+      "country": "Mauritius",
+      "bank_name": "Mauritus Commercial Bank(MCB)",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / Savings rate",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-a866ecbbd99927df",
+      "record_id": "d4736feb26068a47",
+      "country": "Mauritius",
+      "bank_name": "Mauritus Commercial Bank(MCB)",
+      "type": "Deposit",
+      "product_tenor": "Fixed: 3 Month / MUR fixed deposit",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-a866ecbbd99927df",
+      "record_id": "a9fc59997c16ed6a",
+      "country": "Mauritius",
+      "bank_name": "Mauritus Commercial Bank(MCB)",
+      "type": "Deposit",
+      "product_tenor": "Fixed: 12 Month / Monthly interest",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-a866ecbbd99927df",
+      "record_id": "a9fc59997c16ed6a-bbec7dd4",
+      "country": "Mauritius",
+      "bank_name": "Mauritus Commercial Bank(MCB)",
+      "type": "Deposit",
+      "product_tenor": "Fixed: 12 Month / Quarterly interest",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-a866ecbbd99927df",
+      "record_id": "a9fc59997c16ed6a-4aff2e78",
+      "country": "Mauritius",
+      "bank_name": "Mauritus Commercial Bank(MCB)",
+      "type": "Deposit",
+      "product_tenor": "Fixed: 12 Month / Yearly interest",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-a866ecbbd99927df",
+      "record_id": "a9fc59997c16ed6a-68c9cb98",
+      "country": "Mauritius",
+      "bank_name": "Mauritus Commercial Bank(MCB)",
+      "type": "Deposit",
+      "product_tenor": "Fixed: 12 Month / At maturity interest",
+      "currency": "MUR",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-580ac56e8bbdabec",
+      "record_id": "7ea55f7bd0dc0e60",
+      "country": "Zambia",
+      "bank_name": "United Bank of Africa(UBA) Zambia",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / UBA Kiddies Account",
+      "currency": "ZMW",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-580ac56e8bbdabec",
+      "record_id": "7ea55f7bd0dc0e60-1ad277ee",
+      "country": "Zambia",
+      "bank_name": "United Bank of Africa(UBA) Zambia",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / UBA Teens Account",
+      "currency": "ZMW",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-580ac56e8bbdabec",
+      "record_id": "7ea55f7bd0dc0e60-eabe7eb9",
+      "country": "Zambia",
+      "bank_name": "United Bank of Africa(UBA) Zambia",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / UBA NextGen Account",
+      "currency": "ZMW",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-580ac56e8bbdabec",
+      "record_id": "7ea55f7bd0dc0e60-b22151da",
+      "country": "Zambia",
+      "bank_name": "United Bank of Africa(UBA) Zambia",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail) / UBA Freedom Account",
+      "currency": "ZMW",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "src-580ac56e8bbdabec",
+      "record_id": "e9c8f9311512100a",
+      "country": "Zambia",
+      "bank_name": "United Bank of Africa(UBA) Zambia",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (High-Yield) / UBA Bumper Account",
+      "currency": "ZMW",
+      "mapping_basis": "live_workbook_exact_match"
     }
   ]
 }

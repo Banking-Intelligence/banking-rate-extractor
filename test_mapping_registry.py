@@ -1,3 +1,10 @@
+"""
+Mapping registry tests.
+
+These tests check that automated source-to-row mappings are documented once
+and match the country and currency in sources.json.
+"""
+
 import unittest
 
 from validate_mapping_registry import RegistryError, load_registry, validate_registry

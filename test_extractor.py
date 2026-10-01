@@ -232,6 +232,47 @@ Source : BCEAO."""
   with self.assertRaises(ReviewRequired):parse_central_rules(src,b'Policy Rate 5% Policy Rate 6%')
   src['rules'][0]['pattern']=r'Policy\s+Rate\s+(?P<value>Up to \d+(?:\.\d+)?%)'
   with self.assertRaises(ReviewRequired):parse_central_rules(src,b'Policy Rate Up to 5%')
+
+ def test_uganda_central_rules_extract_bou_benchmarks_without_hardcoded_values(self):
+  import json
+  from pathlib import Path
+  sources=json.loads(Path('sources.json').read_text(encoding='utf-8'))
+  src=next(s for s in sources if s['id']=='cb-68a0f1d7cecdc13b')
+  raw=("""
+  Monetary Policy Decision: The Monetary Policy Committee maintained the Central Bank Rate at 9.75 % in May 2026.
+  The Bank of Uganda increased the Cash Reserve Requirement from 9.5% to 11%.
+  Annual headline inflation rose to 3.0 % from 2.8% in March 2026, while core inflation increased to 3.0% from 2.9%.
+  Money market rates stayed within the CBR band, with the overnight interbank rate and the 7-day weighted average rate rising by 17 basis points and 30 basis points to 10.09 % and 10.5% in April 2026, respectively.
+  Q-Apr'26 10.3 11.3 12.3 13.4 13.7 14.5 15.5 15.9 16.0
+  The weighted average shilling lending rate fell to 18.65% in the three months to March 2026 compared to 18.71% in the three months to December 2025.
+  The lending rate on foreign currency denominated loans fell to 6.98% compared to 7.96% over the same period.
+  """).encode('utf-8')
+  records=parse_central_rules(src,raw)
+  values={r['metric']:r['value'] for r in records}
+  self.assertAlmostEqual(values['Central Bank Rate (CBR)'],.0975)
+  self.assertAlmostEqual(values['Cash Reserve Requirement (CRR)'],.11)
+  self.assertAlmostEqual(values['Headline Inflation Rate'],.03)
+  self.assertAlmostEqual(values['Core Inflation Rate'],.03)
+  self.assertAlmostEqual(values['Overnight Interbank Cash Rate'],.1009)
+  self.assertAlmostEqual(values['7-Day Interbank Cash Market Rate'],.105)
+  self.assertAlmostEqual(values['Treasury Bills (91-Day Yield)'],.103)
+  self.assertAlmostEqual(values['Treasury Bills (182-Day Yield)'],.113)
+  self.assertAlmostEqual(values['Treasury Bills (364-Day Yield)'],.123)
+  self.assertAlmostEqual(values['Commercial Bank Weighted Lending Rate (UGX)'],.1865)
+  self.assertAlmostEqual(values['Commercial Bank Weighted Lending Rate (Foreign Currency)'],.0698)
+  self.assertTrue(all(r['source_url']==src['url'] for r in records))
+  for rule in src['rules']:
+   self.assertNotIn('rate',rule)
+   self.assertNotIn('final_value',rule)
+
+ def test_uganda_central_rules_fail_safely_when_publication_wording_changes(self):
+  import json
+  from pathlib import Path
+  sources=json.loads(Path('sources.json').read_text(encoding='utf-8'))
+  src=next(s for s in sources if s['id']=='cb-68a0f1d7cecdc13b')
+  with self.assertRaises(ReviewRequired):
+   parse_central_rules(src,b'Bank of Uganda Monetary Policy Report. The policy stance is unchanged but no exact numeric benchmark table is present.')
+
  def test_central_source_targets_are_standardized_for_all_countries(self):
   import json
   from pathlib import Path

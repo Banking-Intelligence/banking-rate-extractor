@@ -4883,17 +4883,118 @@
     "id": "cb-68a0f1d7cecdc13b",
     "group": "central",
     "country": "Uganda",
-    "name": "Bank of Uganda — bank charges April 2026",
+    "name": "Bank of Uganda — Monetary Policy Report May 2026",
     "target": "Uganda CB data",
-    "url": "https://bou.or.ug/uploads/Commercial_Banks_Interest_Rates_and_Bank_Charges_as_at_01_April_2026_25716d34bb.pdf",
+    "url": "https://bou.or.ug/uploads/Monetary_Policy_Report_May_2026_3e04d871dc.pdf",
     "allowed_hosts": [
       "bou.or.ug",
       "www.bou.or.ug"
     ],
-    "adapter": "review",
-    "scope": "Bank-reported ranges republished by regulator; product/tenor unspecified",
+    "adapter": "central_rules",
+    "scope": "Central-bank policy, inflation, money-market, securities-yield, and aggregate lending indicators",
     "enabled": true,
-    "update_mode": "Retrieve and flag for review"
+    "update_mode": "Automatic reviewed mapping",
+    "rules": [
+      {
+        "kind": "regex",
+        "key": "cbr",
+        "metric": "Central Bank Rate (CBR)",
+        "pattern": "maintained\\s+the\\s+Central\\s+Bank\\s+Rate\\s+at\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*%\\s+in\\s+(?P<period>[A-Za-z]+\\s+\\d{4})",
+        "unit": "%",
+        "period_group": "period",
+        "notes": "BOU Monetary Policy Report policy decision text"
+      },
+      {
+        "kind": "regex",
+        "key": "crr",
+        "metric": "Cash Reserve Requirement (CRR)",
+        "pattern": "increased\\s+the\\s+Cash\\s+Reserve\\s+Requirement\\s+from\\s+\\d+(?:\\.\\d+)?\\s*%\\s+to\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*%",
+        "unit": "%",
+        "period": "May 2026",
+        "notes": "BOU Monetary Policy Report executive summary"
+      },
+      {
+        "kind": "regex",
+        "key": "headline_inflation",
+        "metric": "Headline Inflation Rate",
+        "pattern": "Annual\\s+headline\\s+inflation\\s+rose\\s+to\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*%\\s+from\\s+\\d+(?:\\.\\d+)?%\\s+in\\s+March\\s+2026",
+        "unit": "%",
+        "period": "April 2026",
+        "notes": "BOU Monetary Policy Report inflation summary"
+      },
+      {
+        "kind": "regex",
+        "key": "core_inflation",
+        "metric": "Core Inflation Rate",
+        "pattern": "Annual\\s+headline\\s+inflation\\s+rose\\s+to\\s+\\d+(?:\\.\\d+)?\\s*%\\s+from\\s+\\d+(?:\\.\\d+)?%\\s+in\\s+March\\s+2026,\\s+while\\s+core\\s+inflation\\s+increased\\s+to\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*%\\s+from\\s+\\d+(?:\\.\\d+)?%",
+        "unit": "%",
+        "period": "April 2026",
+        "notes": "BOU Monetary Policy Report inflation summary"
+      },
+      {
+        "kind": "regex",
+        "key": "overnight_interbank",
+        "metric": "Overnight Interbank Cash Rate",
+        "pattern": "overnight\\s+interbank\\s+rate\\s+and\\s+the\\s+7\\s*-day\\s+weighted\\s+average\\s+rate\\s+rising\\s+by\\s+[^.]*?\\s+to\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*%\\s+and\\s+\\d+(?:\\.\\d+)?\\s*%\\s+in\\s+(?P<period>[A-Za-z]+\\s+\\d{4})",
+        "unit": "%",
+        "period_group": "period",
+        "notes": "BOU Monetary Policy Report domestic financial conditions"
+      },
+      {
+        "kind": "regex",
+        "key": "interbank_7_day",
+        "metric": "7-Day Interbank Cash Market Rate",
+        "pattern": "overnight\\s+interbank\\s+rate\\s+and\\s+the\\s+7\\s*-day\\s+weighted\\s+average\\s+rate\\s+rising\\s+by\\s+[^.]*?\\s+to\\s+\\d+(?:\\.\\d+)?\\s*%\\s+and\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*%\\s+in\\s+(?P<period>[A-Za-z]+\\s+\\d{4})",
+        "unit": "%",
+        "period_group": "period",
+        "notes": "BOU Monetary Policy Report domestic financial conditions"
+      },
+      {
+        "kind": "regex",
+        "key": "tbill_91",
+        "metric": "Treasury Bills (91-Day Yield)",
+        "pattern": "Q-Apr'26\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s+\\d+(?:\\.\\d+)?\\s+\\d+(?:\\.\\d+)?",
+        "unit": "%",
+        "period": "Quarter to April 2026",
+        "notes": "BOU Monetary Policy Report secondary market yield curve"
+      },
+      {
+        "kind": "regex",
+        "key": "tbill_182",
+        "metric": "Treasury Bills (182-Day Yield)",
+        "pattern": "Q-Apr'26\\s+\\d+(?:\\.\\d+)?\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s+\\d+(?:\\.\\d+)?",
+        "unit": "%",
+        "period": "Quarter to April 2026",
+        "notes": "BOU Monetary Policy Report secondary market yield curve"
+      },
+      {
+        "kind": "regex",
+        "key": "tbill_364",
+        "metric": "Treasury Bills (364-Day Yield)",
+        "pattern": "Q-Apr'26\\s+\\d+(?:\\.\\d+)?\\s+\\d+(?:\\.\\d+)?\\s+(?P<value>\\d+(?:\\.\\d+)?)",
+        "unit": "%",
+        "period": "Quarter to April 2026",
+        "notes": "BOU Monetary Policy Report secondary market yield curve"
+      },
+      {
+        "kind": "regex",
+        "key": "weighted_lending_ugx",
+        "metric": "Commercial Bank Weighted Lending Rate (UGX)",
+        "pattern": "weighted\\s+average\\s+shilling\\s+lending\\s+rate\\s+fell\\s+to\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*%\\s+in\\s+the\\s+three\\s+months\\s+to\\s+(?P<period>[A-Za-z]+\\s+\\d{4})",
+        "unit": "%",
+        "period_group": "period",
+        "notes": "BOU Monetary Policy Report lending interest rates"
+      },
+      {
+        "kind": "regex",
+        "key": "weighted_lending_fx",
+        "metric": "Commercial Bank Weighted Lending Rate (Foreign Currency)",
+        "pattern": "lending\\s+rate\\s+on\\s+foreign\\s+currency\\s+denominated\\s+loans\\s+fell\\s+to\\s+(?P<value>\\d+(?:\\.\\d+)?)\\s*%\\s+compared\\s+to\\s+\\d+(?:\\.\\d+)?\\s*%\\s+over\\s+the\\s+same\\s+period",
+        "unit": "%",
+        "period": "Three months to March 2026",
+        "notes": "BOU Monetary Policy Report lending interest rates"
+      }
+    ]
   },
   {
     "id": "cb-nigeria",

@@ -304,7 +304,6 @@ def parse_central_rules(source,raw):
     if not out:raise ReviewRequired('No reviewed central-bank rules for this publication')
     return out
 
-
 def parse_bceao_country(source, raw):
     """Extract country-specific BCEAO average lending and deposit rates from the official monthly bulletin PDF."""
     text=text_content(raw)

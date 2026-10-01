@@ -112,6 +112,7 @@ def tier_for(source, content=None, retrieval_status="not_checked"):
 
 
 def audit_source(source, fetch_review_publications=True):
+    """Inspect one bank source and decide how safe it looks for automation."""
     item = {
         "source_id": source.get("id"),
         "country": source.get("country"),
@@ -167,6 +168,7 @@ def audit_source(source, fetch_review_publications=True):
 
 
 def rank_candidates(items, limit=10):
+    """Prefer the clearest source candidates while spreading coverage by country."""
     tier_score = {"Tier A": 0, "Tier B": 1}
     candidates = [i for i in items if i["tier"] in tier_score and i["source_kind"] == "product_publication"]
     candidates.sort(key=lambda i: (tier_score[i["tier"]], i["country"] or "", i["bank_name"] or ""))
