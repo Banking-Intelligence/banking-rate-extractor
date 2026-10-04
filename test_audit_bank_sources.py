@@ -20,6 +20,8 @@ class BankSourceAuditTests(unittest.TestCase):
         self.assertEqual(classify_rate_meaning(text), 'single_numeric')
         self.assertEqual(classify_rate_meaning('Term deposit 3.0% - 4.0% p.a.'), 'range')
         self.assertEqual(classify_rate_meaning('Loan Prime + 2%'), 'reference_linked')
+        self.assertEqual(classify_rate_meaning('Savings account pays 30% of MPR per annum.'), 'reference_linked')
+        self.assertEqual(classify_rate_meaning('Competitive interest rate. Financing up to 80% of the property value.'), 'unavailable')
         self.assertEqual(classify_rate_meaning('Term deposit available upon request'), 'personalised_or_negotiated')
 
     def test_tier_a_requires_numeric_rates_and_clear_structure(self):
