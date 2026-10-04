@@ -16,7 +16,8 @@ from extractor import CONFIG, ReviewRequired, fetch_publication, markdown_tables
 from import_record_manifest import allowed_countries, load_manifest, match_sources, validate_manifest_rows
 
 REPORT_DIR = Path(__file__).with_name("reports")
-REFERENCE_LINKED = re.compile(r"\b(?:prime|base\s+rate|repo|tbill|t-bill|treasury|benchmark|reference)\b\s*(?:[+\-]|plus|minus)", re.I)
+REFERENCE_LINKED = re.compile(r"\b(?:prime|base\s+rate|repo|tbill|t-bill|treasury|benchmark|reference|mpr)\b\s*(?:[+\-]|plus|minus|per\s+annum|p\.?a\.?)", re.I)
+NON_RATE_PERCENT = re.compile(r"\b(?:financ(?:e|ing)\s+up\s+to|up\s+to)\s+\d{1,3}(?:[.,]\d+)?\s*%\s+(?:of|unit|value|ltv|loan\s+to\s+value)", re.I)
 PERSONALISED = re.compile(r"\b(?:negotiable|subject to|depending on|depends on|as per arrangement|upon request|available on request|contact branch|assessment|personalised|personalized)\b", re.I)
 RATE_LIKE = re.compile(r"(?<!\d)(?:\d{1,2}(?:[.,]\d{1,3})?\s*%|\d{1,2}(?:[.,]\d{1,3})?\s*(?:-|to|à)\s*\d{1,2}(?:[.,]\d{1,3})?\s*%)", re.I)
 PRODUCT_WORDS = re.compile(r"\b(?:deposit|savings?|loan|mortgage|fixed|term|call|notice|epargne|compte|taux|interest|rate)\b", re.I)
@@ -42,7 +43,10 @@ def source_has_existing_record_ids(source):
 
 def classify_rate_meaning(text):
     snippets = [clean(s) for s in re.split(r"[\n\r]+|(?<=[.;])\\s+", text) if RATE_LIKE.search(s)]
-    sample = " ".join(snippets[:20]) if snippets else text
+    rate_snippets = [s for s in snippets if not NON_RATE_PERCENT.search(s)]
+    sample = " ".join(rate_snippets[:20]) if rate_snippets else " ".join(snippets[:20]) if snippets else text
+    if snippets and not rate_snippets:
+        return "unavailable"
     if REFERENCE_LINKED.search(sample):
         return "reference_linked"
     if snippets and all(PERSONALISED.search(s) for s in snippets):
