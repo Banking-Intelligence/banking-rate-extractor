@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "source_id": "bank-eea41274b759",
+  "checked_at": "2026-10-05T13:46:57.651926+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "d2e5a105f2ed2b1f",
+      "target": "Nigeria",
+      "rate": 0.0555,
+      "low": 0.0555,
+      "high": 0.0555,
+      "method": "Published rate",
+      "raw": "5.55%",
+      "source_url": "https://www.accessbankplc.com/Rates-Guide/",
+      "evidence": "Interest Rate (P.A.) | 5.55% | 5.55% | 5.55% | 5.55% | 5.55% | 5.55% | 5.55% | Less than ₦100,000 0.50% ₦100,000- ₦4,999,999 2.50% ₦5M - ₦49,999,999 3.50% ₦50M - ₦99,999,999 3.75% ₦100M - ₦249,999,999 5.50% ₦250M & ABOVE 5.0% | 5.55% | 5.55%",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "bank-eea41274b759",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "4b732d5f24ab1bfacb67658917fdf1b517db78b9ef13e3f630a6cb6e556ba5a4",
+  "source_url": "https://www.accessbankplc.com/Rates-Guide/",
+  "message": "",
+  "retrieval_method": "jina_reader"
+}

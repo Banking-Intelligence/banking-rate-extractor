@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "src-76e978c5da35b69b",
-  "checked_at": "2026-10-05T09:29:16.075250+00:00",
+  "checked_at": "2026-10-05T13:46:31.731979+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "451445860fbda7555637080531a661ebd5a61c93a650d26720f8470fc09cbc48",
+  "fingerprint": "3816f8a23765c92a45ee109aa7ed49748cb86c31013477bf56100f572ac6662d",
   "source_url": "https://www.nmbbank.co.tz/investor-relations-nmb/financial-and-regulatory-reports/disclosure?download=469:2026-minimum-disclosure-of-interest-rates-fees-and-charges",
   "message": "Publication wording changed or is ambiguous",
   "stage": "parsing",

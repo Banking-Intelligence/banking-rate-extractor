@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-b0673db44f87164a",
-  "checked_at": "2026-10-05T09:29:24.663795+00:00",
+  "checked_at": "2026-10-05T13:46:34.934034+00:00",
   "status": "ok",
   "records": [
     {
@@ -11,9 +11,9 @@
       "low": 0.034,
       "high": 0.034,
       "method": "Published rate",
-      "raw": "3.40% p.a",
+      "raw": "3.40%",
       "source_url": "https://maubank.mu/news/2026/communique-changes-in-interest-rates/",
-      "evidence": "Savings Rate Household | 3.40% p.a",
+      "evidence": "Savings Rate Household 3.40% p.a Savings Base Rate",
       "status": "Verified bank source",
       "period": "",
       "source_id": "src-b0673db44f87164a",
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "3170ec9d827226f49931c2fdb8dab3541d1d61dd17950e79c5e69ea61d3af38d",
+  "fingerprint": "68f4e3b48526e00ec97efc409ecb3c9737dc9eb8f0859cdd5d870325f56f32c0",
   "source_url": "https://maubank.mu/news/2026/communique-changes-in-interest-rates/",
   "message": "",
   "retrieval_method": "direct_http"

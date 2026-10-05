@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "source_id": "bank-749c4d4e2cf9",
+  "checked_at": "2026-10-05T13:47:20.118599+00:00",
+  "status": "ok",
+  "records": [
+    {
+      "id": "fd2989a146aa1b09",
+      "target": "Namibia",
+      "rate": 0.045,
+      "low": 0.045,
+      "high": 0.045,
+      "method": "Published rate",
+      "raw": "4.50%",
+      "source_url": "https://www.atlantico.na/",
+      "evidence": "3 months | 4.50% | 10,000 | 1,500,000 | end of term",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "bank-749c4d4e2cf9",
+      "effective_date": "",
+      "published_date": ""
+    },
+    {
+      "id": "521ba3f051c5165b",
+      "target": "Namibia",
+      "rate": 0.0475,
+      "low": 0.0475,
+      "high": 0.0475,
+      "method": "Published rate",
+      "raw": "4.75%",
+      "source_url": "https://www.atlantico.na/",
+      "evidence": "6 months | 4.75% | 10,000 | 1,500,000 | end of term",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "bank-749c4d4e2cf9",
+      "effective_date": "",
+      "published_date": ""
+    },
+    {
+      "id": "ce8bb6e1e7805111",
+      "target": "Namibia",
+      "rate": 0.05,
+      "low": 0.05,
+      "high": 0.05,
+      "method": "Published rate",
+      "raw": "5.00%",
+      "source_url": "https://www.atlantico.na/",
+      "evidence": "12 months | 5.00% | 10,000 | 1,500,000 | end of term",
+      "status": "Verified bank source",
+      "period": "",
+      "source_id": "bank-749c4d4e2cf9",
+      "effective_date": "",
+      "published_date": ""
+    }
+  ],
+  "fingerprint": "b58c6fa9810379b5b9ed6adb53788a673467713c34fe7f4bbd1f8001bdeac4d3",
+  "source_url": "https://www.atlantico.na/",
+  "message": "",
+  "retrieval_method": "jina_reader"
+}

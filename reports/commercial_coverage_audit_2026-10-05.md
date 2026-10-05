@@ -59,3 +59,10 @@ The live updater requested GitHub files even for `adapter: review` bank director
 ### Existing mapping repair
 
 MauBank's HTML table becomes plain text in Jina. The old rule also pinned a changing rate inside its expected header. The new rule matches the exact Household Savings label, annual unit, and adjoining Savings Base Rate label in both representations, capturing the rate dynamically. Duplicate, qualified and wrong-product text stays review. Live direct HTML and Jina both passed.
+
+## Final extraction
+
+25 mapped sources (previously 22): 22 ok, 3 review, 0 failed; 93 emitted records. Five newly mapped existing rows: Nigeria +1, Egypt +1, Namibia +3.
+- `src-5882f5135bf84b65`: Product row is missing or ambiguous: N\$0\ \-\ 4\ 999
+- `src-97dac4e1b8d5eb32`: Product row is missing or ambiguous: 3\ Months
+- `src-76e978c5da35b69b`: Publication wording changed or is ambiguous
