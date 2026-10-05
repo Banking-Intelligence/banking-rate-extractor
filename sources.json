@@ -1166,14 +1166,8 @@
     "scope": "Bank-published product rates",
     "rules": [
       {
-        "kind": "table",
-        "table_header": [
-          "Savings Rate Household",
-          "3.40% p.a"
-        ],
-        "row_label": "Savings\\ Rate\\ Household",
-        "label_column": 0,
-        "column": 1,
+        "kind": "regex",
+        "pattern": "Savings\\s+Rate\\s+Household\\s+(?P<rate>\\d+(?:\\.\\d+)?%)\\s*p\\.?a\\.?\\s+Savings\\s+Base\\s+Rate",
         "record_id": "a025681fd400c0e9"
       }
     ],
@@ -2223,14 +2217,46 @@
     "country": "Nigeria",
     "name": "Access Bank",
     "target": "Nigeria",
-    "url": "https://www.accessbankplc.com/",
+    "url": "https://www.accessbankplc.com/Rates-Guide/",
     "allowed_hosts": [
       "www.accessbankplc.com"
     ],
-    "adapter": "review",
-    "scope": "Website/publication discovery; manual product review",
+    "adapter": "rules",
+    "scope": "Official annual ordinary retail savings rate; named products must agree",
     "enabled": true,
-    "update_mode": "Retrieve and flag for review"
+    "update_mode": "Verified Record-ID updates",
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "Service Item",
+          "Early Savers",
+          "Solo",
+          "Instant Savings",
+          "Premier Savings",
+          "Evergreen Savings",
+          "Everyday Banking Savings",
+          "Diaspora Savings",
+          "High Interest Deposit Account (HIDA)",
+          "Community Savings",
+          "Diamondxtra"
+        ],
+        "row_label": "Interest Rate \\(P\\.A\\.\\)",
+        "label_column": 0,
+        "column": 3,
+        "consensus_columns": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10
+        ],
+        "record_id": "d2e5a105f2ed2b1f"
+      }
+    ]
   },
   {
     "id": "bank-e06ab25108cd",
@@ -3588,14 +3614,25 @@
     "country": "Egypt",
     "name": "Banque Misr",
     "target": "Egypt",
-    "url": "https://www.banquemisr.com/en",
+    "url": "https://www.banquemisr.com/-/media/Interest-rates/Interest-Rates-EN.pdf",
     "allowed_hosts": [
       "www.banquemisr.com"
     ],
-    "adapter": "review",
-    "scope": "Website/publication discovery; manual product review",
+    "adapter": "rules",
+    "scope": "Official USD term deposit, 12 months, USD 500–25,000 tier matching live minimum",
     "enabled": true,
-    "update_mode": "Retrieve and flag for review"
+    "update_mode": "Verified Record-ID updates",
+    "rules": [
+      {
+        "kind": "pdf_table",
+        "page_heading": "Term Deposit in foreign currencies",
+        "section_start": "From\\s+500\\s+unit\\s+till\\s+25,000\\s+unit\\s+in\\s+foreign\\s+currency",
+        "section_end": "More\\s+than\\s+25,000\\s+unit\\s+till\\s+100,000\\s+unit\\s+in\\s+foreign\\s+currency",
+        "header_text": "Currency/Tenor WEEK MONTH 2 MONTHS 3 MONTHS 6 MONTHS YEAR",
+        "pattern": "^US\\s+DOLLAR\\s+\\(USD\\)\\s+(?:\\d+(?:\\.\\d+)?%[ \\t]+){5}(?P<rate>\\d+(?:\\.\\d+)?%)[ \\t]*$",
+        "record_id": "84fb22a27adbbaee"
+      }
+    ]
   },
   {
     "id": "bank-972aa4bc8321",
@@ -4297,10 +4334,54 @@
     "allowed_hosts": [
       "www.atlantico.na"
     ],
-    "adapter": "review",
-    "scope": "Website/publication discovery; manual product review",
+    "adapter": "rules",
+    "scope": "Official NAD fixed-rate term deposits; standard offer only",
     "enabled": true,
-    "update_mode": "Retrieve and flag for review"
+    "update_mode": "Verified Record-ID updates",
+    "rules": [
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "Interest Rate p.a.(%)",
+          "Minimum Deposit (NAD)",
+          "Maximum Deposit (NAD)",
+          "Interest Payment"
+        ],
+        "row_label": "3 months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "fd2989a146aa1b09"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "Interest Rate p.a.(%)",
+          "Minimum Deposit (NAD)",
+          "Maximum Deposit (NAD)",
+          "Interest Payment"
+        ],
+        "row_label": "6 months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "521ba3f051c5165b"
+      },
+      {
+        "kind": "table",
+        "table_header": [
+          "Term",
+          "Interest Rate p.a.(%)",
+          "Minimum Deposit (NAD)",
+          "Maximum Deposit (NAD)",
+          "Interest Payment"
+        ],
+        "row_label": "12 months",
+        "label_column": 0,
+        "column": 1,
+        "record_id": "ce8bb6e1e7805111"
+      }
+    ]
   },
   {
     "id": "bank-99ac4ddaf0cd",

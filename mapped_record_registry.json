@@ -240,6 +240,56 @@
       "product_tenor": "Savings Account (High-Yield) / UBA Bumper Account",
       "currency": "ZMW",
       "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "bank-eea41274b759",
+      "record_id": "d2e5a105f2ed2b1f",
+      "country": "Nigeria",
+      "bank_name": "Access Bank",
+      "type": "Deposit",
+      "product_tenor": "Savings Account (Retail)",
+      "currency": "NGN",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "bank-749c4d4e2cf9",
+      "record_id": "fd2989a146aa1b09",
+      "country": "Namibia",
+      "bank_name": "Atlantic de Europa (Namibia)",
+      "type": "Deposit",
+      "product_tenor": "Fixed: 3 Month",
+      "currency": "NAD",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "bank-749c4d4e2cf9",
+      "record_id": "521ba3f051c5165b",
+      "country": "Namibia",
+      "bank_name": "Atlantic de Europa (Namibia)",
+      "type": "Deposit",
+      "product_tenor": "Fixed: 6 Month",
+      "currency": "NAD",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "bank-749c4d4e2cf9",
+      "record_id": "ce8bb6e1e7805111",
+      "country": "Namibia",
+      "bank_name": "Atlantic de Europa (Namibia)",
+      "type": "Deposit",
+      "product_tenor": "Fixed: 12 Month",
+      "currency": "NAD",
+      "mapping_basis": "live_workbook_exact_match"
+    },
+    {
+      "source_id": "bank-5cfa550f9cc9",
+      "record_id": "84fb22a27adbbaee",
+      "country": "Egypt",
+      "bank_name": "Banque Misr",
+      "type": "Deposit",
+      "product_tenor": "Fixed: 12 Month / USD 500–25,000 tier",
+      "currency": "USD",
+      "mapping_basis": "live_workbook_exact_match"
     }
   ]
 }

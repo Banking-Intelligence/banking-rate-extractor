@@ -382,7 +382,34 @@ def parse_rules(source,raw):
     """Apply deterministic source rules and reject missing or ambiguous matches."""
     out=[];ts=(tables(raw)+markdown_tables(raw)) if not raw.startswith(b'%PDF') else []; text=text_content(raw)
     for rule in source.get('rules',[]):
-        if rule['kind']=='table':
+        if rule['kind']=='pdf_table':
+            # Layout text retains the visual order of balance tiers in a PDF.
+            # One exact page, tier, header and currency row must all agree.
+            if not raw.startswith(b'%PDF'):
+                raise ReviewRequired('Expected official PDF publication')
+            pages = [p.extract_text(extraction_mode='layout') or ''
+                     for p in PdfReader(io.BytesIO(raw)).pages[:60]]
+            candidates = [p for p in pages if rule['page_heading'] in clean(p)
+                          and re.search(rule['section_start'], p, re.I)]
+            if len(candidates) != 1:
+                raise ReviewRequired('PDF product page is missing or ambiguous')
+            page = candidates[0]
+            starts = list(re.finditer(rule['section_start'], page, re.I))
+            if len(starts) != 1:
+                raise ReviewRequired('PDF balance tier is missing or ambiguous')
+            tail = page[starts[0].end():]
+            ends = list(re.finditer(rule['section_end'], tail, re.I))
+            if len(ends) != 1:
+                raise ReviewRequired('PDF balance tier boundary changed')
+            section = tail[:ends[0].start()]
+            if rule['header_text'] not in clean(section):
+                raise ReviewRequired('PDF currency or tenor header changed')
+            matches = list(re.finditer(rule['pattern'], section, re.I | re.M))
+            if len(matches) != 1:
+                raise ReviewRequired('PDF currency row is missing or ambiguous')
+            rr = rate(matches[0].group('rate'))
+            evidence = rule['page_heading'] + ' | ' + starts[0].group(0).strip() + ' | ' + matches[0].group(0).strip()
+        elif rule['kind']=='table':
             selected=[t for t in ts if table_header_matches(t, rule.get('table_header'))]
             label_col=rule.get('label_column',0)
             matches=[r for t in selected for r in t if len(r)>label_col and row_label_matches(rule['row_label'],r[label_col])]
@@ -394,7 +421,16 @@ def parse_rules(source,raw):
                 m=re.fullmatch(rule['value_pattern'],cell,re.I)
                 if not m:raise ReviewRequired('Qualified rate wording changed')
                 cell=m.group('rate')
-            rr=rate(cell); evidence=' | '.join(row)
+            rr=rate(cell)
+            # Ordinary retail products must agree before supplying a generic row.
+            # Different product rates are never averaged to manufacture a value.
+            for other_column in rule.get('consensus_columns', []):
+                if other_column >= len(row):
+                    raise ReviewRequired('Consensus rate column changed')
+                other = rate(row[other_column])
+                if (other['low'], other['high']) != (rr['low'], rr['high']):
+                    raise ReviewRequired('Retail product rates differ; exact product mapping required')
+            evidence=' | '.join(row)
         else:
             matches=list(re.finditer(rule['pattern'],text,re.I))
             if len(matches)!=1:raise ReviewRequired('Publication wording changed or is ambiguous')
