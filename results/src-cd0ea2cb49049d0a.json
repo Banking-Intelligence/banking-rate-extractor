@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-cd0ea2cb49049d0a",
-  "checked_at": "2026-10-01T20:58:31.703004+00:00",
+  "checked_at": "2026-10-05T09:29:30.426783+00:00",
   "status": "ok",
   "records": [
     {
@@ -37,7 +37,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "ab61f41b072e55e2c04a2a67fcb6fe7545d66b44b755d6581a8abc5af10b2564",
+  "fingerprint": "9985727f1539ec9d4ddfeb2780b11b12d81e26889aa6c1d1fc3234aa5ab1e6d4",
   "source_url": "https://banking.sbmgroup.mu/individual/interest-rates",
   "message": "",
   "retrieval_method": "direct_http"
