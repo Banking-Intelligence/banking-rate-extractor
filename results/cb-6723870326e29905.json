@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "cb-6723870326e29905",
-  "checked_at": "2026-10-06T08:01:44.885829+00:00",
+  "checked_at": "2026-10-07T07:39:48.880666+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "3e119ce9233da0041f19ffc5c4d963e0ceb08a24592de322ae8466fb89afcc5e",
+  "fingerprint": "b34291dfe0a8055ade5c31870159739186ea17c3dab7746173709c045dcb8c11",
   "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Rates-on-term-deposits",
   "message": "Term deposit table changed",
   "stage": "parsing",
