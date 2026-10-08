@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "cb-nigeria",
-  "checked_at": "2026-10-07T07:40:09.690476+00:00",
+  "checked_at": "2026-10-08T07:56:07.004745+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "ece895bd8a158d0d3937edbd8b3b293e14ec2a443409e6156260121f53309141",
+  "fingerprint": "6a1e769e9bd5a525e6a5a76c03dc7b498f67ed6ffddc0c0ab088cbdac8336f44",
   "source_url": "https://www.cbn.gov.ng/Documents/depositandlending.html",
   "message": "Publication retrieved; product/period mapping needs review",
   "retrieval_method": "direct_http"
