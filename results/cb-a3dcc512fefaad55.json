@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-10-08T07:55:47.038159+00:00",
+  "checked_at": "2026-10-09T07:55:02.336934+00:00",
   "status": "ok",
   "records": [
     {
@@ -522,6 +522,19 @@
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
       "notes": "KESONIA + Premium; indicative average, not a customer quote",
+      "status": "Verified official source"
+    },
+    {
+      "id": "cb-a3dcc512fefaad55:a0b8862a64e63edd",
+      "target": "Kenya CB data",
+      "metric": "Asset Finance",
+      "value": 0.24960000000000002,
+      "unit": "%",
+      "period": "2026-10-08",
+      "bank": "Commercial International Bank",
+      "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
+      "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
+      "notes": "Central Bank Rate (CBR) + Bank Premium (K); indicative average, not a customer quote",
       "status": "Verified official source"
     },
     {
@@ -2410,7 +2423,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "f946fb62088c948b3980afafc7136559994520230cc82bc8b061a852b8ef5b0a",
+  "fingerprint": "5527f32aaca0dbec3e82fb256020e939191bed2347b28b9b564dde68da23f155",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": "",
   "retrieval_method": "direct_http"

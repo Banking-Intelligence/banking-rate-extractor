@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-botswana",
-  "checked_at": "2026-10-08T07:56:20.966095+00:00",
+  "checked_at": "2026-10-09T07:55:41.021817+00:00",
   "status": "ok",
   "records": [
     {
@@ -10,11 +10,11 @@
       "metric": "Monetary Policy Rate",
       "value": 0.055,
       "unit": "%",
-      "period": "August 2026",
+      "period": "September 2026",
       "bank": "",
       "scope": "Central-bank published aggregate or policy data",
       "source_url": "https://www.bankofbotswana.bw/",
-      "notes": "Home page economic-indicator panel; 5.50Monetary Policy RateAugust 2026",
+      "notes": "Home page economic-indicator panel; 5.50Monetary Policy RateSeptember 2026",
       "status": "Verified official source"
     },
     {
@@ -44,7 +44,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "ad821bae560595ad5e128636117f0e3c3f820f8256205d28d44786d74a146055",
+  "fingerprint": "a207106b0ccb1cf6e65f615ad53165b54ad83de7634303802e4af47dd8071974",
   "source_url": "https://www.bankofbotswana.bw/",
   "message": "",
   "retrieval_method": "direct_http"
