@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-8d81d976af3ba436",
-  "checked_at": "2026-10-05T13:46:00.675445+00:00",
+  "checked_at": "2026-10-12T09:36:00.456205+00:00",
   "status": "ok",
   "records": [
     {
@@ -53,7 +53,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "bdcad3b8b1b97f374ca07cb15660bd287154da5ff84b4ae6b426e054eb27ef84",
+  "fingerprint": "6e7fe9cab5744afe8de87423d4e4e5cbf996045616121bd4dc191bcae8815624",
   "source_url": "https://gotyme.co.za/personal/save-and-invest/fixed-deposit",
   "message": "",
   "retrieval_method": "direct_http"
