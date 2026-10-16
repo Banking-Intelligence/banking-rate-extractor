@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-namibia",
-  "checked_at": "2026-10-15T06:20:11.204548+00:00",
+  "checked_at": "2026-10-16T06:16:05.759727+00:00",
   "status": "ok",
   "records": [
     {
@@ -18,7 +18,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "dfe2e681e806e0f6df5027d39db46df229fe92fdbe6a22f6a7b7a509a36540c0",
+  "fingerprint": "6f46e6a685c4a99fd5c3adc34ff06b15fcaa58d49208c31004099f36cbbe13db",
   "source_url": "https://www.bon.com.na/",
   "message": "",
   "retrieval_method": "direct_http"
