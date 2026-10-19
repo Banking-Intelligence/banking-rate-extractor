@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-botswana",
-  "checked_at": "2026-10-18T06:30:17.813055+00:00",
+  "checked_at": "2026-10-19T06:42:05.181906+00:00",
   "status": "ok",
   "records": [
     {
@@ -44,7 +44,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "436b70f18af0a33bc7e357ff75b8266e92eef4e8e297e17a4d2f998740b9d018",
+  "fingerprint": "e5db941ce3198197fac7124d7fe4125aa2061eb555ce1e3925c49bce804dc3c8",
   "source_url": "https://www.bankofbotswana.bw/",
   "message": "",
   "retrieval_method": "direct_http"
