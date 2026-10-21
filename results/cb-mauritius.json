@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "cb-mauritius",
-  "checked_at": "2026-10-20T06:28:14.437661+00:00",
+  "checked_at": "2026-10-21T06:28:18.135646+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "7aeba74bfb988c0469a8bff08337eda114369487bea67da176de573ea365086d",
+  "fingerprint": "018dd0f45b62997f2e582d199abd3e39062caaaecf124ba82af0f16249cd0cfc",
   "source_url": "https://www.bom.mu/repo-rate",
   "message": "Publication retrieved; product/period mapping needs review",
   "retrieval_method": "direct_http"
