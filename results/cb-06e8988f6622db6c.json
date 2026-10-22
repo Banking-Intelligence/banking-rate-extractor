@@ -1,11 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "cb-06e8988f6622db6c",
-  "checked_at": "2026-10-21T06:27:58.162374+00:00",
+  "checked_at": "2026-10-22T06:30:01.729697+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "d1b20e8f42f893387352b4567e87dcd443186ae26011df303f337279f5331189",
+  "fingerprint": "",
   "source_url": "https://www.bog.gov.gh/wp-content/uploads/2026/07/Summary-of-Economic-and-Financial-Data-July-2026-1.pdf",
-  "message": "Publication retrieved; product/period mapping needs review",
-  "retrieval_method": "direct_http"
+  "message": "Retrieval failed by direct HTTP and Jina Reader: <urlopen error [Errno 104] Connection reset by peer>; HTTP Error 422: Unprocessable Entity"
 }
