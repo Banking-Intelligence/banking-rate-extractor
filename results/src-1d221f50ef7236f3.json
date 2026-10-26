@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-1d221f50ef7236f3",
-  "checked_at": "2026-10-19T08:03:11.419806+00:00",
+  "checked_at": "2026-10-26T08:05:40.578169+00:00",
   "status": "ok",
   "records": [
     {
@@ -37,7 +37,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "e48c2a8e64b75fc0c5fc725f6f776b7c783a87065d85e14270a25d396b640835",
+  "fingerprint": "c16cadbbfcc74f5a76772f0ade1e74101c7a7f9f52c3315604d5abef6a0d9175",
   "source_url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary/4/savings-accounts",
   "message": "",
   "retrieval_method": "direct_http"

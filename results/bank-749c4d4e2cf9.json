@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "bank-749c4d4e2cf9",
-  "checked_at": "2026-10-19T08:03:23.356105+00:00",
+  "checked_at": "2026-10-26T08:05:56.118649+00:00",
   "status": "ok",
   "records": [
     {
@@ -53,8 +53,8 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "df67b019954665eeb4163bd8f8cc98e25e1fb7dd9d37f30333148227d4a6bae5",
+  "fingerprint": "80a03b6b76285512f8ed3889e7aad2a0a09ee1d8b7ca221fab3777d389d65de9",
   "source_url": "https://www.atlantico.na/",
   "message": "",
-  "retrieval_method": "jina_reader"
+  "retrieval_method": "direct_http"
 }

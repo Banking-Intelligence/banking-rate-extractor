@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "bank-eea41274b759",
-  "checked_at": "2026-10-19T08:03:16.891908+00:00",
+  "checked_at": "2026-10-26T08:05:45.778738+00:00",
   "status": "ok",
   "records": [
     {
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "d02a2f2809cb807ec53d2e25eca59635e49700a741422febd31e9569d067b93f",
+  "fingerprint": "5ee9fd1a53456107dd35c9f222b9a6b6bf5140c4d2cb7ca70decdb7d7ca013cb",
   "source_url": "https://www.accessbankplc.com/Rates-Guide/",
   "message": "",
   "retrieval_method": "direct_http"

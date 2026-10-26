@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-ab176418dc9aae1b",
-  "checked_at": "2026-10-19T08:03:10.904460+00:00",
+  "checked_at": "2026-10-26T08:05:39.961737+00:00",
   "status": "ok",
   "records": [
     {
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "c3192c45c2ae5763343a3bf22abed2b6247c7a8ec014afdf042fac1d2f71ea75",
+  "fingerprint": "eafd4f13457ac34625e3bba01df44b094611904924188ed226a1f6f8bc81c5e3",
   "source_url": "https://www.republicghana.com/products/savings/republic-i-do-account/",
   "message": "",
   "retrieval_method": "direct_http"
