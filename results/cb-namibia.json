@@ -1,25 +1,12 @@
 {
   "schema_version": 1,
   "source_id": "cb-namibia",
-  "checked_at": "2026-10-28T07:17:18.762036+00:00",
-  "status": "ok",
-  "records": [
-    {
-      "id": "cb-namibia:repo",
-      "target": "Namibia CB data",
-      "metric": "Repo Rate",
-      "value": 0.0675,
-      "unit": "%",
-      "period": "",
-      "bank": "",
-      "scope": "Central-bank published aggregate or policy data",
-      "source_url": "https://www.bon.com.na/",
-      "notes": "Official Bank of Namibia monetary-policy homepage text; decided to maintain the Repo rate at 6.75 percent",
-      "status": "Verified official source"
-    }
-  ],
-  "fingerprint": "3b8c1cbd308fa545926f99b830fc885a2e6bec9cd92ae4608f84e8b66e5cdc7e",
+  "checked_at": "2026-10-29T07:37:45.420178+00:00",
+  "status": "review",
+  "records": [],
+  "fingerprint": "7cd6946f5f6ec034d4f03da2aa5a8308cb6699321c7910476cb9d9e89f4bc7c3",
   "source_url": "https://www.bon.com.na/",
-  "message": "",
+  "message": "Central-bank metric is missing or ambiguous: Repo Rate",
+  "stage": "parsing",
   "retrieval_method": "direct_http"
 }
