@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "src-97dac4e1b8d5eb32",
-  "checked_at": "2026-10-26T08:03:36.932836+00:00",
+  "checked_at": "2026-11-02T09:50:17.215164+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "1cf1d58f5985ca6fa93814ffcd22030974c29ced267efd8c3d2a5bf7c0dff832",
+  "fingerprint": "53b5cd6372ca436c405bd6a919261ed52e045e793782a0407d7a1a3a854e5d73",
   "source_url": "https://www.fnbnamibia.com.na/rates-pricing/accessAfterAFixedPeriod.html",
   "message": "Crawl4AI retrieval failed: Unexpected error in _crawl_web at line 778 in _crawl_web (../../../../../opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage",
   "stage": "parsing",

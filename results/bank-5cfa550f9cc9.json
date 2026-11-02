@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "source_id": "bank-5cfa550f9cc9",
-  "checked_at": "2026-10-26T08:05:47.769142+00:00",
+  "checked_at": "2026-11-02T09:52:21.129318+00:00",
   "status": "ok",
   "records": [
     {
       "id": "84fb22a27adbbaee",
       "target": "Egypt",
-      "rate": 0.0420371,
-      "low": 0.0420371,
-      "high": 0.0420371,
+      "rate": 0.04077600000000001,
+      "low": 0.04077600000000001,
+      "high": 0.04077600000000001,
       "method": "Published rate",
-      "raw": "4.20371%",
+      "raw": "4.07760%",
       "source_url": "https://www.banquemisr.com/-/media/Interest-rates/Interest-Rates-EN.pdf",
-      "evidence": "Term Deposit in foreign currencies | From 500 unit till 25,000 unit in foreign currency | US DOLLAR (USD)                            0.60000%               3.51522%                3.60551%               3.69580%               3.88075%                4.20371%",
+      "evidence": "Term Deposit in foreign currencies | From 500 unit till 25,000 unit in foreign currency | US DOLLAR (USD)                            0.60000%               3.52987%                3.59595%               3.66202%               3.81579%                4.07760%",
       "status": "Verified bank source",
       "period": "",
       "source_id": "bank-5cfa550f9cc9",
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "8ebf30a3de4ba1426e9df9307c3d2c3c9f321ecf77bdee646211fcf40f0894d2",
+  "fingerprint": "a0046ffa4dc665b75f9fe53f91f7675f6cd12648c9a350ac6bad81540d893c54",
   "source_url": "https://www.banquemisr.com/-/media/Interest-rates/Interest-Rates-EN.pdf",
   "message": "",
   "retrieval_method": "direct_http"
