@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "cb-namibia",
-  "checked_at": "2026-11-05T08:23:38.086151+00:00",
+  "checked_at": "2026-11-06T08:26:35.576466+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "06615b4ff2a1128e4892c3b87c4a6dfbe3f6dcf5633a410bfffb6a0ac8cba130",
+  "fingerprint": "4bca79bc10af7b434fb043a45d6a699a72bb0bba57f1f2ac990212a8ff192466",
   "source_url": "https://www.bon.com.na/",
   "message": "Central-bank metric is missing or ambiguous: Repo Rate",
   "stage": "parsing",
