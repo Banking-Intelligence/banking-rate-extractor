@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-01f4a26b62fba636",
-  "checked_at": "2026-11-02T09:48:00.020019+00:00",
+  "checked_at": "2026-11-09T10:04:45.812404+00:00",
   "status": "ok",
   "records": [
     {
@@ -485,7 +485,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "5908437e8e6e01cdeea51a601608c1a0b94315529e252f201c9dd368168440b1",
+  "fingerprint": "2397b1bf21cad97eb0c1bffa5f004ce81628fcb498a4b3634b4eccbc8ea0b593",
   "source_url": "https://www.sc.com/ke/deposits/fixed/?intcid=p-p-fixed-deposits",
   "message": "",
   "retrieval_method": "direct_http"

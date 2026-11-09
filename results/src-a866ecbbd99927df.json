@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-a866ecbbd99927df",
-  "checked_at": "2026-11-02T09:51:52.806611+00:00",
+  "checked_at": "2026-11-09T10:09:00.532949+00:00",
   "status": "ok",
   "records": [
     {
@@ -101,7 +101,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "3c7db4520655de791f915c7912726241521cab864518f23ee8723901663e513a",
+  "fingerprint": "c92249110292a46c8170264eddf67caefa084e65c22bc31ade9b16e756611f3a",
   "source_url": "https://mcb.mu/rates-fees",
   "message": "",
   "retrieval_method": "direct_http"

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-826359a55d1fbe8b",
-  "checked_at": "2026-11-02T09:51:55.281665+00:00",
+  "checked_at": "2026-11-09T10:09:04.271812+00:00",
   "status": "ok",
   "records": [
     {
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "b9eb016456be220e00cdfd35ac430ef323c295fde352d27caa7809606f25cacc",
+  "fingerprint": "35fa6d6de00e8f2a8af8884835d67c1e502e8a774f8d0d65f6adfa70a324cc0a",
   "source_url": "https://abcbanking.mu/fees-and-charges/",
   "message": "",
   "retrieval_method": "direct_http"

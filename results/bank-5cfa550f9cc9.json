@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "bank-5cfa550f9cc9",
-  "checked_at": "2026-11-02T09:52:21.129318+00:00",
+  "checked_at": "2026-11-09T10:09:29.954815+00:00",
   "status": "ok",
   "records": [
     {
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "a0046ffa4dc665b75f9fe53f91f7675f6cd12648c9a350ac6bad81540d893c54",
+  "fingerprint": "83042d93e2f7eb50ef7178d9aa789a036453df4832dda830c49a9223810c2501",
   "source_url": "https://www.banquemisr.com/-/media/Interest-rates/Interest-Rates-EN.pdf",
   "message": "",
   "retrieval_method": "direct_http"

@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "source_id": "src-5882f5135bf84b65",
-  "checked_at": "2026-11-02T09:48:40.635501+00:00",
+  "checked_at": "2026-11-09T10:05:47.223128+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "4e70d2e47806f797f9ce68422ad134ea44ac0fb34a669afbca862fb1468a9209",
+  "fingerprint": "07a76481e7ec4841a9af4eb0ad9664a167211005c74bb856bc7ec4f225e991f5",
   "source_url": "https://www.fnbnamibia.com.na/rates-pricing/accessImmediately.html",
-  "message": "Crawl4AI retrieval failed: Unexpected error in _crawl_web at line 778 in _crawl_web (../../../../../opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage",
+  "message": "Crawl4AI retrieval failed: Unexpected error in _crawl_web at line 778 in _crawl_web (../../../../../opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage",
   "stage": "parsing",
   "retrieval_method": "direct_http",
-  "crawl4ai_message": "Crawl4AI retrieval failed: Unexpected error in _crawl_web at line 778 in _crawl_web (../../../../../opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed o"
+  "crawl4ai_message": "Crawl4AI retrieval failed: Unexpected error in _crawl_web at line 778 in _crawl_web (../../../../../opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed o"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-6db4c18f67255270",
-  "checked_at": "2026-11-02T09:51:55.697686+00:00",
+  "checked_at": "2026-11-09T10:09:05.566935+00:00",
   "status": "ok",
   "records": [
     {
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "702d24e946e80c98343ed6fb6d02c62f11e232e9e5de6f3f52548e86729eee67",
+  "fingerprint": "ab3c40d7b14aa71fbb7ffeafd77a9a8f590960f051f8de05bed58a0486e79bcf",
   "source_url": "https://www.afrasiabank.com/en/about/rates",
   "message": "",
   "retrieval_method": "direct_http"

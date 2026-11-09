@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-981fab275d20596e",
-  "checked_at": "2026-11-02T09:52:17.879772+00:00",
+  "checked_at": "2026-11-09T10:09:24.966675+00:00",
   "status": "ok",
   "records": [
     {
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "dcb698a4d3abded06ba8c4cd8a33c6cae3e7b1b66368e8f70bc5c6b6708cc17e",
+  "fingerprint": "e67d15b5a821a23b08e92fded03a0febd0d798a545d75549bbe33fb3e931d76f",
   "source_url": "https://www.cfgbank.com/particuliers/notre-offre/epargne/le-compte-sur-carnet/",
   "message": "",
   "retrieval_method": "direct_http"
