@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "cb-1a509fe254888a6e",
-  "checked_at": "2026-11-10T08:46:34.831449+00:00",
+  "checked_at": "2026-11-11T08:13:21.594124+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "a5f694b208a285db895ac1c26e13446e4b8d1d2f5cbd7970db62db9543930b1d",
+  "fingerprint": "6558716262e6864e8ac8bce66bc6e9c7d6976d51d8b042b83645f16f59b77c55",
   "source_url": "https://www.bkam.ma/en/Statistics/Interest-rate/Lending-rates",
   "message": "Lending table changed",
   "stage": "parsing",
