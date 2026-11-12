@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-seychelles",
-  "checked_at": "2026-11-11T08:13:57.238385+00:00",
+  "checked_at": "2026-11-12T08:46:41.419679+00:00",
   "status": "ok",
   "records": [
     {
@@ -18,7 +18,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "0847b378c76304faeedbbd8aa8bc02b297ce2b062a10d08aa36727c483072060",
+  "fingerprint": "eb30030a91eeb95be747cdf9a456b44d1652b9242cbf153e1b6efef9c00e5e11",
   "source_url": "https://www.cbs.sc/",
   "message": "",
   "retrieval_method": "direct_http"
