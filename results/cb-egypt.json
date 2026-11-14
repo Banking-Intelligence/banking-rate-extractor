@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_id": "cb-egypt",
-  "checked_at": "2026-11-13T08:39:51.257917+00:00",
+  "checked_at": "2026-11-14T07:57:09.396909+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "e61b99c991e883dd6dd86bd5fce6e49cf545ab087a2d7a46a2b60aa9ff4ca716",
+  "fingerprint": "8c9b32e4fa1e1b80e53c0ace59f0c8560a572cbfaddef3d5d2f2283ca86f66bb",
   "source_url": "https://www.cbe.org.eg/en/economic-research/statistics/monthly-interest-rates",
   "message": "Publication retrieved; product/period mapping needs review",
   "retrieval_method": "jina_reader"

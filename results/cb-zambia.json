@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "source_id": "cb-zambia",
-  "checked_at": "2026-11-13T08:40:12.838362+00:00",
+  "checked_at": "2026-11-14T07:58:31.358059+00:00",
   "status": "ok",
   "records": [
     {
       "id": "cb-zambia:overnight_interbank",
       "target": "Zambia CB data",
       "metric": "Overnight interbank interest rate",
-      "value": 0.1075,
+      "value": 0.1017,
       "unit": "%",
-      "period": "2026-11-13T07:30:00Z",
+      "period": "2026-11-13T13:30:00Z",
       "bank": "",
       "scope": "Official Bank of Zambia overnight market rates",
       "source_url": "https://www.boz.zm/markets-securities/overnight-interbank-interest-rates",
@@ -31,7 +31,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "0088ce5c14811a52ceb874371c34c08bb2d1e8a88a024a7b90bf3651ade800b3",
+  "fingerprint": "70eed994869c87f5b90666c5c2642ca7607c910766bc5a598c1c8882f01f3a6b",
   "source_url": "https://www.boz.zm/markets-securities/overnight-interbank-interest-rates",
   "message": "",
   "retrieval_method": "official_json_api"
