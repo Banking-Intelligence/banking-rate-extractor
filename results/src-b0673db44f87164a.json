@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-b0673db44f87164a",
-  "checked_at": "2026-11-09T10:09:03.143043+00:00",
+  "checked_at": "2026-11-16T10:05:47.587443+00:00",
   "status": "ok",
   "records": [
     {
@@ -21,7 +21,7 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "220d1d735dfa89f23ff4f16bc18c3197fecefef6d50ec9dd47b1e060d2f17809",
+  "fingerprint": "ff885b97af477c4a1ac87b66bc5167fe6768c51596cb9af07e44b7a1689bfe2d",
   "source_url": "https://maubank.mu/news/2026/communique-changes-in-interest-rates/",
   "message": "",
   "retrieval_method": "direct_http"
