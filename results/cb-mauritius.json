@@ -1,10 +1,11 @@
 {
   "schema_version": 1,
   "source_id": "cb-mauritius",
-  "checked_at": "2026-11-17T09:41:31.030796+00:00",
+  "checked_at": "2026-11-18T08:59:51.217822+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "",
+  "fingerprint": "dab80b0f695bc175540bfdc8943ca183a98837dac0de0e849a4f012fa0d54771",
   "source_url": "https://www.bom.mu/repo-rate",
-  "message": "Retrieval failed by direct HTTP and Jina Reader: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>; HTTP Error 401: Unauthorized"
+  "message": "Publication retrieved; product/period mapping needs review",
+  "retrieval_method": "jina_reader"
 }

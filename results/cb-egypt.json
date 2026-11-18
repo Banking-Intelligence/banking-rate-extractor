@@ -1,10 +1,11 @@
 {
   "schema_version": 1,
   "source_id": "cb-egypt",
-  "checked_at": "2026-11-17T09:41:30.110360+00:00",
+  "checked_at": "2026-11-18T08:59:48.607271+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "",
+  "fingerprint": "e61b99c991e883dd6dd86bd5fce6e49cf545ab087a2d7a46a2b60aa9ff4ca716",
   "source_url": "https://www.cbe.org.eg/en/economic-research/statistics/monthly-interest-rates",
-  "message": "Retrieval failed by direct HTTP and Jina Reader: Publisher requires interactive access; HTTP Error 401: Unauthorized"
+  "message": "Publication retrieved; product/period mapping needs review",
+  "retrieval_method": "jina_reader"
 }
