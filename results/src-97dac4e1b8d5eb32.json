@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "source_id": "src-97dac4e1b8d5eb32",
-  "checked_at": "2026-11-16T10:04:10.968813+00:00",
+  "checked_at": "2026-11-23T11:04:02.172550+00:00",
   "status": "review",
   "records": [],
-  "fingerprint": "83138c863b73269ac1fc9997baad497f82b9914c547269efa189694ba0e12c8c",
+  "fingerprint": "73d8aaca86f197b1b44ede830a36ab0de9b2c751fcaf1645b92f82b20bba39d9",
   "source_url": "https://www.fnbnamibia.com.na/rates-pricing/accessAfterAFixedPeriod.html",
-  "message": "Crawl4AI retrieval failed: Unexpected error in _crawl_web at line 778 in _crawl_web (../../../../../opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage",
+  "message": "Product row is missing or ambiguous: 3\\ Months",
   "stage": "parsing",
-  "retrieval_method": "direct_http",
-  "crawl4ai_message": "Crawl4AI retrieval failed: Unexpected error in _crawl_web at line 778 in _crawl_web (../../../../../opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed o"
+  "retrieval_method": "crawl4ai",
+  "render_status": 200
 }

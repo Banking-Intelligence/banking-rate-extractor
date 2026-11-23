@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "src-1d221f50ef7236f3",
-  "checked_at": "2026-11-16T10:06:14.271870+00:00",
+  "checked_at": "2026-11-23T11:04:39.199272+00:00",
   "status": "ok",
   "records": [
     {
@@ -12,7 +12,7 @@
       "high": 0.02,
       "method": "Published rate",
       "raw": "2%",
-      "source_url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary/4/savings-accounts",
+      "source_url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary",
       "evidence": "Competitive interest rates of 2% p.a",
       "status": "Verified bank source",
       "period": "",
@@ -28,7 +28,7 @@
       "high": 0.18,
       "method": "Published rate",
       "raw": "18%",
-      "source_url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary/4/savings-accounts",
+      "source_url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary",
       "evidence": "5 million unsecured at 18% p.a",
       "status": "Verified bank source",
       "period": "",
@@ -37,8 +37,8 @@
       "published_date": ""
     }
   ],
-  "fingerprint": "b97d14957ea15d4e9752656924a6631b9f0b84a462e78c344f20be50e3dadd8f",
-  "source_url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary/4/savings-accounts",
+  "fingerprint": "bd49b33f375ad125184dfbc1e08d284de50410a7c4c353dab1e9a3bb4ff9e73d",
+  "source_url": "https://www.centenarybank.co.ug/product-details/cente-supawoman-individual-savings-account-ordinary",
   "message": "",
   "retrieval_method": "direct_http"
 }
