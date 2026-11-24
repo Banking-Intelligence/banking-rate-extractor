@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-11-23T09:38:47.752742+00:00",
+  "checked_at": "2026-11-24T11:31:17.537338+00:00",
   "status": "ok",
   "records": [
     {
@@ -2324,7 +2324,7 @@
       "metric": "Business (MSME + Trade Finance)",
       "value": 0.16210000000000002,
       "unit": "%",
-      "period": "2026-10-02",
+      "period": "2026-11-23",
       "bank": "UBA Kenya Bank Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -2337,7 +2337,7 @@
       "metric": "Corporate",
       "value": 0.156,
       "unit": "%",
-      "period": "2026-10-02",
+      "period": "2026-11-23",
       "bank": "UBA Kenya Bank Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -2350,7 +2350,7 @@
       "metric": "Personal",
       "value": 0.1471,
       "unit": "%",
-      "period": "2026-10-02",
+      "period": "2026-11-23",
       "bank": "UBA Kenya Bank Limited",
       "scope": "KBA/CBK portal: indicative bank averages; not specific product offers",
       "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
@@ -2423,7 +2423,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "0b5df4ff1d314c8c8933122becc898e2425487058f58e3f68291476334917a94",
+  "fingerprint": "4de776c05bd9152a8bff38625256f343f1d7c6a6d9c80e5576125b67480a83bf",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": "",
   "retrieval_method": "direct_http"
