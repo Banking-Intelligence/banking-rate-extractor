@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "cb-a3dcc512fefaad55",
-  "checked_at": "2026-11-27T10:02:23.514712+00:00",
+  "checked_at": "2026-11-28T09:19:51.199663+00:00",
   "status": "ok",
   "records": [
     {
@@ -2423,7 +2423,7 @@
       "status": "Verified official source"
     }
   ],
-  "fingerprint": "44589308319acea012a688c7df9fb6a010d239bc7517b5fb5ceb2ed8279fc2f1",
+  "fingerprint": "df00ef63bdee063fbc2916d0fefa424a9daf45ec4e75033a93a94f0a396e7ad4",
   "source_url": "https://www.costofcredit.co.ke/site/interest-rate",
   "message": "",
   "retrieval_method": "direct_http"

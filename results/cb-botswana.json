@@ -1,51 +1,12 @@
 {
   "schema_version": 1,
   "source_id": "cb-botswana",
-  "checked_at": "2026-11-27T10:03:12.775035+00:00",
-  "status": "ok",
-  "records": [
-    {
-      "id": "cb-botswana:mopr",
-      "target": "Botswana CB data",
-      "metric": "Monetary Policy Rate",
-      "value": 0.055,
-      "unit": "%",
-      "period": "October 2026",
-      "bank": "",
-      "scope": "Central-bank published aggregate or policy data",
-      "source_url": "https://www.bankofbotswana.bw/",
-      "notes": "Home page economic-indicator panel; 5.50Monetary Policy RateOctober 2026",
-      "status": "Verified official source"
-    },
-    {
-      "id": "cb-botswana:inflation",
-      "target": "Botswana CB data",
-      "metric": "Current Inflation Rate",
-      "value": 0.078,
-      "unit": "%",
-      "period": "September 2026",
-      "bank": "",
-      "scope": "Central-bank published aggregate or policy data",
-      "source_url": "https://www.bankofbotswana.bw/",
-      "notes": "Home page economic-indicator panel; 7.8Current Inflation Rate September 2026",
-      "status": "Verified official source"
-    },
-    {
-      "id": "cb-botswana:avg_prime_lending",
-      "target": "Botswana CB data",
-      "metric": "Average Prime Lending Rate",
-      "value": 0.0719,
-      "unit": "%",
-      "period": "October 2026",
-      "bank": "",
-      "scope": "Central-bank published aggregate or policy data",
-      "source_url": "https://www.bankofbotswana.bw/",
-      "notes": "Home page economic-indicator panel; 7.19Average Prime Lending RateOctober 2026",
-      "status": "Verified official source"
-    }
-  ],
-  "fingerprint": "fdc39b3274506d3bdab71d053dd2b61944fd5f50d1e6364b74e21906c18e8ced",
+  "checked_at": "2026-11-28T09:20:30.985397+00:00",
+  "status": "review",
+  "records": [],
+  "fingerprint": "a5025d8f41fbdf5f1ab32049399aa8a5420589165b9912891846b4c755cbe627",
   "source_url": "https://www.bankofbotswana.bw/",
-  "message": "",
-  "retrieval_method": "direct_http"
+  "message": "Central-bank metric is missing or ambiguous: Monetary Policy Rate",
+  "stage": "parsing",
+  "retrieval_method": "jina_reader"
 }
